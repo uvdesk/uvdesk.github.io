@@ -15,22 +15,20 @@
 # in the templates via {{ site.myvariable }}.
 email: support@webkul.com
 
-title: UVDesk Community
+title: UVDesk Community Documentation
 description: >-
     UVDesk Community Edition is an easy-to-use, highly customizable open-source 
     helpdesk solution built on top of the reliable Symfony PHP framework, enabling 
     organizations to provide their customers with the best level of support solution possible.
 
-baseurl: "https://uvdesk.github.io" # the subpath of your site, e.g. /blog
-url: "/docs" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://uvdesk.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/docs" # the subpath of your site, e.g. /blog
 
 # Build settings
 markdown: kramdown
 remote_theme: uvdesk-docs
-plugins:
-  - jekyll-feed
+
+plugins: ~
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
