@@ -52,7 +52,7 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-    uvdesk-docs (0.1.1)
+    uvdesk-docs (0.1.2)
       jekyll (~> 3.8)
 
 PLATFORMS
