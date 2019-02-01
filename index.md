@@ -1,7 +1,7 @@
 ---
-
 layout: home
 
+title: UVDesk Docs
 ---
 
 <h1>UVDesk Community Edition</h1>

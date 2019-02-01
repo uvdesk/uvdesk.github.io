@@ -26,6 +26,7 @@ baseurl: "/docs" # the subpath of your site, e.g. /blog
 
 # Build settings
 markdown: kramdown
+theme: uvdesk-docs
 remote_theme: uvdesk-docs
 
 plugins: ~
