@@ -1,0 +1,15 @@
+---
+---
+[
+  {% for uvdemo in site.uvdemo %}
+    {
+    
+      "title"    : "{{ uvdemo.title | escape }}",
+      "url"      : "{{ site.baseurl }}{{ uvdemo.url }}",
+      "category" : "{{ uvdemo.category }}",
+      "tags"     : "{{ uvdemo.tags | join: ', ' }}",
+      "date"     : "{{ uvdemo.date }}"
+      
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

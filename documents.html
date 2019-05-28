@@ -1,0 +1,14 @@
+--- 
+layout: page-sidebar-layout
+title: Document-list
+---
+
+<ul>
+
+{% for uvdemo in site.uvdemo %}
+    <li>
+        <h3><a href = "{{ uvdemo.url }}">{{ uvdemo.title | capitalize }}</a></h3>
+    </li>
+{% endfor %}
+</ul>
+
