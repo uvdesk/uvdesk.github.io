@@ -38,6 +38,8 @@
 .remove-line-docs {
   text-decoration: none;
   color: #1b1b1c;
+  padding: 0 0 0 201px;
+  font-size: xx-large;
 }
 
 .bloglink {
@@ -341,14 +343,14 @@
   display: grid;
   grid-template-columns: auto auto auto;
   grid-gap: 10px;
-  padding: 10px;
+ 
 }
 
 .item {
   background-color: white;
   padding: 20px 0;
   font-size: 18px;
-  margin: 31px 25px 0px 10px;
+  margin: 30px 0 0 0;
 }
 
 .topic-box {
