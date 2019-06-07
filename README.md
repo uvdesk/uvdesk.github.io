@@ -19,7 +19,7 @@ These instructions will get you a copy of the project up and running on your loc
 1. Server: Apache
 2. Database: MySQL
 3. For Ubuntu
-```
+
 	- **[Install Composer](https://getcomposer.org/download/)**
 	- **PHP Installation (run the commands to install)**
 		- **For PHP 7.0**
@@ -42,10 +42,10 @@ These instructions will get you a copy of the project up and running on your loc
 			- Add "extension=mailparse.so" in php.ini file of the corresponding php 		version.
 	- IMAP Installation (run the commands to install)
 		- apt-get install php < version > -imap
-```
+
 		
 4. For Windows
-```
+
 	- **[Install Composer](https:getcomposer.org/download/)**
 		- Give **composer.exe** the path of **php.exe**, which you can find in your WAMP directory.
 
@@ -61,9 +61,9 @@ These instructions will get you a copy of the project up and running on your loc
 			- Uncomment the IMAP Extension in the **php.ini** file of the specific version, then restart Apache server.
 
 
-```
+
 5. For Mac
-```
+
 	- **[Install Composer](https://getcomposer.org/download/)**
 		- Run the commands from the link to download Composer
 
@@ -77,13 +77,13 @@ These instructions will get you a copy of the project up and running on your loc
 	- **IMAP Installation**
 		- MAMP comes preinstalled with IMAP Extension, uncomment the IMAP Extension from **php.ini** file of your respective PHP version, then restart Apache services.
 
-```
+
 
 ### Installing
 
 
 1. Installation on Ubuntu
-```
+
 	- **Step 1**
 		- Install the community-skeleton project via composer using the commands below:
 			- composer clear-cache
@@ -119,9 +119,9 @@ These instructions will get you a copy of the project up and running on your loc
 	- **Step 10**
 		- The wizard will indicate success message on finished installation. 
 
-``` 
+
 2. Installation on Windows
-```
+
 	- **Step 1**
 		- Install the community-skeleton project via composer using the commands below:
 			- composer clear-cache
@@ -157,7 +157,7 @@ These instructions will get you a copy of the project up and running on your loc
 	- **Step 10**
 		- The wizard will indicate success message on finished installation.
 
-```
+
 3. Installation on Mac
 
 
