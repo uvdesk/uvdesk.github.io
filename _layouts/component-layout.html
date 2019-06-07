@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>{{ page.title | default: site.title }}</title>
-    <link rel="stylesheet" type="text/css" href="/assets/css/uvdocs.css">
+    <head>
+        <title>{{ page.title | default: site.title }}</title>
+        <link rel="stylesheet" type="text/css" href="/assets/css/uvdocs.css">
 
-</head>
+    </head>
 
-<body>
-    <div class="container">
-        <div class="header">
-            {%- include navigation1.html -%}
-            <div class="component-index-container">
-                {{ content }}
+    <body>
+        <div class="container">
+            <div class="header">
+                {%- include navigation1.html -%}
             </div>
-        <div class="footer">
-            <div class="grid-footer-container">
-                <div class="item footer123">
-                    <center>
-                        <p> &copy; Copyright 2018 Webkul Software. All rights reserved under MIT License.</p>
-                    </center>
+                <div class="component-index-container">
+                    {{ content }}
+                </div>
+            <div class="footer">
+                <div class="grid-footer-container">
+                    <div class="item footer123">
+                        <center>
+                            <p> &copy; Copyright 2018 Webkul Software. All rights reserved under MIT License.</p>
+                        </center>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-</body>
+    </body>
 </html>
