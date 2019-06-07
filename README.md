@@ -1,4 +1,4 @@
-# Project Title
+# UVdesk
 
 The purpose of this project is to deliver a *refined* customer
 service experience. This project comes with PHP-based packages in order to develop and or build modules to create custom helpdesk solutions for your organization. 
