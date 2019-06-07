@@ -1,0 +1,211 @@
+<!--
+    Author: Anmol Rathi
+
+    Usage: This is for the sidebar-navigation.
+
+    The corresponding CSS is below: 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+       /* Fixed sidenav, full height */
+            .sidenav {
+            height: 100%;
+            width: 200px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #ffffff;
+            overflow-x: hidden;
+            padding-top: 20px;
+            }
+
+            /* Style the sidenav links and the dropdown button */
+            .sidenav a, .dropdown-btn {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #4d4d4d;
+            display: block;
+            border: none;
+            background: none;
+            width:100%;
+            text-align: left;
+            cursor: pointer;
+            outline: none;
+            }
+
+            /* On mouse-over */
+            .sidenav a:hover, .dropdown-btn:hover {
+            color: black;
+            text-shadow: 2px 2px 4px #737373;
+            }
+            .parent:hover .dropdown-container{
+                display: block;
+                
+
+            }
+
+            .dropdown-container a:hover{
+                text-shadow: 2px 2px 4px #737373;
+
+            }
+
+            /* Main content */
+            .main {
+            margin-left: 200px; /* Same as the width of the sidenav */
+            font-size: 20px; /* Increased text to enable scrolling */
+            padding: 0px 10px;
+            }
+
+           
+        
+            /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+            .dropdown-container {
+            display: none;
+            /*background-color: #262626;*/
+            background-color: #ffffff;
+            padding-left: 8px;
+            margin-left: 20px;
+            }
+
+            /* Optional: Style the caret down icon */
+            .fa-caret-down {
+            float: right;
+            padding-right: 8px;
+            } 
+
+            .dropdown-container a{
+                font-size: 15px;
+            }
+           
+            #top-button{
+                margin-top: 50px;
+            }
+
+            #topics_label{
+                margin-left: 50px;
+                color: black;
+                font-size: 30px;
+            }
+     
+            
+
+    </style>
+-->
+
+
+<div class="sidenav">
+       
+    <label id="topics_label">Topics</label>
+
+    <div class="parent">
+        <button class="dropdown-btn" id="top-button">Installation <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-container">
+                <a href="/uvdemo/prerequisites/prerequisites.html">Prerequisites</a>
+                <a href="/uvdemo/installation/installation-ubuntu.html">Installation on Ubuntu</a>
+                <a href="/uvdemo/installation/installation-windows.html">Installation on Windows</a>
+                <a href="/uvdemo/installation/installation-mac.html">Installation on Mac</a>
+            </div>
+        </div>
+
+
+
+    <div class="parent">
+        <button class="dropdown-btn">Users <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-container">
+                <a href="/uvdemo/users/groups.html">Groups</a>
+                <a href="/uvdemo/users/teams.html">Teams</a>
+                <a href="/uvdemo/users/agents.html">Agents</a>
+                <a href="/uvdemo/users/privileges.html">Privileges</a>
+                <a href="/uvdemo/users/customers.html">Customers</a>
+            </div>
+     </div>
+     
+
+
+     <div class="parent">
+        <button class="dropdown-btn">Knowledgebase <i class="fa fa-caret-down"></i></button>
+        
+            <div class="dropdown-container">
+
+                <a href="/uvdemo/knowledgebase/folder.html">Folder</a>
+                <a href="/uvdemo/knowledgebase/category.html">Category</a>
+                <a href="/uvdemo/knowledgebase/article.html">Article</a>
+            </div>
+     </div>
+
+
+
+     <div class="parent">
+        <button class="dropdown-btn">Productivity <i class="fa fa-caret-down"></i></button>
+        
+            <div class="dropdown-container">
+
+                <a href="/uvdemo/productivity/ticket-type.html">Ticket Types</a>
+                <a href="/uvdemo/productivity/tags.html">Tags</a>
+                <a href="/uvdemo/productivity/replies.html">Saved Replies</a>
+                <a href="/uvdemo/productivity/workflow.html">Workflows</a>
+                <a href="/uvdemo/productivity/prepared-response.html">Prepared Responses</a>
+            </div>
+     </div>
+     
+
+
+         <div class="parent">
+         <button class="dropdown-btn">Setting <i class="fa fa-caret-down"></i></button>
+         
+             <div class="dropdown-container" >
+
+                 <a href="/uvdemo/settings/branding.html">Branding</a>
+                 <a href="/uvdemo/settings/template.html">Email Templates</a>
+                 <a href="/uvdemo/settings/swiftmailer.html">Swift Mailer</a>
+                 <a href="/uvdemo/settings/email-settings.html">Email Settings</a>
+                 <a href="/uvdemo/settings/block-spam.html">Block Spam</a>
+                 <a href="/uvdemo/settings/mailbox.html">Mail Box</a>
+             </div>
+         </div>
+
+         <div class="parent">
+             <button class="dropdown-btn">Helpful Links <i class="fa fa-caret-down"></i></button>
+             <div class="dropdown-container">
+                 <a href="https://demo.uvdesk.com/">Schedule a Demo</a>
+                 <a href="https://www.youtube.com/channel/UCKKt4IOC7ynLwhJMP35uFeQ">Video Tutorial</a>
+                 <a href="https://forums.uvdesk.com/">Webinar - Forum</a>
+                 <a href="https://www.uvdesk.com/en/articles/">Read Blogs</a>
+                 <a href="https://bagisto.com/en/roadmap/">Released - Add Roadmap</a>
+             </div>
+         </div>
+
+
+
+
+         <div class="parent">
+             <button class="dropdown-btn">Community <i class="fa fa-caret-down"></i></button>
+             <div class="dropdown-container">
+                 <a href="https://github.com/uvdesk/community-skeleton/blob/master/README.md">Get Involved in the Community</a>
+                 <a href="">Help to Make UVdesk Community</a>
+             </div>
+         </div>
+
+         
+
+         <div class="parent">
+             <button class="dropdown-btn">Social Sites <i class="fa fa-caret-down"></i></button>
+             <div class="dropdown-container">
+                 <a href="https://www.facebook.com/uvdesk/">Facebook</a>
+             </div>
+         </div>
+
+
+
+         <div class="parent">
+             <button class="dropdown-btn">Generates Tickets <i class="fa fa-carent-down"></i></button>
+             <div class="dropdown-container">
+                 <a href="https://support.uvdesk.com/en/">Create Ticket</a>
+             </div>
+         </div>
+     
+</div>
+

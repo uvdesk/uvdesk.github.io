@@ -1,4 +1,10 @@
-/* header css start */
+/* header css start 
+The import statement below is for the sidebar-nav.
+Specific usage: the 'down arrow caret' used in the header
+of the sidebar. 
+ Author: Anmol Rathi.
+*/
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
 .container {
   background-color: #ffffff;
@@ -541,7 +547,7 @@ ul {
 }
 
 .component-index-container{
-  background-color: #FCF9FF;
+  //background-color: #FCF9FF;
   width: 1200px;
   margin: 0 0 0 60px;
 }
@@ -551,15 +557,20 @@ ul {
 }
 
 .component-title {
-  color: #7878C1;
+  color: #0d0d0d;
   font-size: xx-large;
-  font-weight: bold; 
+  //font-weight: bold; 
+  /*
+  by me
+  */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .component-sub-title {
-  color: #7878C1;
+  color: #333333;
   font-size: x-large;
-  font-weight: bold;
+  font-weight: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .component-a{
@@ -606,15 +617,19 @@ ul {
 }
 
 .paragraph1 {
+  color: #595959;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.6;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .command-heading {
   font-size: 18px;
-  font-style: italic;
-  font-weight: 600;
+  //font-style: italic;
+  font-weight: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #333333;
 }
 
 .command {
@@ -624,15 +639,107 @@ ul {
   border-left: 6px solid #7878C1;
   background-color: lightgrey;
   padding: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .image-heading {
-  font-weight: 600;
-  font-size: 18px;
-  font-style: noraml;
+  font-weight: bold;
+  font-size: 22px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #333333;
 }
 
 .big-screen-shot {
   width: 850px;
 }
 
+/*
+START OF CSS for sidebar-nav.html
+author: Anmol Rathi
+*/
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  padding-top: 20px;
+  }
+
+  /* Style the sidenav links and the dropdown button */
+  .sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #4d4d4d;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  }
+
+  /* On mouse-over */
+  .sidenav a:hover, .dropdown-btn:hover {
+  color: black;
+  text-shadow: 2px 2px 4px #737373;
+  }
+  .parent:hover .dropdown-container{
+      display: block;
+      
+
+  }
+
+  .dropdown-container a:hover{
+      text-shadow: 2px 2px 4px #737373;
+
+  }
+
+  /* Main content */
+  .main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+  }
+
+ 
+
+  /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+  .dropdown-container {
+  display: none;
+  /*background-color: #262626;*/
+  background-color: #ffffff;
+  padding-left: 8px;
+  margin-left: 20px;
+  }
+
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+  float: right;
+  padding-right: 8px;
+  } 
+
+  .dropdown-container a{
+      font-size: 15px;
+  }
+ 
+  #top-button{
+      margin-top: 50px;
+  }
+
+  #topics_label{
+      margin-left: 50px;
+      color: black;
+      font-size: 30px;
+  }
+
+
+/*
+END OF CSS for sidebar-nav.html
+author: Anmol Rathi
+*/
