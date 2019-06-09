@@ -75,7 +75,6 @@ window.onclick = function (event) {
 
 
 function openHamburger() {
-    
     const hamburgerButton = document.querySelector('.hamburger-menu-icon');
     const hamburgerMenu = document.querySelector('.hamburger-menu');
 
@@ -86,6 +85,4 @@ function openHamburger() {
         hamburgerButton.classList.add('hamburger-menu-icon-change');
         hamburgerMenu.classList.add('hamburger-menu-show');
     }
-
-
 }
