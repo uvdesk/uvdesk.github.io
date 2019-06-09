@@ -45,7 +45,7 @@ window.onload = load;
 function load() {
     var retrievedData = sessionStorage.getItem("activeId");
     var idArray = JSON.parse(retrievedData);
-    if (typeof idArray !== 'undefined' ) {
+    if (idArray && (idArray instanceof Array) ) {
         for (let i = 0; i < idArray.length; i++) {
             document.getElementById(idArray[i]).classList.add('open');
             //console.log(idArray[i]);
@@ -73,3 +73,19 @@ window.onclick = function (event) {
     }
 }
 
+
+function openHamburger() {
+    
+    const hamburgerButton = document.querySelector('.hamburger-menu-icon');
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+
+    if ( hamburgerButton.classList.contains('hamburger-menu-icon-change')) {
+        hamburgerButton.classList.remove('hamburger-menu-icon-change');
+        hamburgerMenu.classList.remove('hamburger-menu-show');
+    } else {
+        hamburgerButton.classList.add('hamburger-menu-icon-change');
+        hamburgerMenu.classList.add('hamburger-menu-show');
+    }
+
+
+}
