@@ -14,13 +14,11 @@
   box-shadow: 2px 0 5px var(--box-shadow-color);
   background-color: var(--container-bg-color, #ffffff); 
   z-index: 9999;
-  overflow: auto; 
+  overflow: auto;
 }
 
-
-
 .hamburger-menu-title {
-  width: calc(var(--hamburger-menu-width) - var(--hamburger-menu-item-left-margin) - var(--hamburger-menu-item-left-margin));
+  width: calc(var(--hamburger-menu-width) - 3 * var(--hamburger-menu-item-left-margin) );
   padding-bottom: var(--hamburger-menu-item-bottom-margin); 
   margin: calc(var(--hamburger-menu-item-bottom-margin)) var(--hamburger-menu-item-left-margin);
   opacity: 0.5;
