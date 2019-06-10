@@ -88,8 +88,8 @@ window.onclick = function (event) {
 
 // on hamburger menu icon click
 function onClickHamburgerIcon() {
-    const hamburgerButton = document.querySelector('.second .hamburger-menu-icon');
-    const hamburgerMenu = document.querySelector('.second .hamburger-menu');
+    const hamburgerButton = document.querySelector('.hamburger-menu-icon');
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
     if (hamburgerButton.classList.contains('hamburger-menu-icon-change')) {
         closeHamburgerMenu(hamburgerButton, hamburgerMenu);
     } else {
@@ -125,14 +125,14 @@ function openHamburgerDropdown(event) {
 // close the hamburger menu on the clicking the area outside the hamburger menu
 document.body.addEventListener('mousedown', (event) => {
 
-    if (event.clientX > document.querySelector('.second .hamburger-menu').offsetWidth && 
-        ([document.querySelector('.second .hamburger-menu-icon'),
+    if (event.clientX > document.querySelector('.hamburger-menu').offsetWidth && 
+        ([document.querySelector('.hamburger-menu-icon'),
            document.querySelector('.hmi-bar1'),
            document.querySelector('.hmi-bar2'),
            document.querySelector('.hmi-bar3')].indexOf(event.target) === -1)) {
-        const hamburgerButton = document.querySelector('.second .hamburger-menu-icon');
+        const hamburgerButton = document.querySelector('.hamburger-menu-icon');
         if (hamburgerButton.classList.contains('hamburger-menu-icon-change')) {
-            closeHamburgerMenu(hamburgerButton, hamburgerMenu = document.querySelector('.second .hamburger-menu'));
+            closeHamburgerMenu(hamburgerButton, hamburgerMenu = document.querySelector('.hamburger-menu'));
         }
     }
 });

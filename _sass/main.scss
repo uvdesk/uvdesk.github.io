@@ -20,7 +20,7 @@ p {
 }
 
 .container {
-  background-color: var(--container-bg-color, #ffffff);
+  background-color: var(--container-bg-color);
   display: grid;
   -webkit-grid-template-columns: auto;
   -moz-grid-template-columns: auto;
@@ -83,7 +83,7 @@ p {
 }
 
 @media all and (min-width: 871px) {
-  .second .hamburger-menu {
+  .hamburger-menu {
     display: none !important;
   }
 }

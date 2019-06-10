@@ -12,7 +12,8 @@
   overflow: auto;
 }
 
-.second .hamburger-menu {
+
+.hamburger-menu {
   -webkit-transition: left 200ms linear;
   -moz-transition: left 200ms linear;
   -ms-transition: left 200ms linear;
@@ -94,7 +95,7 @@
 
 
 // hamburger icon start
-.second .hamburger-menu.hamburger-menu-show {
+.hamburger-menu-show {
   left: 0px;
 }
 
