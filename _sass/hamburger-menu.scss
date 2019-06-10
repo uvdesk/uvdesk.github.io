@@ -1,20 +1,24 @@
 // hamburger menu start
 .hamburger-menu {
   display: block;
-  -webkit-transition: left 200ms linear;
-  -moz-transition: left 200ms linear;
-  -ms-transition: left 200ms linear;
-  -o-transition: left 200ms linear;
-  transition: left 200ms linear;
   position: fixed;
   top: 0px;
-  left: calc(-1 * var(--hamburger-menu-width));
+  left: 0px;
   max-width: var(--hamburger-menu-width);
   height: 100%;
   box-shadow: 2px 0 5px var(--box-shadow-color);
   background-color: var(--container-bg-color, #ffffff); 
   z-index: 9999;
   overflow: auto;
+}
+
+.second .hamburger-menu {
+  -webkit-transition: left 200ms linear;
+  -moz-transition: left 200ms linear;
+  -ms-transition: left 200ms linear;
+  -o-transition: left 200ms linear;
+  transition: left 200ms linear;
+  left: calc(-1 * var(--hamburger-menu-width));
 }
 
 .hamburger-menu-title {
@@ -90,7 +94,7 @@
 
 
 // hamburger icon start
-.hamburger-menu-show {
+.second .hamburger-menu.hamburger-menu-show {
   left: 0px;
 }
 
