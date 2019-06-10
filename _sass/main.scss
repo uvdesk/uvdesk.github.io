@@ -14,6 +14,11 @@ body {
   color: var(--paragraph-heading-color);
 }
 
+p {
+  opacity: var(--paragraph-opacity);
+  font-size: var(--paragraph-font-size);
+}
+
 .container {
   background-color: var(--container-bg-color, #ffffff);
   display: grid;
@@ -134,9 +139,12 @@ body {
   padding: var(--item-padding);
 }
 
-
 .item > p {
   margin: var(--paragraph-tb-margin) 0;
+}
+
+.item > h4 {
+  font-weight: var(--item-heading-font-weight);
 }
 
 .button {
@@ -199,7 +207,8 @@ body {
 .topics-heading {
   font-size: var(--sub-heading-font-size);
   font-weight: var(--heading-font-weight);
-  padding-bottom: var(--sub-heading-bottom-spacing);
+  padding-bottom: calc( 2 * var(--sub-heading-bottom-spacing));
+  padding-top: calc( var(--sub-heading-bottom-spacing));
 }
 
 .topics-grid-container {
@@ -212,7 +221,7 @@ body {
 .topic-box-title {
   color: var(--purple-bg-shade);
   text-decoration: none;
-  font-weight: var(--heading-font-weight);
+  font-weight: var(--item-heading-font-weight);
   margin-bottom: 0px;
 }
 
@@ -351,6 +360,7 @@ body {
 .helpful-links-heading {
   font-weight: var(--heading-font-weight, bold);
   padding-bottom: var(--sub-heading-bottom-spacing);
+  padding-top: calc(var(--sub-heading-bottom-spacing));
   font-size: var(--sub-heading-font-size);
 }
 
