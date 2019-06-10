@@ -13,11 +13,12 @@
         <div class="hamburger-menu">
             <h3 class="hamburger-menu-title">Documentation</h3>
             <div class="hamburger-menu-wrapper">
+                {%- include sidebar.html -%}
                 <button class="button headerBtn hamburgerMenuContentBtn">Fork on Github</button>
                 <button class="button headerBtn hamburgerMenuContentBtn">UVdesk Helpdesk</button>
             </div>
         </div>
-        <div class="hamburger-menu-icon" onclick="openHamburger(event);">
+        <div class="hamburger-menu-icon" onclick="onClickHamburgerIcon(event);">
             <div class="hmi-bar1"></div>
             <div class="hmi-bar2"></div>
             <div class="hmi-bar3"></div>

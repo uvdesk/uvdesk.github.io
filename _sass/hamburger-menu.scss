@@ -1,0 +1,125 @@
+// hamburger menu start
+.hamburger-menu {
+  display: block;
+  transition: left 200ms linear;
+  position: fixed;
+  top: 0px;
+  left: calc(-1 * var(--hamburger-menu-width));
+  width: var(--hamburger-menu-width);
+  height: 100vh;
+  box-shadow: 2px 0 5px var(--box-shadow-color);
+  background-color: var(--container-bg-color, #ffffff);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  z-index: 9999;
+  min-height: min-content;
+  overflow-y: scroll; 
+}
+
+
+.hamburger-menu-title {
+  width: auto;
+  padding-bottom: var(--hamburger-menu-item-bottom-margin); 
+  margin: calc(var(--hamburger-menu-item-bottom-margin)) var(--hamburger-menu-item-left-margin);
+  opacity: 0.5;
+  border-bottom: 1px solid grey;
+}
+
+.hamburgerMenuContentBtn {
+  align-self: flex-start;
+  margin-bottom: var(--hamburger-menu-item-bottom-margin);
+  padding: 5px 7px 3px;
+  border: 1px;
+  margin-left: var(--hamburger-menu-item-left-margin);
+  border-radius: 3px;
+}
+
+.hamburgerMenuContentBtn:nth-of-type(1) {
+  margin-top: var(--hamburger-menu-seperator-margin);
+  background-color: var(--purple-bg-shade);
+}
+
+.hamburgerMenuContentBtn:nth-of-type(2) {
+  background-color: var(--green-bg-shade);
+}
+
+// Style the sidenav links and the dropdown button */
+.hamburger-menu-wrapper a, .dropdown-btn {
+    text-decoration: none;
+    margin-bottom: var(--hamburger-menu-item-bottom-margin);
+    margin-left: var(--hamburger-menu-item-left-margin);
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    font: var(--hamburger-menu-item-font-weight) var(--hamburger-menu-item-font-size) var(--hamburger-menu-item-font-family);
+    border-bottom: 2px solid rgba(0,0,0,0);
+    width: fit-content;
+}
+
+.hamburger-menu-wrapper a:hover, .dropdown-btn:hover, .dropdown-container a:hover {
+    color: var(--paragraph-heading-color);
+    border-bottom-color: var(--purple-bg-shade);
+}
+
+.dropdown-btn:active {
+    opacity: 0.5;
+}
+
+.parent:first-of-type .dropdown-btn {
+    margin-top: calc( var(--hamburger-menu-seperator-margin));
+}
+
+// Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content
+.dropdown-container {
+    display: none;
+    margin: 0 var(--hamburger-menu-item-left-margin) var(--hamburger-menu-item-bottom-margin);
+}
+// hamburger menu end
+
+
+
+// hamburger icon start
+.hamburger-menu-show {
+  left: 0px;
+}
+
+.hamburger-menu-icon {
+  display: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  user-select: none;
+}
+
+.hamburger-menu-icon-change {
+  transform: rotateZ(90deg);
+}
+
+.hmi-bar1, .hmi-bar2, .hmi-bar3 {
+  width: 30px;
+  height: 4px;
+  background-color: var(--purple-bg-shade, #8473F3);
+  margin: 6px 0;
+  user-select: none;
+}
+
+.hamburger-menu-icon-change .hmi-bar1 {
+  transform: rotate(45deg) translate(6px, 6.5px);
+}
+
+.hamburger-menu-icon-change .hmi-bar2 { opacity: 0; }
+
+.hamburger-menu-icon-change .hmi-bar3 {
+  transform: rotate(-45deg) translate(8px, -8px);
+}
+// hamburger icon end
+
+
+
+
+
+
+

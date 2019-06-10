@@ -1,0 +1,69 @@
+:root {
+  // typography
+  --heading-font-weight: bold;
+  --sub-heading-font-size: 24px;
+  --sub-heading-bottom-spacing: 40px;
+  --main-heading-size: 30px;
+  --main-heading-bottom-spacing: 20px;
+  --root-font-size: 10px;
+  --universal-font-size: 1.5rem;
+  --paragraph-tb-margin: 10px;
+  --ticket-content-heading-font-size: 22px;
+
+  // layout sizing and spacing
+  --page-padding:50px;
+  --grid-row-gap: 12px;
+  --grid-column-gap: 7px;
+  --item-min-width: 150px;
+  --item-min-height: 100px;
+  --header-footer-height: 68px;
+  --item-padding: 10px;
+  --topic-box-padding: 20px;
+  --box-3-tb-margin: 10px;
+  --ticket-top-margin: 22px;
+  --footer-tb-padding: 10px;
+  --helpful-item-left-padding: 0px;
+  --ticket-button-width: 126px;
+  --ticket-content-bottom-padding: 15px;
+  
+  // hamburger menu
+  --hamburger-menu-width: 300px;
+  --hamburger-menu-item-left-margin: 25px;
+  --hamburger-menu-item-bottom-margin: 10px;
+  --hamburger-menu-item-font-family: 'Arial';
+  --hamburger-menu-item-font-size: 13.3333px;
+  --hamburger-menu-item-font-weight: 400;
+  --hamburger-menu-seperator-margin: 5px;
+  
+
+  // colors
+  --purple-bg-shade: #8473F3;
+  --green-bg-shade: #1cbc54;
+  --footer-bg-color: #362F55;
+  --topics-bg-color: #f9f9f9;
+  --container-bg-color: #ffffff;
+  --header-border-color: #cbcfd6;
+  --box-shadow-color: #27272780;
+  --topics-box-shadow-color: rgba(0, 0, 0, 0.1);
+  --community-container-text-color: #282828;
+  --footer-text-color: #f2f4f9;
+  --footer-background-color: #362F55;
+  --paragraph-heading-color: 	#202020;
+  
+}
+
+@media all and (min-width: 1261px) {
+  :root {
+    --page-padding:30px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  :root {
+    --page-padding:30px;
+    --grid-column-gap: 0px;
+    --grid-row-gap: 10px;
+  }
+}
+
+
