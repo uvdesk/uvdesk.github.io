@@ -3,6 +3,10 @@ html {
   font-size: var(--root-font-size);
 }
 
+body {
+  min-width: 500px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
