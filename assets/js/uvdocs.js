@@ -52,7 +52,6 @@ function load() {
     if (idArray && (idArray instanceof Array) ) {
         for (let i = 0; i < idArray.length; i++) {
             document.getElementById(idArray[i]).classList.add('open');
-            //console.log(idArray[i]);
         }
 
     }
@@ -62,6 +61,7 @@ function load() {
 
     for　(i = 0; i < length; i++) {
         hamburgerDrpDnBtns[i].onclick = openHamburgerDropdown;
+        hamburgerDrpDnBtns[i].nextElementSibling.style.display = 'none';
     }
 
 }
@@ -90,7 +90,9 @@ window.onclick = function (event) {
 function onClickHamburgerIcon() {
     const hamburgerButton = document.querySelector('.hamburger-menu-icon');
     const hamburgerMenu = document.querySelector('.hamburger-menu');
-    if (!hamburgerButton.classList.contains('hamburger-menu-icon-change')) {
+    if (hamburgerButton.classList.contains('hamburger-menu-icon-change')) {
+        closeHamburgerMenu(hamburgerButton, hamburgerMenu);
+    } else {
         openHamburgerMenu(hamburgerButton, hamburgerMenu);
     }
 }
@@ -109,15 +111,24 @@ function closeHamburgerMenu(hamburgerButton, hamburgerMenu) {
 
 // open the selected dropdown menu in the hamburger menu and close the opened one
 function openHamburgerDropdown(event) {
-    if (openedDropDown()) {
+    if (openedDropDown() && (event.target.nextElementSibling !== openedDropDown())) {
         openedDropDown().style.display = 'none';
     }
-    (openedDropDown(event.target.nextElementSibling)).style.display = 'block';
+    if (event.target.nextElementSibling.style.display === 'none') {
+        (openedDropDown(event.target.nextElementSibling)).style.display = 'block';
+    } else {
+        (openedDropDown(event.target.nextElementSibling)).style.display = 'none';
+    }
 }
 
 // close the hamburger menu on the clicking the area outside the hamburger menu
 document.body.addEventListener('mousedown', (event) => {
-    if (event.clientX > document.querySelector('.hamburger-menu').offsetWidth) {
+
+    if (event.clientX > document.querySelector('.hamburger-menu').offsetWidth && 
+        ([document.querySelector('.hamburger-menu-icon'),
+           document.querySelector('.hmi-bar1'),
+           document.querySelector('.hmi-bar2'),
+           document.querySelector('.hmi-bar3')].indexOf(event.target) === -1)) {
         const hamburgerButton = document.querySelector('.hamburger-menu-icon');
         if (hamburgerButton.classList.contains('hamburger-menu-icon-change')) {
             closeHamburgerMenu(hamburgerButton, hamburgerMenu = document.querySelector('.hamburger-menu'));

@@ -1,25 +1,26 @@
 // hamburger menu start
 .hamburger-menu {
   display: block;
+  -webkit-transition: left 200ms linear;
+  -moz-transition: left 200ms linear;
+  -ms-transition: left 200ms linear;
+  -o-transition: left 200ms linear;
   transition: left 200ms linear;
   position: fixed;
   top: 0px;
   left: calc(-1 * var(--hamburger-menu-width));
-  width: var(--hamburger-menu-width);
-  height: 100vh;
+  max-width: var(--hamburger-menu-width);
+  height: 100%;
   box-shadow: 2px 0 5px var(--box-shadow-color);
-  background-color: var(--container-bg-color, #ffffff);
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: flex-start;
+  background-color: var(--container-bg-color, #ffffff); 
   z-index: 9999;
-  min-height: min-content;
-  overflow-y: scroll; 
+  overflow: auto; 
 }
 
 
+
 .hamburger-menu-title {
-  width: auto;
+  width: calc(var(--hamburger-menu-width) - var(--hamburger-menu-item-left-margin) - var(--hamburger-menu-item-left-margin));
   padding-bottom: var(--hamburger-menu-item-bottom-margin); 
   margin: calc(var(--hamburger-menu-item-bottom-margin)) var(--hamburger-menu-item-left-margin);
   opacity: 0.5;
@@ -48,7 +49,7 @@
 .hamburger-menu-wrapper a, .dropdown-btn {
     text-decoration: none;
     margin-bottom: var(--hamburger-menu-item-bottom-margin);
-    margin-left: var(--hamburger-menu-item-left-margin);
+    margin-left: calc(var(--hamburger-menu-item-left-margin));
     display: block;
     border: none;
     background: none;
@@ -57,7 +58,15 @@
     padding: 0;
     font: var(--hamburger-menu-item-font-weight) var(--hamburger-menu-item-font-size) var(--hamburger-menu-item-font-family);
     border-bottom: 2px solid rgba(0,0,0,0);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: -ms-fit-content;
+    width: -o-fit-content;
     width: fit-content;
+}
+
+.dropdown-container a {
+   margin-left: var(--hamburger-menu-dropdown-container-item-left-margin);
 }
 
 .hamburger-menu-wrapper a:hover, .dropdown-btn:hover, .dropdown-container a:hover {
@@ -76,7 +85,7 @@
 // Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content
 .dropdown-container {
     display: none;
-    margin: 0 var(--hamburger-menu-item-left-margin) var(--hamburger-menu-item-bottom-margin);
+    margin: 0 calc(var(--hamburger-menu-item-left-margin)) calc( var(--hamburger-menu-item-bottom-margin));
 }
 // hamburger menu end
 
@@ -90,11 +99,19 @@
 .hamburger-menu-icon {
   display: none;
   cursor: pointer;
+  -webkit-transition: transform 0.2s ease;
+  -moz-transition: transform 0.2s ease;
+  -ms-transition: transform 0.2s ease;
+  -o-transition: transform 0.2s ease;
   transition: transform 0.2s ease;
   user-select: none;
 }
 
 .hamburger-menu-icon-change {
+  -webkit-transform: rotateZ(90deg);
+  -moz-transform: rotateZ(90deg);
+  -ms-transform: rotateZ(90deg);
+  -o-transform: rotateZ(90deg);
   transform: rotateZ(90deg);
 }
 
@@ -107,12 +124,20 @@
 }
 
 .hamburger-menu-icon-change .hmi-bar1 {
+  -webkit-transform: rotate(45deg) translate(6px, 6.5px);
+  -moz-transform: rotate(45deg) translate(6px, 6.5px);
+  -ms-transform: rotate(45deg) translate(6px, 6.5px);
+  -o-transform: rotate(45deg) translate(6px, 6.5px);
   transform: rotate(45deg) translate(6px, 6.5px);
 }
 
 .hamburger-menu-icon-change .hmi-bar2 { opacity: 0; }
 
 .hamburger-menu-icon-change .hmi-bar3 {
+  -webkit-transform: rotate(-45deg) translate(8px, -8px);
+  -moz-transform: rotate(-45deg) translate(8px, -8px);
+  -ms-transform: rotate(-45deg) translate(8px, -8px);
+  -o-transform: rotate(-45deg) translate(8px, -8px);
   transform: rotate(-45deg) translate(8px, -8px);
 }
 // hamburger icon end
