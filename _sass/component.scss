@@ -1,6 +1,6 @@
 .component-container {
     display: grid;
-    grid-template-columns: var(--hamburger-menu-width) 1fr;
+    grid-template-columns: var(--hamburger-menu-width) 1fr var(--hamburger-menu-width);
     grid-template-rows: var(--header-footer-height) 1fr;
     background-color: var(--container-bg-color);
 }
@@ -24,9 +24,6 @@
     height: auto;
     display: block !important;
 }
-.component-container .hamburger-menu .hamburger-menu-title {
-    display: none;
-}
 
 .component-container .hamburger-menu-wrapper {
     margin-top: calc(var(--hamburger-menu-item-left-margin) - 5px);
@@ -47,21 +44,25 @@
 .component-container .installation-component {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    padding: 20px;
+    padding: var(--component-container-content-padding);
 }
 
+.component-container .footer {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
 
 @media all and (max-width: 870px) {    
     .component-container {
         grid-template-columns: 1fr;
-        grid-template-rows: var(--header-footer-height) 1fr; //var(--header-footer-height);
+        grid-template-rows: var(--header-footer-height) 1fr var(--header-footer-height);
     }
 
     .component-container .header-filler,　.component-container .sidebar-filler {
         display: none;
     }
 
-    .component-container .installation-component {
+    .component-container .footer, .component-container .installation-component {
         grid-column: 1 / 2;
     }
 
@@ -71,9 +72,6 @@
         z-index: 9999;
         top: 0;
         height: 100%;
-    }
-    .component-container .hamburger-menu .hamburger-menu-title {
-        display: block;
     }
 }
 
