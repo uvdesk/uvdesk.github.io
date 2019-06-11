@@ -36,15 +36,15 @@ Features and functionality of community skeleton helpdesk enable the user to use
     
     1. clear cache:
     
-    ```bash
+    ~~~
     $ composer clear-cache
-    ```
-    
-    2. Create project:
+    ~~~
 
-    ```bash
+    2. Create project:
+    
+    ~~~
     $ composer create-project uvdesk/community-skeleton helpdesk-project --stability dev
-    ```
+    ~~~
 
 2. ### Browse your installed helpdesk project.
 For example – http://domain/installed_folder/public/
