@@ -45,7 +45,7 @@ $ composer create-project uvdesk/community-skeleton helpdesk-project --stability
 ~~~
 
 ### 2. Browse your installed helpdesk project.
-For example – <span style="color:blue;">ht&#8203;tp://domain/installed_folder/public/</span>
+>For example – ht&#8203;tp://domain/installed_folder/public/
 
 ### 3. Set Up Helpdesk
 Click on SETUP UVDESK 
