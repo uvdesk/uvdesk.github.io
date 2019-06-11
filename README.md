@@ -1,12 +1,26 @@
-# Project Title
+# uvdesk
 
-One Paragraph of project description goes here
+A fully-functional UVDesk Community Edition project skeleton packaged along with the bare essential utilities that you can use to develop your own custom helpdesk solutions.
 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
+
+#### Hardware Requirements
+
+1. Processor: 1.60GHz or higher
+2. RAM: 3GB or higher
+
+#### Software Requirements
+
+1. [PHP]
+2. [Composer](https://getcomposer.org/)
+3. [PHP IMAP](https://php.net/manual/en/book.imap.php)
+4. [PHP Mailparse](https://php.net/manual/en/book.mailparse.php)
+2. Server: Apache
+3. Database: MySQL
 
 What things you need to install the software and how to install them
 
