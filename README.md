@@ -26,11 +26,11 @@ Features and functionality of community skeleton helpdesk enable the user to use
 
 ### 1. Obtain the package
     
-#### a. Download ZIP as per your System’s PHP version.   
+#### a. Download ZIP as per your System’s PHP version:
 
 1. Download the [zip file](https://www.uvdesk.com/en/opensource/) for your prefered PHP version and extract it.
 
-#### b. Install the community-skeleton project via composer using the below-structured command:**
+#### b. Install the community-skeleton project via composer using the below-structured command:
     
 1. clear cache:
 
@@ -44,10 +44,10 @@ $ composer clear-cache
 $ composer create-project uvdesk/community-skeleton helpdesk-project --stability dev
 ~~~
 
-### 2. Browse your installed helpdesk project.
+### 2. Browse your installed helpdesk project:
 >For example – ht&#8203;tp://domain/installed_folder/public/
 
-### 3. Set Up Helpdesk
+### 3. Set Up Helpdesk:
 Click on SETUP UVDESK 
 
 ### 3. Evaluating System requirements:
@@ -59,10 +59,10 @@ Fill in the required fields and Click on the PROCEED Button.
 ### 5. Create Super Admin Account:
 Fill in the required fields and Click on the PROCEED Button.
 
-### 6. Website Configuration
+### 6. Website Configuration:
 Fill in the required fields and Click on the PROCEED Button.
 
-### 7. Click Install now
+### 7. Click Install now:
 The Helpdesk Has Been Installed Successfully.
 
 
