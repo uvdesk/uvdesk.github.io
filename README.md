@@ -6,70 +6,67 @@ Features and functionality of community skeleton helpdesk enable the user to use
 
 ## Documentation
 
-- ### UVdesk Documentation [https://uvdesk.github.io/](https://uvdesk.github.io/)
+### UVdesk Documentation [https://uvdesk.github.io/](https://uvdesk.github.io/)
 
 ## Prerequisites
 
-- ### Hardware Requirements
+### Hardware Requirements
+1. Processor: 1.60GHz or higher
+2. RAM: 3GB or higher
 
-    1. Processor: 1.60GHz or higher
-    2. RAM: 3GB or higher
-
-- ### Software Requirements
-
-    1. PHP 7.0 or higher
-    2. [Composer](https://getcomposer.org/)
-    3. [PHP IMAP](https://php.net/manual/en/book.imap.php)
-    4. [PHP Mailparse](https://php.net/manual/en/book.mailparse.php)
-    2. Server: Apache
-    3. Database: MySQL
+### Software Requirements
+1. PHP 7.0 or higher
+2. [Composer](https://getcomposer.org/)
+3. [PHP IMAP](https://php.net/manual/en/book.imap.php)
+4. [PHP Mailparse](https://php.net/manual/en/book.mailparse.php)
+2. Server: Apache
+3. Database: MySQL
 
 ## Installation & Configuration
 
-1. ### Obtain the package
+### 1. Obtain the package
     
-    **a. Download ZIP as per your System’s PHP version.**    
-    
-    1. Download the [zip file](https://www.uvdesk.com/en/opensource/) for your prefered PHP version and extract it.
+#### a. Download ZIP as per your System’s PHP version.**    
 
-    **b. Install the community-skeleton project via composer using the below-structured command:**
-    
-    1. clear cache:
-    
-    ~~~
-    $ composer clear-cache
-    ~~~
+1. Download the [zip file](https://www.uvdesk.com/en/opensource/) for your prefered PHP version and extract it.
 
-    2. Create project:
+#### b. Install the community-skeleton project via composer using the below-structured command:**
     
-    ~~~
-    $ composer create-project uvdesk/community-skeleton helpdesk-project --stability dev
-    ~~~
+1. clear cache:
 
-2. ### Browse your installed helpdesk project.
+~~~
+$ composer clear-cache
+~~~
+
+2. Create project:
+    
+~~~
+$ composer create-project uvdesk/community-skeleton helpdesk-project --stability dev
+~~~
+
+### 2. Browse your installed helpdesk project.
 For example – http://domain/installed_folder/public/
 
-2. ### Set Up Helpdesk
+### 3. Set Up Helpdesk
 Click on SETUP UVDESK 
 
-3. ### Evaluating System requirements:
+### 3. Evaluating System requirements:
 Evaluate your requirements and Click on the PROCEED Button.  
 
-4. ### Database Configuration:
+### 4. Database Configuration:
 Fill in the required fields and Click on the PROCEED Button.
 
-5. ### Create Super Admin Account:
+### 5. Create Super Admin Account:
 Fill in the required fields and Click on the PROCEED Button.
 
-6. ### Website Configuration
+### 6. Website Configuration
 Fill in the required fields and Click on the PROCEED Button.
 
-7. ### Click Install now
+### 7. Click Install now
 The Helpdesk Has Been Installed Successfully.
 
 
 ## About Us
----
 The development of the UVDesk Community Edition is supported by [Webkul][webkul], led by the [UVDesk Team](https://www.uvdesk.com/en/team/).
 
 Visit our official [website][webkul] to learn more about the UVDesk Helpdesk System.
