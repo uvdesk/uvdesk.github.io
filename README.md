@@ -26,7 +26,7 @@ Features and functionality of community skeleton helpdesk enable the user to use
 
 ### 1. Obtain the package
     
-#### a. Download ZIP as per your System’s PHP version.**    
+#### a. Download ZIP as per your System’s PHP version.   
 
 1. Download the [zip file](https://www.uvdesk.com/en/opensource/) for your prefered PHP version and extract it.
 
