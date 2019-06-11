@@ -1,101 +1,81 @@
-# uvdesk
+# Introduction
 
-A fully-functional UVDesk Community Edition project skeleton packaged along with the bare essential utilities that you can use to develop your own custom helpdesk solutions.
+UVdesk Community skeleton is a fully-functional support ticket system built on the top of the Symfony PHP framework, supporting organizations to provide better customer support.
+It comes with all the essential features like Email Piping, Knowledgebase support, automated-workflow, multiple-group-team-agent-customer creation, prepared responses, saved replies and many more.
+Features and functionality of community skeleton helpdesk enable the user to use or build custom helpdesk solution to make it for their purpose.
 
-## Getting Started
+## Documentation
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+- ### UVdesk Documentation [https://uvdesk.github.io/](https://uvdesk.github.io/)
 
-### Prerequisites
+## Prerequisites
 
-#### Hardware Requirements
+- ### Hardware Requirements
 
-1. Processor: 1.60GHz or higher
-2. RAM: 3GB or higher
+    1. Processor: 1.60GHz or higher
+    2. RAM: 3GB or higher
 
-#### Software Requirements
+- ### Software Requirements
 
-1. [PHP]
-2. [Composer](https://getcomposer.org/)
-3. [PHP IMAP](https://php.net/manual/en/book.imap.php)
-4. [PHP Mailparse](https://php.net/manual/en/book.mailparse.php)
-2. Server: Apache
-3. Database: MySQL
+    1. PHP 7.0 or higher
+    2. [Composer](https://getcomposer.org/)
+    3. [PHP IMAP](https://php.net/manual/en/book.imap.php)
+    4. [PHP Mailparse](https://php.net/manual/en/book.mailparse.php)
+    2. Server: Apache
+    3. Database: MySQL
 
-What things you need to install the software and how to install them
+## Installation & Configuration
 
-```
-Give examples
-```
+1. ### Obtain the package
+    
+    **a. Download ZIP as per your System’s PHP version.**    
+    
+    1. Download the [zip file](https://www.uvdesk.com/en/opensource/) for your prefered PHP version and extract it.
 
-### Installing
+    **b. Install the community-skeleton project via composer using the below-structured command:**
+    
+    1. clear cache:
+    
+    ```bash
+    $ composer clear-cache
+    ```
+    
+    2. Create project:
 
-A step by step series of examples that tell you how to get a development env running
+    ```bash
+    $ composer create-project uvdesk/community-skeleton helpdesk-project --stability dev
+    ```
 
-Say what the step will be
+2. ### Browse your installed helpdesk project.
+For example – http://domain/installed_folder/public/
 
-```
-Give the example
-```
+2. ### Set Up Helpdesk
+Click on SETUP UVDESK 
 
-And repeat
+3. ### Evaluating System requirements:
+Evaluate your requirements and Click on the PROCEED Button.  
 
-```
-until finished
-```
+4. ### Database Configuration:
+Fill in the required fields and Click on the PROCEED Button.
 
-End with an example of getting some data out of the system or using it for a little demo
+5. ### Create Super Admin Account:
+Fill in the required fields and Click on the PROCEED Button.
 
-## Running the tests
+6. ### Website Configuration
+Fill in the required fields and Click on the PROCEED Button.
 
-Explain how to run the automated tests for this system
+7. ### Click Install now
+The Helpdesk Has Been Installed Successfully.
 
-### Break down into end to end tests
 
-Explain what these tests test and why
+## About Us
+---
+The development of the UVDesk Community Edition is supported by [Webkul][webkul], led by the [UVDesk Team](https://www.uvdesk.com/en/team/).
 
-```
-Give an example
-```
+Visit our official [website][webkul] to learn more about the UVDesk Helpdesk System.
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
+All libraries and bundles included in the UVDesk Community Edition are released under the MIT or BSD license.
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+[webkul]: https://webkul.com/
