@@ -107,16 +107,17 @@ p {
 }
 
 .community {
-  flex: 0 40%;
+  flex: 0 auto;
 }
 
 .index-image {
-  flex: 0 30%;
+  flex: 0 auto;
+  padding-left: calc(var(--main-heading-bottom-spacing) * 4);
 }
 
 .index-image img {
-  height: fit-content;
-  width: fit-content;
+  height: auto;
+  width: auto;
 }
 
 
@@ -127,7 +128,16 @@ p {
     justify-content: flex-start;
   }
   .index-image {
+    padding-left: 0;
     padding-top: calc(var(--main-heading-bottom-spacing) * 2);
+    text-align: center;
+  }
+}
+
+@media all and (max-width: 670px) {
+   .index-image img {
+      height: 80%;
+      width: 80%;
   }
 }
 
