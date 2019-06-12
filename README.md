@@ -17,7 +17,7 @@ UVdesk Documentation [https://uvdesk.github.io/](https://uvdesk.github.io/)
 2. RAM: 3GB or higher
 
 ## Software Requirements
-1. PHP 7.0 and higher
+1. PHP 7.0 or higher
 2. [Composer](https://getcomposer.org/)
 3. [PHP IMAP](https://php.net/manual/en/book.imap.php)
 4. [PHP Mailparse](https://php.net/manual/en/book.mailparse.php)
