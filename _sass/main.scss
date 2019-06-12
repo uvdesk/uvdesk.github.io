@@ -115,16 +115,19 @@ p {
 }
 
 .index-image img {
-  height: auto;
-  width: 100%;
+  height: fit-content;
+  width: fit-content;
 }
 
 
 
-@media all and (max-width: 870px) {
+@media all and (max-width: 1000px) {
   .grid-community-container {
     flex-flow: column wrap;
     justify-content: flex-start;
+  }
+  .index-image {
+    padding-top: calc(var(--main-heading-bottom-spacing) * 2);
   }
 }
 
