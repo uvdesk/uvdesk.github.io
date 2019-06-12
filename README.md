@@ -33,16 +33,14 @@ UVdesk Documentation [https://uvdesk.github.io/](https://uvdesk.github.io/)
 ### b. via Composer:
     
 1. clear cache:
+    ```
+    $ composer clear-cache
+    ```
 
-~~~
-$ composer clear-cache
-~~~
-
-2. Create project:
-    
-~~~
-$ composer create-project uvdesk/community-skeleton helpdesk-project --stability dev
-~~~
+2. Create project: 
+   ```
+   $ composer create-project uvdesk/community-skeleton helpdesk-project --stability dev
+   ```
 
 ## 2. Browse your installed uvdesk project:
 For example – ht&#8203;tp://domain/installed_folder/public/
@@ -50,20 +48,21 @@ For example – ht&#8203;tp://domain/installed_folder/public/
 ## 3. Install the uvdesk project:
 A web installer will appear. Follow the following steps to install and configure the uvdesk:
 
-##### Step 1 - Evaluating System requirements:
-Make sure all your system requirements are met and click on the `Proceed` button.  
 
-##### Step 2 - Database Configuration:
-Fill in the required database configuration fields and click on the `Proceed` button.
+<h4 style="margin:10px">Step 1 - Evaluating System requirements:</h4>
+<p style="margin:15px">Make sure all your system requirements are met and click on the `Proceed` button.</p>  
 
-##### Step 3 - Create Super Admin Account:
-Fill in the required super admin credentials and click on the `Proceed` button.
+<h4 style="margin:10px">Step 2 - Database Configuration:</h4>
+<p style="margin:15px">Fill in the required database configuration fields and click on the `Proceed` button.</p>
 
-##### Step 4 - Website Configuration:
-Provide prefixes for Member and Customer panel and click on the `Proceed` button.
+<h4 style="margin:10px">Step 3 - Create Super Admin Account:</h4>
+<p style="margin:15px">Fill in the required super admin credentials and click on the `Proceed` button.</p>
 
-##### Step 5 - Finish the Installation:
-Click on the `Install now` button to finish the installation. The uvdesk will be successfully installed on your system.
+<h4 style="margin:10px">Step 4 - Website Configuration:</h4>
+<p style="margin:15px">Provide prefixes for Member and Customer panel and click on the `Proceed` button.</p>
+
+<h4 style="margin:10px">Step 5 - Finish the Installation:</h4>
+<p style="margin:15px">Click on the `Install now` button to finish the installation. The uvdesk will be successfully installed on your system.</p>
 
 
 # About Us
