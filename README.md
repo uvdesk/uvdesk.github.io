@@ -1,7 +1,9 @@
 # Introduction
 
 UVdesk Community skeleton is a fully-functional support ticket system built on the top of the Symfony PHP framework, supporting organizations to provide better customer support.
+
 It comes with all the essential features like Email Piping, Knowledgebase support, automated-workflow, multiple-group-team-agent-customer creation, prepared responses, saved replies and many more.
+
 Features and functionality of community skeleton helpdesk enable the user to use or build custom helpdesk solution to make it for their purpose.
 
 # Documentation
