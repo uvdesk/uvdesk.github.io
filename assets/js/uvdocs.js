@@ -52,6 +52,10 @@ function load() {
     if (idArray && (idArray instanceof Array) ) {
         for (let i = 0; i < idArray.length; i++) {
             document.getElementById(idArray[i]).classList.add('open');
+<<<<<<< HEAD
+=======
+            //console.log(idArray[i]);
+>>>>>>> c424388997935387cea903a76f03172562d9cf95
         }
 
     }
@@ -61,7 +65,10 @@ function load() {
 
     for　(i = 0; i < length; i++) {
         hamburgerDrpDnBtns[i].onclick = openHamburgerDropdown;
+<<<<<<< HEAD
         hamburgerDrpDnBtns[i].nextElementSibling.style.display = 'none';
+=======
+>>>>>>> c424388997935387cea903a76f03172562d9cf95
     }
 
 }
@@ -90,9 +97,13 @@ window.onclick = function (event) {
 function onClickHamburgerIcon() {
     const hamburgerButton = document.querySelector('.hamburger-menu-icon');
     const hamburgerMenu = document.querySelector('.hamburger-menu');
+<<<<<<< HEAD
     if (hamburgerButton.classList.contains('hamburger-menu-icon-change')) {
         closeHamburgerMenu(hamburgerButton, hamburgerMenu);
     } else {
+=======
+    if (!hamburgerButton.classList.contains('hamburger-menu-icon-change')) {
+>>>>>>> c424388997935387cea903a76f03172562d9cf95
         openHamburgerMenu(hamburgerButton, hamburgerMenu);
     }
 }
@@ -111,6 +122,7 @@ function closeHamburgerMenu(hamburgerButton, hamburgerMenu) {
 
 // open the selected dropdown menu in the hamburger menu and close the opened one
 function openHamburgerDropdown(event) {
+<<<<<<< HEAD
 
     if (openedDropDown() && (event.target.nextElementSibling !== openedDropDown())) {
         openedDropDown().style.display = 'none';
@@ -120,16 +132,26 @@ function openHamburgerDropdown(event) {
     } else {
         (openedDropDown(event.target.nextElementSibling)).style.display = 'none';
     }
+=======
+    if (openedDropDown()) {
+        openedDropDown().style.display = 'none';
+    }
+    (openedDropDown(event.target.nextElementSibling)).style.display = 'block';
+>>>>>>> c424388997935387cea903a76f03172562d9cf95
 }
 
 // close the hamburger menu on the clicking the area outside the hamburger menu
 document.body.addEventListener('mousedown', (event) => {
+<<<<<<< HEAD
 
     if (event.clientX > document.querySelector('.hamburger-menu').offsetWidth && 
         ([document.querySelector('.hamburger-menu-icon'),
            document.querySelector('.hmi-bar1'),
            document.querySelector('.hmi-bar2'),
            document.querySelector('.hmi-bar3')].indexOf(event.target) === -1)) {
+=======
+    if (event.clientX > document.querySelector('.hamburger-menu').offsetWidth) {
+>>>>>>> c424388997935387cea903a76f03172562d9cf95
         const hamburgerButton = document.querySelector('.hamburger-menu-icon');
         if (hamburgerButton.classList.contains('hamburger-menu-icon-change')) {
             closeHamburgerMenu(hamburgerButton, hamburgerMenu = document.querySelector('.hamburger-menu'));

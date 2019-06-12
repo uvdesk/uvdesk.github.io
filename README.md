@@ -24,51 +24,104 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
-```
-Give examples
-```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
 
-Say what the step will be
+1. Installation on Ubuntu
 
-```
-Give the example
-```
+	- **Step 1**
+		- Install the community-skeleton project via composer using the commands below:
+			- composer clear-cache
+			- composer create-project uvdesk/community-skeleton helpdesk-project --stability dev
+		- OR
+			- Download ZIP as per your System's PHP version.
 
-And repeat
+	- **Step 2**
+		- Browse your installed helpdesk project.
+			- ex: https://domain/installed_folder/public/
 
-```
-until finished
-```
+	- **Step 3**
+		- Set up Helpdesk with the **installation wizard**.
 
-End with an example of getting some data out of the system or using it for a little demo
+	- **Step 4**
+		- The wizard will check whether your system meets minimum requirements to run the application.
+
+	- **Step 5**
+		- The wizard will check your MySQL database connection and configure it with your application.
+
+	- **Step 6**
+		- Create a Super Admin Account through the wizard.
+
+	- **Step 7**
+		- Configure the website through the wizard.
+
+	- **Step 8**
+		- Finish installing the application through the wizard.
+
+	- **Step 9**
+		- The wizard will migrate database to the latest schema version.
+
+	- **Step 10**
+		- The wizard will indicate success message on finished installation. 
+
+
+2. Installation on Windows
+
+	- **Step 1**
+		- Install the community-skeleton project via composer using the commands below:
+			- composer clear-cache
+			- composer create-project uvdesk/community-skeleton helpdesk-project --stability dev
+		- OR
+			- Download ZIP as per your System's PHP version.
+
+	- **Step 2**
+		- Browse your installed helpdesk project.
+			- ex: https://domain/installed_folder/public/
+
+	- **Step 3**
+		- Set up Helpdesk with the **installation wizard**.
+
+	- **Step 4**
+		- The wizard will check whether your system meets minimum requirements to run the application.
+
+	- **Step 5**
+		- The wizard will check your MySQL database connection and configure it with your application.
+
+	- **Step 6**
+		- Create a Super Admin Account through the wizard.
+
+	- **Step 7**
+		- Configure the website through the wizard.
+
+	- **Step 8**
+		- Finish installing the application through the wizard.
+
+	- **Step 9**
+		- The wizard will migrate database to the latest schema version.
+
+	- **Step 10**
+		- The wizard will indicate success message on finished installation.
+
+
+3. Installation on Mac
+
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+
 
 ### Break down into end to end tests
 
-Explain what these tests test and why
 
-```
-Give an example
-```
 
 ### And coding style tests
 
-Explain what these tests test and why
 
-```
-Give an example
-```
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+
 
 ## Built With
 
@@ -96,6 +149,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc

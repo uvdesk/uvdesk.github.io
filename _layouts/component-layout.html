@@ -3,15 +3,20 @@
 
     <head>
         <title>{{ page.title | default: site.title }}</title>
+<<<<<<< HEAD
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="HandheldFriendly" content="true">
         <link rel="stylesheet" type="text/css" href="/assets/css/uvdocs.css">
         <link rel="icon" sizes="16x16" type="text/css" href="/assets/images/favicon.ico">
+=======
+        <link rel="stylesheet" type="text/css" href="/assets/css/uvdocs.css">
+>>>>>>> c424388997935387cea903a76f03172562d9cf95
 
     </head>
 
     <body>
+<<<<<<< HEAD
         
         <div class="component-container">
             {%- include navigation1.html -%}
@@ -30,4 +35,24 @@
         <script src="/assets/js/uvdocs.js"></script>
     </body>
 
+=======
+        <div class="container">
+            <div class="header">
+                {%- include navigation1.html -%}
+            </div>
+                <div class="component-index-container">
+                    {{ content }}
+                </div>
+            <div class="footer">
+                <div class="grid-footer-container">
+                    <div class="item footer123">
+                        <center>
+                            <p> &copy; Copyright 2018 Webkul Software. All rights reserved under MIT License.</p>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+>>>>>>> c424388997935387cea903a76f03172562d9cf95
 </html>
