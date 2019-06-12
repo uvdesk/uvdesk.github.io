@@ -49,20 +49,20 @@ For example – ht&#8203;tp://domain/installed_folder/public/
 A web installer will appear. Follow the following steps to install and configure the uvdesk:
 
 
-<h4 style="padding-left:10px">Step 1 - Evaluating System requirements:</h4>
-<p style="padding-left:15px">Make sure all your system requirements are met and click on the <code>Proceed</code> button.</p>  
+- <h4 style="padding-left:10px">Step 1 - Evaluating System requirements:</h4>
+    <p style="padding-left:15px">Make sure all your system requirements are met and click on the <code>Proceed</code> button.</p>  
 
-<h4 style="padding-left:10px">Step 2 - Database Configuration:</h4>
-<p style="padding-left:15px">Fill in the required database configuration fields and click on the <code>Proceed</code> button.</p>
+- <h4 style="padding-left:10px">Step 2 - Database Configuration:</h4>
+    <p style="padding-left:15px">Fill in the required database configuration fields and click on the <code>Proceed</code> button.</p>
 
-<h4 style="padding-left:10px">Step 3 - Create Super Admin Account:</h4>
-<p style="padding-left:15px">Fill in the required super admin credentials and click on the <code>Proceed</code> button.</p>
+- <h4 style="padding-left:10px">Step 3 - Create Super Admin Account:</h4>
+    <p style="padding-left:15px">Fill in the required super admin credentials and click on the <code>Proceed</code> button.</p>
 
-<h4 style="padding-left:10px">Step 4 - Website Configuration:</h4>
-<p style="padding-left:15px">Provide prefixes for Member and Customer panel and click on the <code>Proceed</code> button.</p>
+- <h4 style="padding-left:10px">Step 4 - Website Configuration:</h4>
+    <p style="padding-left:15px">Provide prefixes for Member and Customer panel and click on the <code>Proceed</code> button.</p>
 
-<h4 style="padding-left:10px">Step 5 - Finish the Installation:</h4>
-<p style="padding-left:15px">Click on the <code>Install now</code> button to finish the installation. The uvdesk will be successfully installed on your system.</p>
+- <h4 style="padding-left:10px">Step 5 - Finish the Installation:</h4>
+    <p style="padding-left:15px">Click on the <code>Install now</code> button to finish the installation. The uvdesk will be successfully installed on your system.</p>
 
 
 # About Us
