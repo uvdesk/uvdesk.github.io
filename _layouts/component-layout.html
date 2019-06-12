@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>{{ page.title | default: site.title }}</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+        <link rel="stylesheet" type="text/css" href="/assets/css/uvdocs.css">
+        <link rel="icon" sizes="16x16" type="text/css" href="/assets/images/favicon.ico">
+
+    </head>
+
+    <body>
+        
+        <div class="component-container">
+            {%- include navigation1.html -%}
+            {%- include sidebar.html -%}
+            <div class="header-filler">
+            </div>
+            <div class="sidebar-filler">
+            </div>
+            {{ content }}
+            <div class="footer">
+                <div class="footer123">
+                    <p> &copy; Copyright 2018 Webkul Software. All rights reserved under MIT License.</p>
+                </div>
+            </div>
+        </div>
+        <script src="/assets/js/uvdocs.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,79 @@
+.component-container {
+    display: grid;
+    grid-template-columns: var(--hamburger-menu-width) 1fr var(--hamburger-menu-width);
+    grid-template-rows: var(--header-footer-height) 1fr;
+    background-color: var(--container-bg-color);
+}
+
+.component-container .header {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: none;
+}
+
+.component-container .hamburger-menu {
+    box-shadow: none;
+    position: fixed;
+    top: var(--header-footer-height);
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    height: auto;
+    display: block !important;
+}
+
+.component-container .hamburger-menu-wrapper {
+    margin-top: calc(var(--hamburger-menu-item-left-margin) - 5px);
+}
+
+.component-container .header-filler {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    height: var(--header-footer-height);
+}
+
+.component-container .sidebar-filler {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+    width: var(--hamburger-menu-width);
+}
+
+.component-container .installation-component {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    padding: var(--component-container-content-padding);
+    min-height: 700px;
+}
+
+.component-container .footer {
+    //by making grod-column 2/4, the footer goes all the way to the right.
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+}
+
+@media all and (max-width: 870px) {    
+    .component-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: var(--header-footer-height) 1fr var(--header-footer-height);
+    }
+
+    .component-container .header-filler,　.component-container .sidebar-filler {
+        display: none;
+    }
+
+    .component-container .footer, .component-container .installation-component {
+        grid-column: 1 / 2;
+    }
+
+    .component-container .hamburger-menu {
+        left: calc( -1 * var(--hamburger-menu-width) );
+        box-shadow: 2px 0 5px var(--hamburger-box-shadow-color);
+        z-index: 9999;
+        top: 0;
+        height: 100%;
+    }
+}
+
