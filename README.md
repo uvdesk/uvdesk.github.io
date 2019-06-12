@@ -26,11 +26,11 @@ UVdesk Documentation [https://uvdesk.github.io/](https://uvdesk.github.io/)
 
 ## 1. Obtain the package
     
-### a. Download ZIP as per your System’s PHP version:
+### a. via ZIP:
 
 1. Download the [zip file](https://www.uvdesk.com/en/opensource/) for your prefered PHP version and extract it.
 
-### b. Install the community-skeleton project via composer using the below-structured command:
+### b. via Composer:
     
 1. clear cache:
 
@@ -44,26 +44,26 @@ $ composer clear-cache
 $ composer create-project uvdesk/community-skeleton helpdesk-project --stability dev
 ~~~
 
-## 2. Browse your installed helpdesk project:
+## 2. Browse your installed uvdesk project:
 For example – ht&#8203;tp://domain/installed_folder/public/
 
-## 3. Install the helpdesk project:
-A web installer will appear. Follow the following steps to install and configure the project.
+## 3. Install the uvdesk project:
+A web installer will appear. Follow the following steps to install and configure the uvdesk:
 
-### 1. Evaluating System requirements:
-Make sure all your system requirements are met and click on the Proceed button.  
+##### Step 1 - Evaluating System requirements:
+Make sure all your system requirements are met and click on the `Proceed` button.  
 
-### 2. Database Configuration:
-Fill in the required database configuration fields and click on the Proceed button.
+##### Step 2 - Database Configuration:
+Fill in the required database configuration fields and click on the `Proceed` button.
 
-### 3. Create Super Admin Account:
-Fill in the required super admin account fields (choose a strong password *Recommended*) and click on the Proceed button.
+##### Step 3 - Create Super Admin Account:
+Fill in the required super admin credentials and click on the `Proceed` button.
 
-### 4. Website Configuration:
-Fill in the prefixes for Member and Customer panel and click on the Proceed button.
+##### Step 4 - Website Configuration:
+Provide prefixes for Member and Customer panel and click on the `Proceed` button.
 
-### 5. Finish the Installation:
-Click on the Install now button to finish the installation. Now, the helpdesk has been installed successfully on your system.
+##### Step 5 - Finish the Installation:
+Click on the `Install now` button to finish the installation. The uvdesk will be successfully installed on your system.
 
 
 # About Us
