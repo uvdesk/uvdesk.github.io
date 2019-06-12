@@ -83,8 +83,11 @@
     border-bottom-color: var(--purple-bg-shade);
 }
 
-.dropdown-btn:active {
-    opacity: var(--button-link-active-opacity);
+.hamburger-menu-wrapper .parent button:visited,
+.hamburger-menu-wrapper .parent a:visited,
+.hamburger-menu-wrapper .parent a:active,
+.hamburger-menu-wrapper .parent button:active {
+  color: initial;
 }
 
 .parent:first-of-type .dropdown-btn {
