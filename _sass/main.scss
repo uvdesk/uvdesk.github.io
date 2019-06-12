@@ -228,6 +228,14 @@ p {
   margin-bottom: 10px;
 }
 
+.topic-box a:hover {
+  opacity: var(--button-link-hover-opacity);
+}
+
+.topic-box a:active {
+  opacity: var(--button-link-active-opacity);
+}
+
 .scheduleDemoBtn {
   background-color: var(--purple-bg-shade);
   width: 150px;
