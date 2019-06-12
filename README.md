@@ -52,19 +52,19 @@ A web installer will appear. Follow the following steps to install and configure
 
 
 - <h4 >Step 1 - Evaluating System requirements:</h4>
-    <p >Make sure all your system requirements are met and click on the <code>Proceed</code> button.</p>  
+    <p >Make sure all your system requirements are met and click on the <code style="background-color:#8473F3; color:white">Proceed</code> button.</p>  
 
 - <h4 >Step 2 - Database Configuration:</h4>
-    <p >Fill in the required database configuration fields and click on the <code>Proceed</code> button.</p>
+    <p >Fill in the required database configuration fields and click on the <code style="background-color:#8473F3;color:white">Proceed</code> button.</p>
 
 - <h4 >Step 3 - Create Super Admin Account:</h4>
-    <p >Fill in the required super admin credentials and click on the <code>Proceed</code> button.</p>
+    <p >Fill in the required super admin credentials and click on the <code style="background-color:#8473F3;color:white">Proceed</code> button.</p>
 
 - <h4 >Step 4 - Website Configuration:</h4>
-    <p >Provide prefixes for Member and Customer panel and click on the <code>Proceed</code> button.</p>
+    <p >Provide prefixes for Member and Customer panel and click on the <code style="background-color:#8473F3;color:white">Proceed</code> button.</p>
 
 - <h4 >Step 5 - Finish the Installation:</h4>
-    <p >Click on the <code>Install now</code> button to finish the installation. The uvdesk will be successfully installed on your system.</p>
+    <p >Click on the <code style="background-color:#8473F3;color:white">Install now</code> button to finish the installation. The uvdesk will be successfully installed on your system.</p>
 
 
 # About Us
