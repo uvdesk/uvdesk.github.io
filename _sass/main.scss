@@ -55,6 +55,7 @@ p {
 .header .second h3 {
   display: inline-block;
   padding-right: 15px;
+  font-weight: 500;
 }
 
 .headerBtn {
@@ -157,12 +158,11 @@ p {
   cursor: pointer;
   user-select: none;
   border-radius: 2px;
-  box-shadow: 0px 2px 4px 0px var(--button-box-shadow-color);
   transition: opacity 100ms ease;    
 }
 
 .button:hover {
-  opacity: 0.7;
+  opacity: var(--button-link-hover-opacity);
 }
 
 .button:focus {
@@ -170,7 +170,7 @@ p {
 }
 
 .button:active {
-  opacity: 0.5;
+  opacity: var(--button-link-active-opacity);
 }
 
 .grid-gap {
@@ -348,7 +348,6 @@ p {
   width: var(--ticket-button-width);
   padding: 9px 5px;
   margin-top: 5px;
-  box-shadow: none;
   color: white;
 }
 
@@ -361,6 +360,19 @@ p {
   padding-bottom: var(--sub-heading-bottom-spacing);
   padding-top: calc(var(--sub-heading-bottom-spacing));
   font-size: var(--sub-heading-font-size);
+}
+
+.helpful-links a {
+  text-decoration: none;
+  color: var(--purple-bg-shade);
+}
+
+.helpful-links a:hover {
+  opacity: var(--button-link-hover-opacity);
+}
+
+.helpful-links a:active {
+  opacity: var(--button-link-active-opacity);
 }
 
 
