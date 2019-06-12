@@ -1,5 +1,6 @@
 //for pagination
 var paginationCollection = document.getElementById('pagination');
+
 if (paginationCollection) {
     paginationCollection.addEventListener('click', event => {
         var dropdowns = document.getElementsByClassName("pagination");
@@ -52,8 +53,8 @@ function load() {
     if (idArray && (idArray instanceof Array) ) {
         for (let i = 0; i < idArray.length; i++) {
             document.getElementById(idArray[i]).classList.add('open');
-        }
 
+        }
     }
 
     const hamburgerDrpDnBtns = document.querySelectorAll('.hamburger-menu-wrapper .parent .dropdown-btn');
@@ -62,15 +63,14 @@ function load() {
     for　(i = 0; i < length; i++) {
         hamburgerDrpDnBtns[i].onclick = openHamburgerDropdown;
         hamburgerDrpDnBtns[i].nextElementSibling.style.display = 'none';
-    }
 
+    }
 }
 
 //for footer-button
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
-
 
 window.onclick = function (event) {
     if (!event.target.matches('.dropbtn')) {
@@ -84,7 +84,6 @@ window.onclick = function (event) {
         }
     }
 }
-
 
 // on hamburger menu icon click
 function onClickHamburgerIcon() {
@@ -120,11 +119,11 @@ function openHamburgerDropdown(event) {
     } else {
         (openedDropDown(event.target.nextElementSibling)).style.display = 'none';
     }
+
 }
 
 // close the hamburger menu on the clicking the area outside the hamburger menu
 document.body.addEventListener('mousedown', (event) => {
-
     if (event.clientX > document.querySelector('.hamburger-menu').offsetWidth && 
         ([document.querySelector('.hamburger-menu-icon'),
            document.querySelector('.hmi-bar1'),
