@@ -13,6 +13,10 @@
   border-right: 1px solid var(--hamburger-border-color);
 }
 
+.hamburger-menu a {
+  color: initial;
+}
+
 .hamburger-menu {
   -webkit-transition: left 200ms linear;
   -moz-transition: left 200ms linear;
@@ -75,11 +79,12 @@
 
 .hamburger-menu-wrapper a:hover, .dropdown-btn:hover, .dropdown-container a:hover {
     color: var(--paragraph-heading-color);
+    opacity: 1;
     border-bottom-color: var(--purple-bg-shade);
 }
 
 .dropdown-btn:active {
-    opacity: 0.5;
+    opacity: var(--button-link-active-opacity);
 }
 
 .parent:first-of-type .dropdown-btn {
