@@ -37,7 +37,7 @@ p {
   flex-wrap: nowrap;
   justify-content: space-between;
   border-width: 1px;
-  padding: var(--homepage-container-padding);
+  padding: var(--header-footer-padding);
   padding-top: 0;
   padding-bottom: 0;
   box-shadow: 0px 1px 5px var(--header-box-shadow-color);
@@ -431,7 +431,7 @@ p {
 .footer {
   background-color: var(--footer-background-color);
   text-align: center;
-  padding: var(--homepage-container-padding);
+  padding: var(--header-footer-padding);
   padding-top: var(--footer-tb-padding);
   padding-bottom: var(--footer-tb-padding);
   height: var(--header-footer-height);
