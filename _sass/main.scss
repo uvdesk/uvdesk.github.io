@@ -161,15 +161,24 @@ p {
   transition: opacity 100ms ease;    
 }
 
-.button:hover {
+a {
+  text-decoration: none;
+  color: var(--purple-bg-shade);
+}
+
+.button:hover, a:hover {
   opacity: var(--button-link-hover-opacity);
+}
+
+a:visited {
+  color: var(--link-button-visited-color);
 }
 
 .button:focus {
   outline: none;
 }
 
-.button:active {
+.button:active, a:active {
   opacity: var(--button-link-active-opacity);
 }
 
@@ -226,14 +235,6 @@ p {
 
 .topic-box h4:first-of-type {
   margin-bottom: 10px;
-}
-
-.topic-box a:hover {
-  opacity: var(--button-link-hover-opacity);
-}
-
-.topic-box a:active {
-  opacity: var(--button-link-active-opacity);
 }
 
 .scheduleDemoBtn {
@@ -369,20 +370,6 @@ p {
   padding-top: calc(var(--sub-heading-bottom-spacing));
   font-size: var(--sub-heading-font-size);
 }
-
-.helpful-links a {
-  text-decoration: none;
-  color: var(--purple-bg-shade);
-}
-
-.helpful-links a:hover {
-  opacity: var(--button-link-hover-opacity);
-}
-
-.helpful-links a:active {
-  opacity: var(--button-link-active-opacity);
-}
-
 
 .helpful-links-grid-container {
     display: grid;
