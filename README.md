@@ -1,16 +1,20 @@
 # UVdesk documentation
 
-Welcome! This site contains the latest UVdesk documentation for users and developers. For additional information, see our [Contribution Guide][contribute].
+Welcome! This site contains the latest UVdesk documentation for users and developers.
 
 # Contributors
-Our goal is to provide the UVdesk community with comprehensive and quality technical documentation. We believe that to accomplish that goal we need experts from the community to share their knowledge with us and each other. We are thankful to all of our contributors for improving UVdesk documentation.
+Our goal is to provide the UVdesk community with comprehensive and quality technical documentation. 
+
+We believe that to accomplish that goal we need experts from the community to share their knowledge with us and each other. We are thankful to all of our contributors for improving UVdesk documentation.
+
+If you like to contribute please visit the [documentation homepage][documentation]
 
 # Access this documentation
 You can access our documentation in two ways:
 - Access [online][documentation]
-- [Build using Jekyll](#build-using-jekyll) (Mac, linux, Windows)
+- [Build locally using Jekyll](#build-locally-using-jekyll) (Mac, linux, Windows)
 
-## Build using Jekyll
+## Build locally using Jekyll
 For local builds, you need to install Ruby 2.4 or later.
 
 To check the Ruby version on your environment, run in your terminal:
@@ -37,7 +41,7 @@ Once you have completed preparing your environment, you can build locally and re
 
 ### Install uvdocs
 1. Clone or download the repository.
-2. Open your system's terminal emulator, browse to the clonned respository and follow the following steps:
+2. Open your system's terminal emulator, browse to the cloned respository and follow the following steps:
     
     1. To install Jekyll dependencies, run: 
 
@@ -64,7 +68,7 @@ Once you have completed preparing your environment, you can build locally and re
     4. Press `Ctrl+C` in the serve terminal to stop the server. 
 
 # License
-All libraries and contents included in the UVdocs are released under the MIT or BSD license.
+All libraries and content included in the UVdocs are released under the MIT or BSD license.
 
 [webkul]: https://webkul.com/
 [team]: https://www.uvdesk.com/en/team/
