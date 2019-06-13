@@ -1,7 +1,7 @@
 .component-container {
     display: grid;
     grid-template-columns: var(--hamburger-menu-width) 1fr;
-    grid-template-rows: var(--header-footer-height) calc(100vh - var(--header-footer-height) * 2 ) var(--header-footer-height);
+    grid-template-rows: var(--header-footer-height) minmax(calc(100vh - var(--header-footer-height) * 2 ), 1fr) var(--header-footer-height);
     background-color: var(--container-bg-color);
 }
 
@@ -55,7 +55,7 @@
 @media all and (max-width: 870px) {    
     .component-container {
         grid-template-columns: 1fr;
-        grid-template-rows: var(--header-footer-height) calc(100vh - var(--header-footer-height) * 2 ) var(--header-footer-height);
+        grid-template-rows: var(--header-footer-height) minmax(calc(100vh - var(--header-footer-height) * 2 ), 1fr) var(--header-footer-height);
     }
 
     .component-container .header-filler,　.component-container .sidebar-filler {
