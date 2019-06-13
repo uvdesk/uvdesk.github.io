@@ -5,7 +5,7 @@ Welcome, this site contains the latest UVdesk documentation for users and develo
 # Contributors
 Our goal is to provide the UVdesk community with comprehensive and quality technical documentation. 
 
-We believe that to accomplish that goal we need experts from the community to share their knowledge with us and each other. We are thankful to all of our contributors for improving UVdesk documentation.
+We believe that to accomplish our goal we need experts from the community to share their knowledge with us and each other. We are thankful to all of our contributors for improving UVdesk documentation.
 
 Like our work, contribute [here][documentation]
 
@@ -37,7 +37,7 @@ Install the [Bundler](https://bundler.io/) gem, which helps with Ruby dependenci
 $ gem install bundler
 ```
 Once you have completed preparing your environment, you can build locally and review the site in your browser.
-> ***TIP*** You can learn more about how to install and use Jekyll from its [official website][jekyll-install]
+> ***TIP*** You can learn about Jekyll from [here][jekyll-install]
 
 ### Install uvdocs
 1. Clone or download the repository.
