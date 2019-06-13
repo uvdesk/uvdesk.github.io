@@ -1,79 +1,75 @@
-# Introduction
+# UVdesk documentation
 
-UVdesk Community skeleton is a fully-functional support ticket system built on the top of the Symfony PHP framework, supporting organizations to provide better customer support.
+Welcome! This site contains the latest UVdesk documentation for users and developers. For additional information, see our [Contribution Guide][contribute].
 
-It comes with all the essential features like Email Piping, Knowledgebase support, automated-workflow, multiple-group-team-agent-customer creation, prepared responses, saved replies and many more.
+# Contributors
+Our goal is to provide the UVdesk community with comprehensive and quality technical documentation. We believe that to accomplish that goal we need experts from the community to share their knowledge with us and each other. We are thankful to all of our contributors for improving UVdesk documentation.
 
-Features and functionality of community skeleton helpdesk enable the user to use or build custom helpdesk solution to make it for their purpose.
+# Access this documentation
+You can access our documentation in two ways:
+- Access [online][documentation]
+- [Build using Jekyll](#build-using-jekyll) (Mac, linux, Windows)
 
-# Documentation
+## Build using Jekyll
+For local builds, you need to install Ruby 2.4 or later.
 
-UVdesk Documentation [https://uvdesk.github.io/](https://uvdesk.github.io/)
-
-# Prerequisites
-
-## Hardware Requirements
-1. Processor: 1.60GHz or higher
-2. RAM: 3GB or higher
-
-## Software Requirements
-1. PHP 7.0 or higher
-2. [Composer](https://getcomposer.org/)
-3. [PHP IMAP](https://php.net/manual/en/book.imap.php)
-4. [PHP Mailparse](https://php.net/manual/en/book.mailparse.php)
-2. Server: Apache
-3. Database: MySQL
-
-# Installation & Configuration
-
-## 1. Obtain the package
-    
-### a. via ZIP:
-
-1. Download the [zip file](https://www.uvdesk.com/en/opensource/) for your prefered PHP version and extract it.
-
-### b. via Composer:
-    
-1. clear cache:
+To check the Ruby version on your environment, run in your terminal:
+```
+$ ruby -v
+```
+### Install the latest Ruby (if the Ruby version is less than 2.4)
+#### MacOS users
+1. Install Homebrew. See the [Homebrew site](https://brew.sh/) for instructions.
+2. Use Homebrew to install the latest stable version of Ruby:
     ```
-    $ composer clear-cache
-    ```
+    $ brew install ruby
+     ```
+#### Unix, Windows, and other OS users
+See the [Ruby site](https://www.ruby-lang.org/en/documentation/installation/) for instructions.
 
-2. Create project: 
-   ```
-   $ composer create-project uvdesk/community-skeleton helpdesk-project --stability dev
-   ```
+### Install Bundler
+Install the [Bundler](https://bundler.io/) gem, which helps with Ruby dependencies:
+```
+$ gem install bundler
+```
+Once you have completed preparing your environment, you can build locally and review the site in your browser.
+> ***TIP*** You can learn more about how to install and use Jekyll from its [official website][jekyll-install]
 
-## 2. Browse your installed uvdesk project:
-For example – ht&#8203;tp://domain/installed_folder/public/
+### Install uvdocs
+1. Clone or download the repository.
+2. Open your system's terminal emulator, browse to the clonned respository and follow the following steps:
+    
+    1. To install Jekyll dependencies, run: 
 
-## 3. Install the uvdesk project:
-A web installer will appear. Follow the following steps to install and configure the uvdesk:
+        ```
+        $ bundle install
+        ```
+    2. To generate the local preview, run:
+        ```
+        bundle exec jekyll serve
+        
+        Configuration file: /Users/username/Github/uvdocs/_config.yml
+        Source: /Users/username/Github/devdocs
+        Destination: /Users/username/Github/devdocs/_site
+        Incremental build: disabled
+        Generating...
+                     done in x.x seconds.
+        Auto-regeneration: enabled for '/Users/username/Github/uvdocs'
+        Server address: http://127.0.0.1:4000//
+        Server running... press ctrl-c to stop.
+        ```
 
-
-- <h4 >Step 1 - Evaluating System requirements:</h4>
-    <p >Make sure all your system requirements are met and click on the <code style="background-color:#8473F3; color:white">Proceed</code> button.</p>  
-
-- <h4 >Step 2 - Database Configuration:</h4>
-    <p >Fill in the required database configuration fields and click on the <code style="background-color:#8473F3;color:white">Proceed</code> button.</p>
-
-- <h4 >Step 3 - Create Super Admin Account:</h4>
-    <p >Fill in the required super admin credentials and click on the <code style="background-color:#8473F3;color:white">Proceed</code> button.</p>
-
-- <h4 >Step 4 - Website Configuration:</h4>
-    <p >Provide prefixes for Member and Customer panel and click on the <code style="background-color:#8473F3;color:white">Proceed</code> button.</p>
-
-- <h4 >Step 5 - Finish the Installation:</h4>
-    <p >Click on the <code style="background-color:#8473F3;color:white">Install now</code> button to finish the installation. The uvdesk will be successfully installed on your system.</p>
-
-
-# About Us
-The development of the UVDesk Community Edition is supported by [Webkul][webkul], led by the [UVDesk Team](https://www.uvdesk.com/en/team/).
-
-Visit our official [website][webkul] to learn more about the UVDesk Helpdesk System.
-
+    3. Use the **Server address** URL http://127.0.0.1:4000/ in a browser to preview the content.
+    
+    4. Press `Ctrl+C` in the serve terminal to stop the server. 
 
 # License
-All libraries and bundles included in the UVDesk Community Edition are released under the MIT or BSD license.
+All libraries and contents included in the UVdocs are released under the MIT or BSD license.
 
 [webkul]: https://webkul.com/
+[team]: https://www.uvdesk.com/en/team/
+[documentation]: https://uvdesk.github.io/
+[contribute]: https://github.com/uvdesk/uvdesk.github.io
+[jekyll-install]: https://jekyllrb.com/docs/installation/
+[jekyll-home]: https://jekyllrb.com
+[uvdocs-zip]: https://
