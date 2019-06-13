@@ -1,4 +1,4 @@
-# UVdesk documentation
+# UVdesk Developer Documentation
 
 Welcome, this site contains the latest UVdesk documentation for users and developers.
 
@@ -9,9 +9,9 @@ We believe that to accomplish that goal we need experts from the community to sh
 
 If you like to contribute, please visit [Homepage][documentation]
 
-# Access this documentation
+# Access this Documentation
 You can access our documentation in two ways:
-- Access [online][documentation]
+- Visit [Homepage][documentation]
 - [Build locally using Jekyll](#build-locally-using-jekyll) (Mac, linux, Windows)
 
 ## Build locally using Jekyll
