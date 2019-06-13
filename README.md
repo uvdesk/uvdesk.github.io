@@ -7,11 +7,11 @@ Our goal is to provide the UVdesk community with comprehensive and quality techn
 
 We believe that to accomplish that goal we need experts from the community to share their knowledge with us and each other. We are thankful to all of our contributors for improving UVdesk documentation.
 
-If you like to contribute, please visit [Homepage][documentation]
+If you like to contribute, please visit [here][documentation]
 
 # Access this Documentation
 You can access our documentation in two ways:
-- Visit [Homepage][documentation]
+- Visit [documentation][documentation]
 - [Build locally using Jekyll](#build-locally-using-jekyll) (Mac, linux, Windows)
 
 ## Build locally using Jekyll
