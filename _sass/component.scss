@@ -1,7 +1,7 @@
 .component-container {
     display: grid;
-    grid-template-columns: var(--hamburger-menu-width) 1fr var(--hamburger-menu-width);
-    grid-template-rows: var(--header-footer-height) 1fr;
+    grid-template-columns: var(--hamburger-menu-width) 1fr;
+    grid-template-rows: var(--header-footer-height) calc(100vh - var(--header-footer-height) * 2 ) var(--header-footer-height);
     background-color: var(--container-bg-color);
 }
 
@@ -48,14 +48,14 @@
 }
 
 .component-container .footer {
-    grid-column: 2 / 3;
+    grid-column: 2 / 4;
     grid-row: 3 / 4;
 }
 
 @media all and (max-width: 870px) {    
     .component-container {
         grid-template-columns: 1fr;
-        grid-template-rows: var(--header-footer-height) 1fr var(--header-footer-height);
+        grid-template-rows: var(--header-footer-height) calc(100vh - var(--header-footer-height) * 2 ) var(--header-footer-height);
     }
 
     .component-container .header-filler,　.component-container .sidebar-filler {
