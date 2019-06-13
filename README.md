@@ -7,7 +7,7 @@ Our goal is to provide the UVdesk community with comprehensive and quality techn
 
 We believe that to accomplish that goal we need experts from the community to share their knowledge with us and each other. We are thankful to all of our contributors for improving UVdesk documentation.
 
-If you want to help us, contribute [here][documentation]
+If you want to support us, contribute [here][documentation]
 
 # Access this Documentation
 You can access our documentation in two ways:
