@@ -12,7 +12,7 @@ Like our work, contribute [here][documentation]
 # Access this Documentation
 You can access our documentation in two ways:
 - Visit [here][documentation]
-- [Build locally using Jekyll](#build-locally-using-jekyll) (Mac, linux, Windows)
+- Build locally using Jekyll (Mac, linux, Windows)
 
 ## Build locally using Jekyll
 For local builds, you need to install Ruby 2.4 or later.
