@@ -13,7 +13,11 @@
     width: 100%;
     box-shadow: none;
 }
-
+/*
+Anmol:
+I added 'margin-bottom: 70px' to hamburger-menu to give
+the footer space to show on the entire page.
+*/
 .component-container .hamburger-menu {
     box-shadow: none;
     position: fixed;
@@ -23,6 +27,7 @@
     z-index: 5;
     height: auto;
     display: block !important;
+    margin-bottom: 70px; 
 }
 
 .component-container .hamburger-menu-wrapper {
@@ -40,15 +45,27 @@
     grid-row: 2 / 4;
     width: var(--hamburger-menu-width);
 }
+/*
+Anmol:
 
+I have changed the grid-column from 2/3 to
+2/4, so the div does not go beyond the right
+size and activates the horizontal scroll. 
+*/
 .component-container .installation-component {
-    grid-column: 2 / 3;
+    grid-column: 2 / 4;
     grid-row: 2 / 3;
     padding: var(--component-container-content-padding);
 }
 
+/*
+Anmol:
+I changed 'grid-column: 1/3' to 
+'grid-column: 1/4' so the footer
+will span across the entire bottom. 
+*/
 .component-container .footer {
-    grid-column: 2 / 3;
+    grid-column: 1 / 4;
     grid-row: 3 / 4;
 }
 
