@@ -1,101 +1,79 @@
-# uvdesk
+# UVdesk documentation
 
-A fully-functional UVDesk Community Edition project skeleton packaged along with the bare essential utilities that you can use to develop your own custom helpdesk solutions.
+Welcome, this site contains the latest UVdesk documentation for users and developers.
 
-## Getting Started
+# Contributors
+Our goal is to provide the UVdesk community with comprehensive and quality technical documentation. 
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+We believe that to accomplish that goal we need experts from the community to share their knowledge with us and each other. We are thankful to all of our contributors for improving UVdesk documentation.
 
-### Prerequisites
+If you like to contribute, please visit [Homepage][documentation]
 
-#### Hardware Requirements
+# Access this documentation
+You can access our documentation in two ways:
+- Access [online][documentation]
+- [Build locally using Jekyll](#build-locally-using-jekyll) (Mac, linux, Windows)
 
-1. Processor: 1.60GHz or higher
-2. RAM: 3GB or higher
+## Build locally using Jekyll
+For local builds, you need to install Ruby 2.4 or later.
 
-#### Software Requirements
-
-1. [PHP]
-2. [Composer](https://getcomposer.org/)
-3. [PHP IMAP](https://php.net/manual/en/book.imap.php)
-4. [PHP Mailparse](https://php.net/manual/en/book.mailparse.php)
-2. Server: Apache
-3. Database: MySQL
-
-What things you need to install the software and how to install them
-
+To check the Ruby version on your environment, run in your terminal:
 ```
-Give examples
+$ ruby -v
 ```
+### Install the latest Ruby (if the Ruby version is less than 2.4)
+#### MacOS users
+1. Install Homebrew. See the [Homebrew site](https://brew.sh/) for instructions.
+2. Use Homebrew to install the latest stable version of Ruby:
+    ```
+    $ brew install ruby
+     ```
+#### Unix, Windows, and other OS users
+See the [Ruby site](https://www.ruby-lang.org/en/documentation/installation/) for instructions.
 
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
+### Install Bundler
+Install the [Bundler](https://bundler.io/) gem, which helps with Ruby dependencies:
 ```
-Give the example
+$ gem install bundler
 ```
+Once you have completed preparing your environment, you can build locally and review the site in your browser.
+> ***TIP*** You can learn more about how to install and use Jekyll from its [official website][jekyll-install]
 
-And repeat
+### Install uvdocs
+1. Clone or download the repository.
+2. Open your system's terminal emulator, browse to the cloned respository and follow the following steps:
+    
+    1. To install Jekyll dependencies, run: 
 
-```
-until finished
-```
+        ```
+        $ bundle install
+        ```
+    2. To generate the local preview, run:
+        ```
+        bundle exec jekyll serve
+        
+        Configuration file: /Users/username/Github/uvdocs/_config.yml
+        Source: /Users/username/Github/devdocs
+        Destination: /Users/username/Github/devdocs/_site
+        Incremental build: disabled
+        Generating...
+                     done in x.x seconds.
+        Auto-regeneration: enabled for '/Users/username/Github/uvdocs'
+        Server address: http://127.0.0.1:4000//
+        Server running... press ctrl-c to stop.
+        ```
 
-End with an example of getting some data out of the system or using it for a little demo
+    3. Use the **Server address** URL http://127.0.0.1:4000/ in a browser to preview the content.
+    
+    4. Press `Ctrl+C` in the serve terminal to stop the server. 
 
-## Running the tests
+# License
+All the libraries and content included in the UVdocs are released under the MIT or BSD license.
 
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+[webkul]: https://webkul.com/
+[team]: https://www.uvdesk.com/en/team/
+[documentation]: https://uvdesk.github.io/
+[contribute]: https://github.com/uvdesk/uvdesk.github.io
+[jekyll-install]: https://jekyllrb.com/docs/installation/
+[jekyll-home]: https://jekyllrb.com
+[uvdocs-zip]: https://
