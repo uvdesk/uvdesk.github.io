@@ -1,6 +1,6 @@
 # UVdesk documentation
 
-Welcome! This site contains the latest UVdesk documentation for users and developers.
+Welcome, this site contains the latest UVdesk documentation for users and developers.
 
 # Contributors
 Our goal is to provide the UVdesk community with comprehensive and quality technical documentation. 
@@ -68,7 +68,7 @@ Once you have completed preparing your environment, you can build locally and re
     4. Press `Ctrl+C` in the serve terminal to stop the server. 
 
 # License
-All libraries and content included in the UVdocs are released under the MIT or BSD license.
+All the libraries and content included in the UVdocs are released under the MIT or BSD license.
 
 [webkul]: https://webkul.com/
 [team]: https://www.uvdesk.com/en/team/
