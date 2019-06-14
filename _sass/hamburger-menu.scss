@@ -32,6 +32,7 @@
   margin: calc(4 * var(--hamburger-menu-item-bottom-margin)) var(--hamburger-menu-item-left-margin) var(--hamburger-menu-item-bottom-margin);
   opacity: 0.5;
   border-bottom: 1px solid var(--hamburger-menu-heading-bottom-border-color);
+  cursor: pointer;
 }
 
 .hamburgerMenuContentBtn {
