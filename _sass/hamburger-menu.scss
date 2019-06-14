@@ -158,7 +158,10 @@
 }
 // hamburger icon end
 
-
+.is-selected {
+  color: var(--purple-bg-shade) !important;
+  font-weight: bold !important;
+}
 
 
 

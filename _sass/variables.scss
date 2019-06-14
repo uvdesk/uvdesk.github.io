@@ -19,11 +19,11 @@
   // layout sizing and spacing
   --header-footer-height: 68px;
   --footer-tb-padding: 10px;
-  --homepage-container-padding: 50px 100px;
+  --homepage-container-padding: 40px 100px;
   --header-footer-padding:50px;
-  --component-container-content-padding: 50px 100px;
+  --component-container-content-padding: 40px 100px;
 
-  --grid-row-gap: 12px;
+  --grid-row-gap: 7px;
   --grid-column-gap: 7px;
   --item-min-width: 150px;
   --item-min-height: 100px;
@@ -76,15 +76,15 @@
 
 @media all and (min-width: 1261px) {
   :root {
-    --homepage-container-padding: 50px 100px;
-    --component-container-content-padding: 50px 100px;
+    --homepage-container-padding: 40px 100px;
+    --component-container-content-padding: 40px 100px;
   }
 }
 
 @media all and (max-width: 576px) {
   :root {
-    --homepage-container-padding:50px 50px;
-    --component-container-content-padding: 50px 50px;
+    --homepage-container-padding:40px 50px;
+    --component-container-content-padding: 40px 50px;
     --grid-column-gap: 0px;
     --grid-row-gap: 10px;
   }
