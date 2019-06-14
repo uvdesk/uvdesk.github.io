@@ -1,143 +1,4 @@
-
-@media all and (min-width: 871px) {
-    .hamburger-menu {
-      display: none !important;
-    }
-  
-    .ipsum-logo{
-      width: 100%;
-      height: auto;
-      padding-right: 10px;
-    }
-    
-    .component-title{
-      font-size: 35px; 
-    }
-    .component-sub-title{
-      font-size: 28px; 
-    }
-  
-    .sub-a{
-      font-size: 22px; 
-    }
-  
-    .component-sub-a{
-      font-size: 22px; 
-    }
-  
-    .image-heading{
-      font-size: 20px;
-    }
-    .paragraph1{
-  
-      font-size: 18px;
-  
-    }
-    .command-heading{
-  
-      font-size: 18px;
-  
-    }
-    .command{
-  
-      font-size: 15px; 
-    }
-    
-    
-   
-  }
-  
-
-  
-  
-  @media all and (max-width: 480px){
-  
-    .installation-component{
-      grid-column: auto;  
-      //font-size: 15px;
-  
-    }
-    .components-topics{
-      font-size: 15px; 
-    }
-  
-    .sidebar-filler{
-      grid-column: auto; 
-    }
-  
-    .paragraph1 li b{
-      font-size: 12px;
-    }
-  
-  
-  
-    .components-topics .ipsum-logo{
-  
-      width: 300px;
-      height: auto;
-      margin-right: 40px; 
-    
-    }
-
-    
-  
-  
-  }
-  
-  @media all and (max-width: 380px){
-
-    .component-title{
-      font-size: 20px; 
-    }
-  
-    .installation-component{
-      grid-column: auto;  
-      //font-size: 15px;
-      //margin-right: 30px; 
-  
-    }
-  
-    .installation-component p, b{
-
-        font-size: 15px;
-        
-    }
-  
-    .installation-component > p, .components-topics > p{
-      //margin-right: calc(100% - 40%);
-      margin-left: -20px;
-    }
-
-    //does this even work???
-    .paragraph1 > li{
-       
-        margin-left: -25px;
-    }
-
-  
-   
-    .components-topics .ipsum-logo{
-  
-      width: 290px;
-      height: auto;
-      margin-left: -50px; 
-   
-    
-    }
-
-    .footer123 p{
-        margin-right: calc(100% - 50%);
-    }
-
-
-  
-  
-  }// end
-  
-  //@@@@@@@@@@@@@@@@@@@@@#####################@@@@@@@@@@@@@@@@@@@@@@@@@@@@####################//
-  
-
-  .component-sub-a{
+ .component-sub-a{
     font-size: 18px;
   }
   .image-heading{
@@ -145,28 +6,37 @@
     padding-right: 10px; 
   }
   .component-title{
-    font-size: 40px;
-    margin-left: 10px;
+    font-size: 30px;
+ 
+    //margin-left: 10px;
+    margin-left: -15px;
     padding-bottom: 10px; 
     color:#131516;
     padding-right: 10px; 
+
   }
   .component-sub-title{
   
     //font-size: 18px;
-    margin-left: 10px;
+    margin-left: -15px;
     padding-bottom: 5px;
-    color: #3a3c3f;
+    color: #3a3535;
     padding-right: 10px; 
     font-size: 22px;
   }
+
+
+
+ .sub-a{
+   margin-left: -38px; 
+ }
   
   .paragraph1{
   
     padding-bottom: 15px;
     margin-left: 10px;
-    color: #65696d;
-    //font-size: 12px;
+    color: black;
+    font-size: 15px;
     padding-right: 10px; 
   }
   
@@ -175,7 +45,8 @@
     margin-left: 10px;
     padding-bottom: 15px;
     color: #3a3c3f;
-    padding-right: 10px; 
+    padding-right: 10px;
+    font-size: 15px; 
     
   
   }
@@ -188,15 +59,15 @@
   .paragraph{
     padding-top: 5px;
     padding-bottom: 5px;
-    //font-size: 12px;
+    font-size: 15px;
     padding-right: 10px;
+    color: #3a3535;
   }
   
   .paragraph1 li {
     padding-top: 5px;
     padding-bottom: 5px;
-    color: #65696d;
-    //font-size: 12px;
+    color: #535456;
     padding-right: 10px; 
   }
   
@@ -243,4 +114,206 @@
 
 .installation-component{
   min-height: 600px; 
-}
+  margin-left: 30px;
+  overflow-x: hidden !important;
+
+  }
+
+  .nav-title > a{
+    color: black;
+  }
+  
+
+
+@media all and (min-width: 871px) {
+
+  
+  
+    .hamburger-menu {
+      display: none !important;
+    }
+  
+    .ipsum-logo{
+      width: 100%;
+      height: auto;
+      padding-right: 10px;
+    }
+    
+    .component-title{
+      font-size: 35px; 
+   
+    }
+    .component-sub-title{
+      //font-size: 28px; 
+    }
+  
+    .sub-a{
+      font-size: 22px; 
+    }
+  
+    .component-sub-a{
+      font-size: 22px; 
+    }
+  
+    .image-heading{
+      font-size: 20px;
+    }
+    .paragraph1{
+  
+      font-size: 18px;
+  
+    }
+    .command-heading{
+  
+      font-size: 18px;
+  
+    }
+    .command{
+  
+      font-size: 15px; 
+    }
+    
+    .footer{
+      width: 100%;
+    }
+
+    .ipsum-logo{
+      width: auto;
+      max-height: 400px;
+    }
+    .installation-component{
+      overflow-x: hidden !important;
+    }
+   
+  }// end of min width 871
+  
+  @media all and (max-width: 870)
+  {
+    .ipsum-logo{
+      max-height: 300px;
+      width: auto;
+      //object-fit: contain;
+      
+    
+    }
+
+    .installation-compotent{
+      overflow-x: hidden !important;
+    }
+  }
+  
+  
+  @media all and (max-width: 480px){
+
+    .installation-compotent{
+      overflow-x: hidden !important;
+    }
+
+    .footer{
+      max-width: 480px !important;
+    }
+  
+    .installation-component{
+      grid-column: auto;  
+      //font-size: 15px;
+  
+    }
+    .components-topics{
+      font-size: 15px; 
+    }
+  
+    .sidebar-filler{
+      grid-column: auto; 
+    }
+  
+    .paragraph1 li b{
+      font-size: 12px;
+    }
+
+    p{
+      font-size: 15px;
+    }
+  
+  
+  
+    .components-topics .ipsum-logo{
+  
+      width: 300px;
+      height: auto;
+      margin-right: 40px; 
+    
+    }
+
+    
+  
+  
+  }// end of max width 480
+  
+  @media all and (max-width: 380px){
+
+    .installation-compotent{
+      overflow-x: hidden !important;
+    }
+
+    p{
+      font-size: 12px;
+    }
+
+
+  
+    .footer{
+      max-width: 380px !important;
+    }
+ 
+  
+    .installation-component{
+      grid-column: auto;  
+      //font-size: 15px;
+      margin-right: 30px;
+
+  
+    }
+
+    .component-sub-title > ol {
+      margin-left: -40px;
+    }
+  
+    .installation-component p, b{
+
+        //font-size: 15px;
+        
+    }
+  
+    .installation-component > p, .components-topics > p{
+      //margin-right: calc(100% - 40%);
+      margin-left: -20px;
+    }
+
+    //does this even work???
+    .paragraph1 > li{
+       
+        margin-left: -25px;
+    }
+
+  
+   
+    .components-topics .ipsum-logo{
+  
+      width: 290px;
+      height: auto;
+      margin-left: -50px; 
+   
+    
+    }
+
+ 
+
+
+  
+  
+  }// end of max width 380
+  
+  //@@@@@@@@@@@@@@@@@@@@@#####################@@@@@@@@@@@@@@@@@@@@@@@@@@@@####################//
+  
+
+ 

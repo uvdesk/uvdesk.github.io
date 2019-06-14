@@ -51,11 +51,17 @@ Anmol:
 I have changed the grid-column from 2/3 to
 2/4, so the div does not go beyond the right
 size and activates the horizontal scroll. 
+
 */
 .component-container .installation-component {
     grid-column: 2 / 4;
     grid-row: 2 / 3;
-    padding: var(--component-container-content-padding);
+    //padding: var(--component-container-content-padding);
+    padding-right: var(--component-container-content-padding);
+    padding-top: var(--component-container-content-padding);
+    padding-bottom: var(--component-container-content-padding);
+    padding-left: 10px;
+    
 }
 
 /*

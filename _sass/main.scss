@@ -5,6 +5,7 @@ html {
 
 body {
   min-width: 500px;
+  overflow-x: hidden !important;
 }
 
 * {
@@ -14,9 +15,10 @@ body {
   color: var(--paragraph-heading-color);
 }
 
+
 p {
   opacity: var(--paragraph-opacity);
-  font-size: var(--paragraph-font-size);
+  font-size:var(--paragraph-font-size);
 }
 
 .container {
@@ -201,6 +203,7 @@ a:visited {
 
 .grid-gap {
   min-width: 30px;
+
 }
 
 .topic-box {
@@ -229,11 +232,20 @@ a:visited {
     background-color: var(--topics-bg-color);
 }
 
+/*
+Anmol:
+I have changed the font-size to 17px so it will not be 
+bigger in size than its parent element.
+
+I also changed the color to #535456 down below.
+*/
 .topics-heading {
-  font-size: var(--sub-heading-font-size);
+  font-size: 17px; 
+  //font-size: var(--sub-heading-font-size);
   font-weight: var(--heading-font-weight);
   padding-bottom: calc( 2 * var(--sub-heading-bottom-spacing));
   padding-top: calc( var(--sub-heading-bottom-spacing));
+
 }
 
 .topics-grid-container {
@@ -484,14 +496,19 @@ a:visited {
     height: auto;
     padding-right: 10px;
   }
-  
+  /*
+  Anmol:
+  I am commenting out component-title and 
+  component-sub-title because I am making
+  changes to them in the main2.scss file.
+
   .component-title{
     font-size: 35px; 
   }
   .component-sub-title{
-    font-size: 28px; 
+    font-size: 30px; 
   }
-
+  */
   .sub-a{
     font-size: 22px; 
   }
@@ -503,11 +520,18 @@ a:visited {
   .image-heading{
     font-size: 20px;
   }
+
+  /*
+  I commented out paragraph1 because I am using it in my own file
+  , main2.scss. 
+
   .paragraph1{
 
     font-size: 18px;
 
   }
+  */
+
   .command-heading{
 
     font-size: 18px;
@@ -558,94 +582,4 @@ a:visited {
 
   
 }
-
-//written by Anmol
-
-.image-heading{
-  margin-left: 10px; 
-  padding-right: 10px; 
-}
-.component-title{
-  //font-size: 25px;
-  margin-left: 10px;
-  padding-bottom: 10px; 
-  color:#131516;
-  padding-right: 10px; 
-}
-.component-sub-title{
-
-  //font-size: 18px;
-  margin-left: 10px;
-  padding-bottom: 5px;
-  color: #3a3c3f;
-  padding-right: 10px; 
-}
-
-.paragraph1{
-
-  padding-bottom: 15px;
-  margin-left: 10px;
-  color: #65696d;
-  //font-size: 12px;
-  padding-right: 10px; 
-}
-
-.command-heading{
-
-  margin-left: 10px;
-  padding-bottom: 15px;
-  color: #3a3c3f;
-  padding-right: 10px; 
-  
-
-}
-.command {
-  margin-left: 10px;
-  padding-bottom: 15px;
-  padding-right: 10px; 
-}
-
-.paragraph{
-  padding-top: 5px;
-  padding-bottom: 5px;
-  //font-size: 12px;
-  padding-right: 10px;
-}
-
-.paragraph1 li {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color: #65696d;
-  //font-size: 12px;
-  padding-right: 10px; 
-}
-
-.paragraph1 li b{
-  //font-size: 12px;
-  padding-right: 10px; 
-}
-
-.sub-a{
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color: #65696d;
-  //font-size: 12px;
-  padding-right: 10px; 
-  list-style-type: none;
-}
-
-
-.ipsum-logo{
-
-  width: 100%;
-  height: auto;
-  padding-right: 10px; 
-
-}
-
-
-.component-a{
-  margin-left: 10px; 
-}
-
 
