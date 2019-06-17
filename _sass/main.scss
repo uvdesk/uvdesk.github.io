@@ -238,6 +238,8 @@ I have changed the font-size to 17px so it will not be
 bigger in size than its parent element.
 
 I also changed the color to #535456 down below.
+
+I also added 'margin-left: -20px' for alignment purposes. 
 */
 .topics-heading {
   font-size: 17px; 
@@ -245,6 +247,7 @@ I also changed the color to #535456 down below.
   font-weight: var(--heading-font-weight);
   padding-bottom: calc( 3 * var(--sub-heading-bottom-spacing));
   padding-top: calc( var(--sub-heading-bottom-spacing));
+  margin-left: -20px; 
 
 }
 

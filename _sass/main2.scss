@@ -7,6 +7,11 @@
     padding-right: 10px; 
     overflow-x: hidden !important;
   }
+
+  .topics-heading{
+    font-size: 20px;
+    color: #000000;
+  }
   .component-title{
     font-size: 30px;
  
@@ -39,7 +44,7 @@
   
     padding-bottom: 15px;
     margin-left: 10px;
-    color: black;
+    color: #202020;
     font-size: 15px;
     padding-right: 20px;
     overflow-x: hidden !important;
@@ -66,11 +71,12 @@
   
   .paragraph{
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     font-size: 15px;
     padding-right: 10px;
-    color: #3a3535;
+    color: #353a42;
     overflow-x: hidden !important; 
+    margin-left: -15px;
   }
   
   .paragraph1 li {
@@ -79,6 +85,7 @@
     color: #535456;
     padding-right: 10px; 
     overflow-x: hidden !important;
+
 
   }
   
@@ -102,7 +109,7 @@
   
     
     width: auto;
-    max-width: 600px; 
+    max-width: 470px; 
     max-height: 800px;
     margin-left: -30px;
     padding-top: 10px;
@@ -223,7 +230,7 @@
     .ipsum-logo{
       max-height: 500px;
       width: auto;
-      max-width: 700px; 
+      max-width: 450px; 
     }
 
     .installation-component{
@@ -405,13 +412,14 @@
     }
 
     //does this even work???
-    //.paragraph1 > li{
+    .paragraph1 > li{
        
-        //margin-left: -25px;
-    //}
+        margin-left: -25px;
+        overflow-x: hidden !important;
+        //padding-right: 15px; 
+    }
 
-  
-   
+     
     
     .footer123 p{
       margin-right: -20px;
@@ -444,8 +452,12 @@
       font-size: 23px; 
     }
 
+    .topics-heading{
+      font-size: 20px; 
+    }
+
     .paragraph1 {
-      font-size: 20px;
+      font-size: 17px;
       overflow-x: hidden !important;
       padding-right: 40px;
 
