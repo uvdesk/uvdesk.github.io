@@ -100,14 +100,11 @@
 
 .ipsum-logo{
   
-    max-width: 450px;
-
+    
     width: auto;
-    //height: auto;
-    //padding-right: 10px; 
-    max-height: 400px;
-    margin-left: -30px; 
-    //padding-right: 50px; 
+    max-width: 600px; 
+    max-height: 800px;
+    margin-left: -30px;
     padding-top: 10px;
     padding-bottom: 10px; 
     overflow-x: hidden !important;
@@ -154,6 +151,8 @@
       width: 100%;
       height: auto;
       padding-right: 10px;
+      width: auto;
+      max-height: 500px;
     }
     
     .component-title{
@@ -194,10 +193,7 @@
       width: 100%;
     }
 
-    .ipsum-logo{
-      width: auto;
-      max-height: 400px;
-    }
+   
     .installation-component{
       overflow-x: hidden !important;
     }
@@ -206,9 +202,10 @@
   
   @media all and (min-width: 1200px){
     .ipsum-logo{
-      //width: auto;
-      max-height: 400px;
-      max-width: 700px; 
+      width: auto;
+      max-height: 800px;
+      max-width: 800px; 
+      margin-left: 40px; 
     }
 
     .image-heading, .paragraph1, .command-heading, .command{
@@ -224,8 +221,9 @@
 
   @media all and (min-width: 871px){
     .ipsum-logo{
-      max-height: 300px;
-      max-width: 500px; 
+      max-height: 500px;
+      width: auto;
+      max-width: 700px; 
     }
 
     .installation-component{
