@@ -56,14 +56,8 @@ size and activates the horizontal scroll.
 .component-container .installation-component {
     grid-column: 2 / 4;
     grid-row: 2 / 3;
-    //padding: var(--component-container-content-padding);
-    padding-right: var(--component-container-content-padding);
-    padding-top: var(--component-container-content-padding);
-    padding-bottom: var(--component-container-content-padding);
-    padding-left: 10px;
-    
+    padding: var(--component-container-content-padding);
 }
-
 /*
 Anmol:
 I changed 'grid-column: 1/3' to 

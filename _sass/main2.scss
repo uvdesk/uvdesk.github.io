@@ -1,9 +1,11 @@
  .component-sub-a{
     font-size: 18px;
+    overflow-x: hidden !important;
   }
   .image-heading{
     margin-left: 10px; 
     padding-right: 10px; 
+    overflow-x: hidden !important;
   }
   .component-title{
     font-size: 30px;
@@ -13,6 +15,7 @@
     padding-bottom: 10px; 
     color:#131516;
     padding-right: 10px; 
+    overflow-x: hidden !important;
 
   }
   .component-sub-title{
@@ -22,7 +25,8 @@
     padding-bottom: 5px;
     color: #3a3535;
     padding-right: 10px; 
-    font-size: 22px;
+    font-size: 25px;
+    overflow-x: hidden !important;
   }
 
 
@@ -37,16 +41,19 @@
     margin-left: 10px;
     color: black;
     font-size: 15px;
-    padding-right: 10px; 
+    padding-right: 20px;
+    overflow-x: hidden !important;
+
   }
   
   .command-heading{
   
     margin-left: 10px;
     padding-bottom: 15px;
-    color: #3a3c3f;
+    color: #171819;
     padding-right: 10px;
     font-size: 15px; 
+    overflow-x: hidden !important; 
     
   
   }
@@ -54,6 +61,7 @@
     margin-left: 10px;
     padding-bottom: 15px;
     padding-right: 10px; 
+    overflow-x: hidden !important;
   }
   
   .paragraph{
@@ -62,6 +70,7 @@
     font-size: 15px;
     padding-right: 10px;
     color: #3a3535;
+    overflow-x: hidden !important; 
   }
   
   .paragraph1 li {
@@ -69,10 +78,13 @@
     padding-bottom: 5px;
     color: #535456;
     padding-right: 10px; 
+    overflow-x: hidden !important;
+
   }
   
   .paragraph1 li b{
     font-size: 13px;
+
   }
   
   .sub-a{
@@ -82,19 +94,24 @@
     font-size: 18px;
     padding-right: 10px; 
     list-style-type: none;
+    overflow-x: hidden !important;
   }
   
 
 .ipsum-logo{
   
+    max-width: 450px;
+
     width: auto;
     //height: auto;
     //padding-right: 10px; 
     max-height: 400px;
-    margin-left: 30px; 
+    margin-left: -30px; 
     //padding-right: 50px; 
     padding-top: 10px;
     padding-bottom: 10px; 
+    overflow-x: hidden !important;
+
   
   }
   
@@ -187,22 +204,96 @@
    
   }// end of min width 871
   
+  @media all and (min-width: 1200px){
+    .ipsum-logo{
+      //width: auto;
+      max-height: 400px;
+      max-width: 700px; 
+    }
+
+    .image-heading, .paragraph1, .command-heading, .command{
+      margin-left: -15px;
+    }
+
+    .component-title{
+      max-width: 1000px; 
+    }
+
+    
+  }
+
+  @media all and (min-width: 871px){
+    .ipsum-logo{
+      max-height: 300px;
+      max-width: 500px; 
+    }
+
+    .installation-component{
+      margin-left: -30px; 
+    }
+}
+
+
   @media all and (max-width: 870)
   {
     .ipsum-logo{
       max-height: 300px;
-      width: auto;
-      //object-fit: contain;
-      
     
+      max-width: 400px;
+
+      overflow-x: hidden !important;
+ 
     }
 
-    .installation-compotent{
-      overflow-x: hidden !important;
+
+
+    //.installation-compotent{
+    //  overflow-x: hidden !important;
+    //}
+  }
+  @media all and (max-width: 720)
+  {
+    .ipsum-logo{
+      width: auto;
+      max-width: 500px;
+      margin-right: 20px; 
+      padding-right: 30px; 
     }
   }
   
-  
+@media all and (max-width: 680px){
+
+  .ipsum-logo{
+    max-width: 500px;
+    max-height: 300px;
+    margin-left: -30px;
+    max-width: 400px;
+  }
+
+  .paragraph1, .command-heading, .command, .image-heading{
+    margin-left: -20px;
+  }
+
+  .footer123 p{
+    font-size: 15px; 
+  }
+
+  .command-heading{
+    font-size: 15px; 
+  }
+
+  .command{
+    font-size: 13px; 
+  }
+
+  .component-title, .component-sub-title{
+    margin-left: -20px;
+  }
+}
+
+
+
+
   @media all and (max-width: 480px){
 
     .installation-compotent{
@@ -212,12 +303,14 @@
     .footer{
       max-width: 480px !important;
     }
-  
-    .installation-component{
-      grid-column: auto;  
-      //font-size: 15px;
-  
+
+    .footer123 p{
+      font-size: 15px; 
+      overflow-x: hidden !important; 
+      padding-right: 50px; 
     }
+
+    
     .components-topics{
       font-size: 15px; 
     }
@@ -233,33 +326,50 @@
     p{
       font-size: 15px;
     }
-  
-  
-  
+
+
     .components-topics .ipsum-logo{
-  
+      
       width: 300px;
       height: auto;
-      margin-right: 40px; 
+      //margin-right: 40px;
+      margin-left: -30px; 
     
     }
 
-    
-  
-  
+    .component-title, .component-sub-title, .image-heading, .paragraph1, .command-heading, .command, .image-heading{
+
+        margin-left: -30px;
+        margin-right: 20px; 
+    }
+
   }// end of max width 480
+  @media all and (max-width: 410px)
+  {
+    .installation-component p{
+      max-width: 340px; 
+      margin-right: 30px; 
+    }
+  }
+
   
   @media all and (max-width: 380px){
 
-    .installation-compotent{
-      overflow-x: hidden !important;
-    }
+ 
 
     p{
       font-size: 12px;
+      padding-right: 40px;
+      
+    }
+    .image-heading{
+      font-size: 17px; 
     }
 
-
+    .command{
+      font-size: 15px;
+    }
+    
   
     .footer{
       max-width: 380px !important;
@@ -270,8 +380,14 @@
       grid-column: auto;  
       //font-size: 15px;
       margin-right: 30px;
+      //margin-left: -10px; 
 
   
+    }
+
+    .ipsum-logo{
+      margin-right: -20px; 
+      max-width: 270px; 
     }
 
     .component-sub-title > ol {
@@ -287,23 +403,20 @@
     .installation-component > p, .components-topics > p{
       //margin-right: calc(100% - 40%);
       margin-left: -20px;
+      max-width: 270px; 
     }
 
     //does this even work???
-    .paragraph1 > li{
+    //.paragraph1 > li{
        
-        margin-left: -25px;
-    }
+        //margin-left: -25px;
+    //}
 
   
    
-    .components-topics .ipsum-logo{
-  
-      width: 290px;
-      height: auto;
-      margin-left: -50px; 
-   
     
+    .footer123 p{
+      margin-right: -20px;
     }
 
  
@@ -312,8 +425,65 @@
   
   
   }// end of max width 380
+
+  @media all and (max-width: 340px){
+
   
-  //@@@@@@@@@@@@@@@@@@@@@#####################@@@@@@@@@@@@@@@@@@@@@@@@@@@@####################//
+
+    .component-sub-title{
+      width: 250px;
+      font-size: 25px;
+    }
+
+    .ipsum-logo{
+      max-width: 250px;
+      height: 300px;
+      //padding-left: 30px; 
+     
+    }
+
+    .image-heading{
+      font-size: 23px; 
+    }
+
+    .paragraph1 {
+      font-size: 20px;
+      overflow-x: hidden !important;
+      padding-right: 40px;
+
+    }
+    .paragraph1 > li{
+      max-width: 200px;
+      font-size: 18px; 
+      padding-top:10px;
+      padding-bottom: 10px;
+      overflow-x: hidden !important; 
+  
+    }
+    .command-heading{
+      font-size: 18px;
+    }
+
+    .command{
+      font-size: 15px;
+    }
+
+    .installation-component{
+      margin-left: -5px;
+    }
+
+    .footer123 p{
+      overflow-x: hidden !important;
+      margin-right: 20px; 
+
+    }
+
+    b {
+      font-size: 16px; 
+    }
+  }
+
+
   
 
  
