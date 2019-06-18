@@ -1,3 +1,53 @@
+#instruction-link{
+  font-size: 22px;
+} 
+
+.search-bar-header {
+  border-radius: 15px; 
+  background-color: white;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;  
+  padding-left: 28px;
+  padding-right: 5px; 
+  margin-right: 10px; 
+  background-image: url(/assets/images/search-1.png);
+  background-repeat: no-repeat;
+  background-position: 7px 7px; 
+  border: 1px solid #d9dde2;
+  /*
+  On hover, the border should be this color: #8473F3;
+  */ 
+ 
+
+}
+.search-bar-header:focus, .search-bar-sidebar:focus{
+  border: 1px solid #8473F3;
+}
+
+.search-bar-sidebar {
+  /*
+  On hover, the border should be this color: #8473F3;
+  */
+
+  border-radius: 15px;
+  background-color: white;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 28px;
+  padding-right: 5px;
+  background-image: url(/assets/images/search-1.png);
+  background-repeat: no-repeat;
+  background-position: 7px 7px;
+  border: 1px solid #d9dde2;
+  max-width: 170px;
+  margin-left: 30px;
+  margin-top: 5px; 
+  margin-bottom: 5px;
+  display: none;
+  
+}
  .component-sub-a{
     font-size: 18px;
     overflow-x: hidden !important;
@@ -64,9 +114,14 @@
   }
   .command {
     margin-left: 10px;
-    padding-bottom: 15px;
-    padding-right: 10px; 
+    padding-bottom: 10px;
+    padding-top: 10px; 
+    padding-right: 10px;
+    //margin-right: -10px; 
     overflow-x: hidden !important;
+    border-left: 6px solid #8473F3;
+    background-color: #beb6ed;
+    padding-left: 5px; 
   }
   
   .paragraph{
@@ -170,44 +225,45 @@
       //font-size: 28px; 
     }
   
-    .sub-a{
+    .sub-a {
       font-size: 22px; 
     }
   
-    .component-sub-a{
+    .component-sub-a {
       font-size: 22px; 
     }
   
-    .image-heading{
+    .image-heading {
       font-size: 20px;
+      padding-bottom: 10px;
     }
-    .paragraph1{
+    .paragraph1 {
   
       font-size: 18px;
   
     }
-    .command-heading{
+    .command-heading { 
   
       font-size: 18px;
   
     }
-    .command{
+    .command {
   
       font-size: 15px; 
     }
     
-    .footer{
+    .footer {
       width: 100%;
     }
 
    
-    .installation-component{
+    .installation-component {
       overflow-x: hidden !important;
     }
    
   }// end of min width 871
   
-  @media all and (min-width: 1200px){
+  @media all and (min-width: 1200px) {
     .ipsum-logo{
       width: auto;
       max-height: 800px;
@@ -215,32 +271,31 @@
       margin-left: 40px; 
     }
 
-    .image-heading, .paragraph1, .command-heading, .command{
+    .image-heading, .paragraph1, .command-heading, .command {
       margin-left: -15px;
     }
 
-    .component-title{
+    .component-title {
       max-width: 1000px; 
     }
 
     
   }
 
-  @media all and (min-width: 871px){
+  @media all and (min-width: 871px) {
     .ipsum-logo{
       max-height: 500px;
       width: auto;
       max-width: 450px; 
     }
 
-    .installation-component{
+    .installation-component {
       margin-left: -30px; 
     }
 }
 
 
-  @media all and (max-width: 870)
-  {
+  @media all and (max-width: 870) {
     .ipsum-logo{
       max-height: 300px;
     
@@ -256,8 +311,7 @@
     //  overflow-x: hidden !important;
     //}
   }
-  @media all and (max-width: 720)
-  {
+  @media all and (max-width: 720) {
     .ipsum-logo{
       width: auto;
       max-width: 500px;
@@ -266,7 +320,7 @@
     }
   }
   
-@media all and (max-width: 680px){
+@media all and (max-width: 680px) {
 
   .ipsum-logo{
     max-width: 500px;
@@ -275,23 +329,23 @@
     max-width: 400px;
   }
 
-  .paragraph1, .command-heading, .command, .image-heading{
+  .paragraph1, .command-heading, .command, .image-heading {
     margin-left: -20px;
   }
 
-  .footer123 p{
+  .footer123 p {
     font-size: 15px; 
   }
 
-  .command-heading{
+  .command-heading {
     font-size: 15px; 
   }
 
-  .command{
+  .command {
     font-size: 13px; 
   }
 
-  .component-title, .component-sub-title{
+  .component-title, .component-sub-title {
     margin-left: -20px;
   }
 }
@@ -299,7 +353,7 @@
 
 
 
-  @media all and (max-width: 480px){
+  @media all and (max-width: 480px) {
 
     .installation-compotent{
       overflow-x: hidden !important;
@@ -309,31 +363,31 @@
       max-width: 480px !important;
     }
 
-    .footer123 p{
+    .footer123 p {
       font-size: 15px; 
       overflow-x: hidden !important; 
       padding-right: 50px; 
     }
 
     
-    .components-topics{
+    .components-topics {
       font-size: 15px; 
     }
   
-    .sidebar-filler{
+    .sidebar-filler {
       grid-column: auto; 
     }
   
-    .paragraph1 li b{
+    .paragraph1 li b {
       font-size: 12px;
     }
 
-    p{
+    p {
       font-size: 15px;
     }
 
 
-    .components-topics .ipsum-logo{
+    .components-topics .ipsum-logo { 
       
       width: 300px;
       height: auto;
@@ -349,20 +403,19 @@
     }
 
   }// end of max width 480
-  @media all and (max-width: 410px)
-  {
-    .installation-component p{
+  @media all and (max-width: 410px) {
+    .installation-component p {
       max-width: 340px; 
       margin-right: 30px; 
     }
   }
 
   
-  @media all and (max-width: 380px){
+  @media all and (max-width: 380px) {
 
  
 
-    p{
+    p {
       font-size: 12px;
       padding-right: 40px;
       
@@ -490,6 +543,13 @@
 
     b {
       font-size: 16px; 
+    }
+  }
+
+  @media all and (max-width: 918px)
+  {
+    .search-bar-header {
+      max-width: 160px; 
     }
   }
 
