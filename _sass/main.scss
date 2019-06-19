@@ -73,7 +73,7 @@ p {
 Because the search bar has been added,
 the 2nd child is now the third child.
 */
-.headerBtn:nth-child(3) {
+.headerBtn:nth-child(2) {
   background-color: var(--purple-bg-shade);
   margin-right: 5px;
 }
@@ -81,7 +81,7 @@ the 2nd child is now the third child.
 Because the search bar has been added,
 the 3rd child is now the 4th.
 */
-.headerBtn:nth-child(4) {
+.headerBtn:nth-child(3) {
   background-color: var(--green-bg-shade);
 }
 
@@ -94,15 +94,7 @@ the 3rd child is now the 4th.
     display: block;
   }
 
-  /*
-  When the inline-header goes away,
-  we want to display the search bar that
-  resides within the sidebar navigation. @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
   
-  .search-bar-sidebar{
-    display: block; 
-  }
-  */
 }
 
 @media all and (min-width: 871px) {

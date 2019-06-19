@@ -5,16 +5,19 @@
 .search-bar-header {
   border-radius: 15px; 
   background-color: white;
-  border: none;
+
   padding-top: 5px;
   padding-bottom: 5px;  
   padding-left: 28px;
   padding-right: 5px; 
-  margin-right: 10px; 
+  margin-left: 30px; 
+  margin-top: -30px; 
+  margin-right: 50px; 
   background-image: url(/assets/images/search-1.png);
   background-repeat: no-repeat;
   background-position: 7px 7px; 
   border: 1px solid #d9dde2;
+
   /*
   On hover, the border should be this color: #8473F3;
   */ 
