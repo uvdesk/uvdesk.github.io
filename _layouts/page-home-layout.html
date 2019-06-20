@@ -43,7 +43,7 @@
                 SimpleJekyllSearch.init({
                     searchInput: document.getElementById('search-bar-sidebar'),
                     resultsContainer: document.getElementById('results-container-sidebar'),
-                    dataSource: '{{ side.baseurl }}/search.json',
+                    dataSource: '{{ site.baseurl }}/search.json',
                     searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}<\/a><\/li>',
                     noResultsText: 'No Results Found',
                     //limit: 10,
