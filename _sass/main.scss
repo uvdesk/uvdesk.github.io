@@ -85,6 +85,10 @@ the 3rd child is now the 4th.
   background-color: var(--green-bg-shade);
 }
 
+/*
+Anmol: 
+I have added a query for .ipsum-query. 
+*/
 @media all and (max-width: 870px) {
   .second .inline-header {
     display: none;
@@ -94,12 +98,37 @@ the 3rd child is now the 4th.
     display: block;
   }
 
+  .ipsum-logo {
+    max-height: 300px;
+    max-width: 400px;
+    overflow-x: hidden !important;
+  }
+
+  .search-bar-header {
+    display: none;
+  }
+
   
 }
+/*
+Anmol: 
+
+When the screen is big enough to not display the hamburger-icon,
+we do not want the searchbar to be visible in the side bar, that
+ is why both the search-bar-header and the results-container-sidebar
+ have been hidden for this media query. 
+*/
 
 @media all and (min-width: 871px) {
   .hamburger-menu {
     display: none !important;
+  }
+
+  .search-bar-sidebar{
+    display: none;
+  }
+  .results-container-sidebar {
+    display: none;
   }
 }
 

@@ -1,32 +1,82 @@
-#instruction-link{
+#instruction-link {
   font-size: 22px;
 } 
+
+
+
+#results-container {
+  
+  list-style-type: none;
+  position: absolute;
+  left: 235px;
+  z-index: 1000;
+  margin-top: 10px; 
+}
+
+#results-container li {
+
+  border-left: 1px solid #8473F3;
+  border-right: 1px solid #8473F3;
+  border-bottom: 1px solid #8473F3;
+  //border-top: 1px solid #8473F3; 
+  padding: 10px;
+  background-color: white;
+  
+}
+#results-container li:hover {
+  background-color: #dfdbff;
+  transition: 0.65s;
+}
+
+
+
+#results-container-sidebar {
+  list-style-type: none;
+  position: absolute;
+  z-index: 1000;
+  margin-top: 10px; 
+}
+
+#results-container-sidebar li {
+  border-left: 1px solid #8473F3;
+  border-right: 1px solid #8473F3;
+  border-bottom: 1px solid #8473F3;
+  padding: 10px; 
+  background-color: white;
+}
+
+#results-container-sidebar li :hover {
+  background-color: #dfdbff;
+  transition: 0.65s;
+}
 
 .search-bar-header {
   border-radius: 15px; 
   background-color: white;
-
   padding-top: 5px;
   padding-bottom: 5px;  
   padding-left: 28px;
   padding-right: 5px; 
   margin-left: 30px; 
   margin-top: -30px; 
-  margin-right: 50px; 
   background-image: url(/assets/images/search-1.png);
   background-repeat: no-repeat;
   background-position: 7px 7px; 
   border: 1px solid #d9dde2;
-
-  /*
-  On hover, the border should be this color: #8473F3;
-  */ 
- 
+  margin-top: -30px;
+  //width: 350px;
 
 }
-.search-bar-header:focus, .search-bar-sidebar:focus{
+.search-bar-header:focus {
   border: 1px solid #8473F3;
+  transition: 0.5s;
 }
+
+.search-bar-sidebar:focus {
+  border: 1px solid #8473F3;
+  transition: 0.5s;
+}
+
 
 .search-bar-sidebar {
   /*
@@ -48,9 +98,8 @@
   margin-left: 30px;
   margin-top: 5px; 
   margin-bottom: 5px;
-  display: none;
-  
 }
+
  .component-sub-a{
     font-size: 18px;
     overflow-x: hidden !important;
@@ -297,6 +346,8 @@
     }
 }
 
+/*
+There already exists the same media query in main.css.
 
   @media all and (max-width: 870) {
     .ipsum-logo{
@@ -307,13 +358,13 @@
       overflow-x: hidden !important;
  
     }
+    .header .first .search-bar-header {
+      display: none;
+    }
 
-
-
-    //.installation-compotent{
-    //  overflow-x: hidden !important;
-    //}
   }
+
+*/
   @media all and (max-width: 720) {
     .ipsum-logo{
       width: auto;
@@ -553,6 +604,26 @@
   {
     .search-bar-header {
       max-width: 160px; 
+    }
+  }
+
+  @media all and (max-width: 980px)
+  {
+    .search-bar-header {
+      max-width: 200px; 
+      margin-right: -30px; 
+    }
+
+    #results-container {
+      margin-left: -15px; 
+    }
+
+  }
+
+  @media all and (max-width: 915px)
+  {
+    .search-bar-header {
+      max-width: 150px; 
     }
   }
 
