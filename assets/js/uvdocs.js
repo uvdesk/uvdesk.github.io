@@ -221,3 +221,25 @@ function openDropdownMenuSelectItemOnPageLoad() {
 function isInlineLink(link, domainName) {
   return link.match(`https?://${window.location.hostname}`) !== null;
 }
+
+//close the search bar when user clicks on the body.
+window.onclick = function() {
+
+
+    if(document.getElementById("results-container").hasChildNodes())
+    {
+        document.getElementById("search-bar-header").value = "";
+
+        var ul = document.getElementById("results-container");
+      
+        ul.innerHTML = "";
+        
+    }
+
+    if(document.getElementById("results-container-sidebar").hasChildNodes())
+    {
+        document.getElementById("search-bar-sidebar").value = "";
+        document.getElementById("results-container-sidebar").innerHTML = "";
+    }
+
+}

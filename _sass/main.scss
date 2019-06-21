@@ -73,7 +73,7 @@ p {
 Because the search bar has been added,
 the 2nd child is now the third child.
 */
-.headerBtn:nth-child(2) {
+.headerBtn:nth-child(3) {
   background-color: var(--purple-bg-shade);
   margin-right: 5px;
 }
@@ -81,7 +81,7 @@ the 2nd child is now the third child.
 Because the search bar has been added,
 the 3rd child is now the 4th.
 */
-.headerBtn:nth-child(3) {
+.headerBtn:nth-child(4) {
   background-color: var(--green-bg-shade);
 }
 
@@ -282,9 +282,9 @@ I also added 'margin-left: -20px' for alignment purposes.
   font-size: 17px; 
   //font-size: var(--sub-heading-font-size);
   font-weight: var(--heading-font-weight);
-  padding-bottom: calc( 3 * var(--sub-heading-bottom-spacing));
+  //padding-bottom: calc( 3 * var(--sub-heading-bottom-spacing));
   padding-top: calc( var(--sub-heading-bottom-spacing));
-  margin-left: -20px; 
+  margin-left: -16px; 
 
 }
 

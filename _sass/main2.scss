@@ -1,31 +1,46 @@
-#instruction-link {
-  font-size: 22px;
-} 
-
-
+/*
+This class is found in the header, it contains both the search bar and the ul.
+It is used to display its components in proper alignment. 
+*/
+.search-bar-div {
+  display: inline-block;
+}
 
 #results-container {
   
   list-style-type: none;
   position: absolute;
-  left: 235px;
   z-index: 1000;
-  margin-top: 10px; 
+  box-shadow: 5px 10px 8px #888888; 
+  width: 250px; 
+  padding: 0px;
+  margin-top: 5px;  
+
+
 }
+#results-container li a {
+  color: black; 
+}
+#results-container-sidebar li a {
+  color: black;
+}
+
+/*
+start with light background: background-color: #dfdbff
+on hover dark background: background-color: #8473F3;
+*/
 
 #results-container li {
+  background-color: #dfdbff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  margin-right: -20px; 
 
-  border-left: 1px solid #8473F3;
-  border-right: 1px solid #8473F3;
-  border-bottom: 1px solid #8473F3;
-  //border-top: 1px solid #8473F3; 
-  padding: 10px;
-  background-color: white;
-  
 }
 #results-container li:hover {
-  background-color: #dfdbff;
-  transition: 0.65s;
+  background-color: #8473F3;
+  transition: 0.65s; 
 }
 
 
@@ -34,20 +49,27 @@
   list-style-type: none;
   position: absolute;
   z-index: 1000;
-  margin-top: 10px; 
+  box-shadow: 5px 10px 8px #888888;
+  background-color: white;
+  padding: 0px; 
+ 
 }
 
 #results-container-sidebar li {
-  border-left: 1px solid #8473F3;
-  border-right: 1px solid #8473F3;
-  border-bottom: 1px solid #8473F3;
-  padding: 10px; 
-  background-color: white;
-  margin-left: -15px; 
+  background-color: #dfdbff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+
 }
 
+/*
+start with light background: background-color: #dfdbff
+on hover dark background: background-color: #8473F3;
+*/
+
 #results-container-sidebar li:hover {
-  background-color: #dfdbff;
+  background-color: #8473F3;
   transition: 0.65s;
 }
 
@@ -58,14 +80,12 @@
   padding-bottom: 5px;  
   padding-left: 28px;
   padding-right: 5px; 
-  margin-left: 30px; 
-  margin-top: -30px; 
   background-image: url(/assets/images/search-1.png);
   background-repeat: no-repeat;
   background-position: 7px 7px; 
   border: 1px solid #d9dde2;
-  margin-top: -30px;
-  //width: 350px;
+  margin-right: 20px; 
+
 
 }
 .search-bar-header:focus {
@@ -102,7 +122,7 @@
 }
 
  .component-sub-a{
-    font-size: 18px;
+    font-size: 15px !important;
     overflow-x: hidden !important;
   }
   .image-heading{
@@ -116,7 +136,7 @@
     color: #000000;
   }
   .component-title{
-    font-size: 30px;
+    //font-size: 27px;
  
     //margin-left: 10px;
     margin-left: -15px;
@@ -133,14 +153,14 @@
     padding-bottom: 5px;
     color: #3a3535;
     padding-right: 10px; 
-    font-size: 25px;
+    font-size: 22px;
     overflow-x: hidden !important;
   }
 
 
 
  .sub-a{
-   margin-left: -38px; 
+   margin-left: -54px; 
  }
   
   .paragraph1{
@@ -271,7 +291,7 @@
     }
     
     .component-title{
-      font-size: 35px; 
+      font-size: 23px; 
    
     }
     .component-sub-title{
@@ -279,7 +299,7 @@
     }
   
     .sub-a {
-      font-size: 22px; 
+      font-size: 18px; 
     }
   
     .component-sub-a {
@@ -601,34 +621,27 @@ There already exists the same media query in main.css.
     }
   }
 
-  @media all and (max-width: 918px)
-  {
-    .search-bar-header {
-      max-width: 160px; 
-    }
+@media all and (max-width: 970px)
+{
+  .search-bar-header {
+    max-width: 200px; 
   }
 
-  @media all and (max-width: 980px)
-  {
-    .search-bar-header {
-      max-width: 200px; 
-      margin-right: -30px; 
-    }
+  .results-container {
+    margin-left: -30px; 
+  }
+}
 
-    #results-container {
-      margin-left: -15px; 
-    }
-
+@media all and (max-width: 910px)
+{
+  .search-bar-header {
+    max-width: 150px; 
   }
 
-  @media all and (max-width: 915px)
-  {
-    .search-bar-header {
-      max-width: 150px; 
-    }
+  .results-container{
+    margin-left: -50px; 
   }
-
-
+}
   
 
  
