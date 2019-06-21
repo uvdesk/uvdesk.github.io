@@ -4,14 +4,19 @@
     grid-template-rows: var(--header-footer-height) minmax(calc(100vh - var(--header-footer-height) * 2 ), 1fr) var(--header-footer-height);
     background-color: var(--container-bg-color);
 }
-
+/*
+Anmol:
+I commented out the box shadow because Shubham said that
+we need to display box shadow on the headers for each page
+of the site. 
+*/
 .component-container .header {
     z-index: 10;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    box-shadow: none;
+    //box-shadow: none;
 }
 /*
 Anmol:
