@@ -174,6 +174,7 @@ on hover dark background: background-color: #8473F3;
 
  .sub-a{
    margin-left: -54px; 
+   font-size: 15px !important; 
  }
   
   .paragraph1{
@@ -181,7 +182,7 @@ on hover dark background: background-color: #8473F3;
     padding-bottom: 15px;
     margin-left: 10px;
     color: #202020;
-    font-size: 15px;
+    font-size: 15px !important;
     padding-right: 20px;
     overflow-x: hidden !important;
     width: 85%;
@@ -211,6 +212,7 @@ on hover dark background: background-color: #8473F3;
     padding-left: 5px; 
     margin-bottom: 15px !important;
     width: 85%; 
+    font-size: 15px !important; 
   }
   
   .paragraph{
@@ -294,7 +296,9 @@ on hover dark background: background-color: #8473F3;
     font-size: 20px;//var(--sub-heading-font-size);
   }
   
-
+.image-heading {
+  font-size: 18px !important; 
+}
 
 @media all and (min-width: 871px) {
 
