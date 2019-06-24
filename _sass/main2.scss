@@ -22,12 +22,7 @@ It is used to display its components in proper alignment.
 
 
 }
-#results-container li a {
-  //color: black; 
-}
-#results-container-sidebar li a {
-  //color: black;
-}
+
 
 /*
 start with light background: background-color: #dfdbff
@@ -51,6 +46,10 @@ on hover dark background: background-color: #8473F3;
   color: white;
   //font-size: 20px; 
   //box-shadow: 5px 10px 8px #888888;
+}
+
+#results-container-sidebar li a:hover {
+  color: white;
 }
 
 
@@ -81,6 +80,10 @@ on hover dark background: background-color: #8473F3;
 #results-container-sidebar li:hover {
   background-color: #8473F3;
   transition: 0.65s;
+}
+
+#results-container-sidebar li a{
+  color: #8473F3;
 }
 
 .search-bar-header {
@@ -724,10 +727,11 @@ on hover dark background: background-color: #8473F3;
 
 @media all and (max-width: 466px)
 {
-  .topics, p, .helpful-links {
-    max-width: 85%;
-    margin-right: 32%;
+  .topics {
+    max-width: 90%;
+    margin-right: 40%;
   }
+
 
   .grid-community-container > p {
     margin-right: 15%;
@@ -738,11 +742,31 @@ on hover dark background: background-color: #8473F3;
   }
 
   .ticket-content {
-    margin-right: 40%;
+    max-width: 90%;
   }
 
-  .community-container-heading >  p {
-    font-size: 15px !important; 
+  .helpful-links {
+    max-width: 65%;
   }
 
+  .item.helpful {
+    display: grid;
+    grid-column: auto;
+  }
+
+  
+
+  .community > p, .community h1{
+    max-width: 60%;
+  }
+  .community > img {
+    margin-left: -30px;
+  }
+
+  .container .header {
+    width: 100%; 
+  }
+
+
+ 
 }
