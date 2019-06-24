@@ -6,6 +6,10 @@ It is used to display its components in proper alignment.
   display: inline-block;
 }
 
+.aside-title {
+  font-size: 21px; 
+}
+
 #results-container {
   
   list-style-type: none;
@@ -19,10 +23,10 @@ It is used to display its components in proper alignment.
 
 }
 #results-container li a {
-  color: black; 
+  //color: black; 
 }
 #results-container-sidebar li a {
-  color: black;
+  //color: black;
 }
 
 /*
@@ -41,6 +45,7 @@ on hover dark background: background-color: #8473F3;
 #results-container li:hover {
   background-color: #8473F3;
   transition: 0.65s; 
+  color: white; 
 }
 
 
@@ -129,14 +134,15 @@ on hover dark background: background-color: #8473F3;
     margin-left: 10px; 
     padding-right: 10px; 
     overflow-x: hidden !important;
+    font-size: 20px;
   }
 
   .topics-heading{
-    font-size: 20px;
+    font-size: 18px;
     color: #000000;
   }
   .component-title{
-    //font-size: 27px;
+    font-size: 25px;
  
     //margin-left: 10px;
     margin-left: -15px;
@@ -148,7 +154,7 @@ on hover dark background: background-color: #8473F3;
   }
   .component-sub-title{
   
-    //font-size: 18px;
+    font-size: 23px;
     margin-left: -15px;
     padding-bottom: 5px;
     color: #3a3535;
@@ -180,7 +186,7 @@ on hover dark background: background-color: #8473F3;
     padding-bottom: 15px;
     color: #171819;
     padding-right: 10px;
-    font-size: 15px; 
+    font-size: 15px !important; 
     overflow-x: hidden !important; 
     
   
@@ -195,6 +201,7 @@ on hover dark background: background-color: #8473F3;
     border-left: 6px solid #8473F3;
     background-color: #beb6ed;
     padding-left: 5px; 
+    margin-bottom: 15px !important;
   }
   
   .paragraph{
@@ -367,31 +374,32 @@ on hover dark background: background-color: #8473F3;
     }
 }
 
-/*
-There already exists the same media query in main.css.
 
-  @media all and (max-width: 870) {
-    .ipsum-logo{
-      max-height: 300px;
-    
-      max-width: 400px;
 
-      overflow-x: hidden !important;
- 
-    }
-    .header .first .search-bar-header {
-      display: none;
-    }
 
-  }
 
-*/
   @media all and (max-width: 720) {
     .ipsum-logo{
       width: auto;
       max-width: 500px;
       margin-right: 20px; 
       padding-right: 30px; 
+    }
+
+    .component-title {
+      font-size: 25px !important; 
+    }
+ 
+    .component-sub-title {
+    font-size: 23px !important; 
+    }
+
+    .image-heading {
+      font-size: 20px !important; 
+    }
+
+    .topics-heading {
+      font-size: 18px !important; 
     }
   }
   
@@ -423,6 +431,22 @@ There already exists the same media query in main.css.
   .component-title, .component-sub-title {
     margin-left: -20px;
   }
+
+  .component-title {
+      font-size: 25px; 
+    }
+ 
+    .component-sub-title {
+    font-size: 22px !important; 
+    }
+
+    .image-heading {
+      font-size: 20px !important; 
+    }
+
+    .topics-heading {
+      font-size: 18px !important; 
+    }
 }
 
 
@@ -447,6 +471,23 @@ There already exists the same media query in main.css.
     
     .components-topics {
       font-size: 15px; 
+    }
+
+    .component-title {
+      font-size: 25px; 
+    }
+ 
+    .component-sub-title {
+    font-size: 22px !important; 
+    }
+
+    .image-heading {
+      font-size: 20px !important; 
+    }
+
+    .topics-heading {
+      font-size: 18px !important; 
+      margin-left: -30px; 
     }
   
     .sidebar-filler {
@@ -527,11 +568,7 @@ There already exists the same media query in main.css.
       margin-left: -40px;
     }
   
-    .installation-component p, b{
-
-        //font-size: 15px;
-        
-    }
+    
   
     .installation-component > p, .components-topics > p{
       //margin-right: calc(100% - 40%);
@@ -547,15 +584,26 @@ There already exists the same media query in main.css.
         //padding-right: 15px; 
     }
 
-     
     
     .footer123 p{
       margin-right: -20px;
     }
 
+    .component-title {
+      font-size: 25px; 
+    }
  
+    .component-sub-title {
+    font-size: 23px !important; 
+    }
 
+    .image-heading {
+      font-size: 20px !important; 
+    }
 
+    .topics-heading {
+      font-size: 18px !important; 
+    }
   
   
   }// end of max width 380
