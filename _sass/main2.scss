@@ -45,7 +45,12 @@ on hover dark background: background-color: #8473F3;
 #results-container li:hover {
   background-color: #8473F3;
   transition: 0.65s; 
-  color: white; 
+
+}
+#results-container li a:hover {
+  color: white;
+  //font-size: 20px; 
+  //box-shadow: 5px 10px 8px #888888;
 }
 
 
@@ -129,6 +134,7 @@ on hover dark background: background-color: #8473F3;
  .component-sub-a{
     font-size: 15px !important;
     overflow-x: hidden !important;
+    width: 85%;
   }
   .image-heading{
     margin-left: 10px; 
@@ -142,8 +148,8 @@ on hover dark background: background-color: #8473F3;
     color: #000000;
   }
   .component-title{
-    font-size: 25px;
- 
+    font-size: 27px !important;
+    width: 85%;
     //margin-left: 10px;
     margin-left: -15px;
     padding-bottom: 10px; 
@@ -154,13 +160,14 @@ on hover dark background: background-color: #8473F3;
   }
   .component-sub-title{
   
-    font-size: 23px;
+    font-size: 20px !important;
     margin-left: -15px;
     padding-bottom: 5px;
     color: #3a3535;
     padding-right: 10px; 
     font-size: 22px;
     overflow-x: hidden !important;
+    max-width: 85%;
   }
 
 
@@ -177,6 +184,7 @@ on hover dark background: background-color: #8473F3;
     font-size: 15px;
     padding-right: 20px;
     overflow-x: hidden !important;
+    width: 85%;
 
   }
   
@@ -202,6 +210,7 @@ on hover dark background: background-color: #8473F3;
     background-color: #beb6ed;
     padding-left: 5px; 
     margin-bottom: 15px !important;
+    width: 85%; 
   }
   
   .paragraph{
@@ -212,6 +221,7 @@ on hover dark background: background-color: #8473F3;
     color: #353a42;
     overflow-x: hidden !important; 
     margin-left: -15px;
+    width: 85%;
   }
   
   .paragraph1 li {
@@ -244,8 +254,9 @@ on hover dark background: background-color: #8473F3;
   
     
     width: auto;
-    max-width: 470px; 
-    max-height: 800px;
+    //max-width: 470px; 
+    max-width: 85% !important;
+    max-height: 500px;
     margin-left: -30px;
     padding-top: 10px;
     padding-bottom: 10px; 
@@ -277,6 +288,10 @@ on hover dark background: background-color: #8473F3;
 
   .nav-title > a{
     color: black;
+    //font-size: var(--sub-heading-font-size);
+  }
+  .nav-title {
+    font-size: 20px;//var(--sub-heading-font-size);
   }
   
 
@@ -593,9 +608,7 @@ on hover dark background: background-color: #8473F3;
       font-size: 25px; 
     }
  
-    .component-sub-title {
-    font-size: 23px !important; 
-    }
+    
 
     .image-heading {
       font-size: 20px !important; 
@@ -690,6 +703,42 @@ on hover dark background: background-color: #8473F3;
     margin-left: -50px; 
   }
 }
-  
 
- 
+@media all and (max-width: 1000px) 
+{
+  .search-bar-header {
+    max-width: 200px; 
+  }
+}
+
+@media all and (max-width: 942px)
+{
+  .search-bar-header {
+    max-width: 130px; 
+  }
+}
+
+@media all and (max-width: 466px)
+{
+  .topics, p, .helpful-links {
+    max-width: 85%;
+    margin-right: 32%;
+  }
+
+  .grid-community-container > p {
+    margin-right: 15%;
+  }
+
+  .index-image{
+    margin-right: 35%;
+  }
+
+  .ticket-content {
+    margin-right: 40%;
+  }
+
+  .community-container-heading >  p {
+    font-size: 15px !important; 
+  }
+
+}

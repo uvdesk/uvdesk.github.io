@@ -87,7 +87,7 @@ the 3rd child is now the 4th.
 
 /*
 Anmol: 
-I have added a query for .ipsum-query. 
+I have added a query for .ipsum-logo. 
 */
 @media all and (max-width: 870px) {
   .second .inline-header {
@@ -452,7 +452,7 @@ I also added 'margin-left: -20px' for alignment purposes.
   font-weight: var(--heading-font-weight, bold);
   padding-bottom: calc(2 * var(--sub-heading-bottom-spacing));
   padding-top: calc(var(--sub-heading-bottom-spacing));
-  font-size: var(--sub-heading-font-size);
+  font-size: 27px;//var(--sub-heading-font-size);
 }
 
 .item.helpful:nth-of-type(1) {
