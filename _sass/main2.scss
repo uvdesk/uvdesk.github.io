@@ -70,6 +70,7 @@
   background-position: 7px 7px; 
   border: 1px solid #d9dde2;
   margin-right: 20px; 
+  outline: none !important;
 }
 .search-bar-header:focus {
   border: 1px solid #8473F3;
@@ -95,6 +96,7 @@
   margin-left: 30px;
   margin-top: 5px; 
   margin-bottom: 5px;
+  outline: none !important;
 }
  .component-sub-a{
     font-size: 15px !important;
