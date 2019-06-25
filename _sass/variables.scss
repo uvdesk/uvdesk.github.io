@@ -13,15 +13,15 @@
   --root-font-family: 'Source Sans Pro', 'Arial', sans-serif;
   --paragraph-opacity: 0.7;
   --item-heading-font-weight: bold;
-  --paragraph-font-size: 14px;
-
+  --paragraph-font-size: 20px;
 
   // layout sizing and spacing
   --header-footer-height: 68px;
   --footer-tb-padding: 10px;
-  --homepage-container-padding:50px;
-  --component-container-content-padding: 20px;
-  --grid-row-gap: 12px;
+  --homepage-container-padding: 40px 100px;
+  --header-footer-padding:50px;
+  --component-container-content-padding: 40px 100px;
+  --grid-row-gap: 7px;
   --grid-column-gap: 7px;
   --item-min-width: 150px;
   --item-min-height: 100px;
@@ -33,7 +33,6 @@
   --ticket-button-width: 126px;
   --ticket-content-bottom-padding: 15px;
   
-
   // hamburger menu
   --hamburger-menu-width: 250px;
   --hamburger-menu-item-left-margin: 40px;
@@ -43,7 +42,6 @@
   --hamburger-menu-item-font-weight: 400;
   --hamburger-menu-seperator-margin: 20px;
   --hamburger-menu-dropdown-container-item-left-margin: 15px;
-  
 
   // colors
   --header-box-shadow-color: #27272780;
@@ -64,17 +62,24 @@
   --purple-bg-shade: #8473F3;
   --green-bg-shade: #1cbc54;
   --container-bg-color: #ffffff;
-}
+  --button-link-visited-color: #4e32a8;
 
+  //opacity
+  --button-link-hover-opacity: 0.7;
+  --button-link-active-opacity: 0.5;
+
+}
 @media all and (min-width: 1261px) {
   :root {
-    --homepage-container-padding:30px;
+    --homepage-container-padding: 40px 100px;
+    --component-container-content-padding: 40px 100px;
   }
 }
 
 @media all and (max-width: 576px) {
   :root {
-    --homepage-container-padding:30px;
+    --homepage-container-padding:40px 50px;
+    --component-container-content-padding: 40px 50px;
     --grid-column-gap: 0px;
     --grid-row-gap: 10px;
   }

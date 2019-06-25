@@ -1,45 +1,38 @@
-# UVdesk documentation
+# UVdesk Developer Documentation
 
-Welcome, this site contains the latest UVdesk documentation for users and developers.
+Welcome, this site contains the latest UVdesk documentation for users and developers. You can find the online version of the documentation at [https://uvdesk.github.io/][documentation]
 
 # Contributors
 Our goal is to provide the UVdesk community with comprehensive and quality technical documentation. 
 
-We believe that to accomplish that goal we need experts from the community to share their knowledge with us and each other. We are thankful to all of our contributors for improving UVdesk documentation.
+We believe that to accomplish our goal we need experts from the community to share their knowledge with us and each other. We are thankful to all of our contributors for improving UVdesk documentation.
 
-If you like to contribute, please visit [Homepage][documentation]
+Like our work, contribute [here][documentation]
 
-# Access this documentation
-You can access our documentation in two ways:
-- Access [online][documentation]
-- [Build locally using Jekyll](#build-locally-using-jekyll) (Mac, linux, Windows)
-
-## Build locally using Jekyll
+# Build locally using Jekyll
 For local builds, you need to install Ruby 2.4 or later.
 
 To check the Ruby version on your environment, run in your terminal:
 ```
 $ ruby -v
 ```
-### Install the latest Ruby (if the Ruby version is less than 2.4)
-#### MacOS users
+## Install the latest Ruby (if the Ruby version is less than 2.4)
+### MacOS users
 1. Install Homebrew. See the [Homebrew site](https://brew.sh/) for instructions.
 2. Use Homebrew to install the latest stable version of Ruby:
     ```
     $ brew install ruby
      ```
-#### Unix, Windows, and other OS users
+### Unix, Windows, and other OS users
 See the [Ruby site](https://www.ruby-lang.org/en/documentation/installation/) for instructions.
 
-### Install Bundler
+## Install Bundler
 Install the [Bundler](https://bundler.io/) gem, which helps with Ruby dependencies:
 ```
 $ gem install bundler
 ```
-Once you have completed preparing your environment, you can build locally and review the site in your browser.
-> ***TIP*** You can learn more about how to install and use Jekyll from its [official website][jekyll-install]
 
-### Install uvdocs
+## Install documentation
 1. Clone or download the repository.
 2. Open your system's terminal emulator, browse to the cloned respository and follow the following steps:
     
@@ -66,9 +59,9 @@ Once you have completed preparing your environment, you can build locally and re
     3. Use the **Server address** URL http://127.0.0.1:4000/ in a browser to preview the content.
     
     4. Press `Ctrl+C` in the serve terminal to stop the server. 
-
+> ***TIP*** You can learn about Jekyll from [here][jekyll-install]
 # License
-All the libraries and content included in the UVdocs are released under the MIT or BSD license.
+All the libraries and content included in this documentation are released under the MIT or BSD license.
 
 [webkul]: https://webkul.com/
 [team]: https://www.uvdesk.com/en/team/
