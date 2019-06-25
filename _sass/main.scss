@@ -69,26 +69,14 @@ p {
   padding: 8px 15px;
   box-shadow: none !important;
 }
-/*.headerBtn:nth-child(2) 
-Because the search bar has been added,
-the 2nd child is now the third child.
-*/
 .headerBtn:nth-child(3) {
   background-color: var(--purple-bg-shade);
   margin-right: 5px;
 }
-/*.headerBtn:nth-child(3)
-Because the search bar has been added,
-the 3rd child is now the 4th.
-*/
 .headerBtn:nth-child(4) {
   background-color: var(--green-bg-shade);
 }
 
-/*
-Anmol: 
-I have added a query for .ipsum-logo. 
-*/
 @media all and (max-width: 870px) {
   .second .inline-header {
     display: none;
@@ -111,14 +99,6 @@ I have added a query for .ipsum-logo.
 
   
 }
-/*
-Anmol: 
-
-When the screen is big enough to not display the hamburger-icon,
-we do not want the searchbar to be visible in the side bar, that
- is why both the search-bar-header and the results-container-sidebar
- have been hidden for this media query. 
-*/
 
 @media all and (min-width: 871px) {
   .hamburger-menu {
@@ -269,21 +249,9 @@ a:visited {
     padding: var(--homepage-container-padding);
     background-color: var(--topics-bg-color);
 }
-
-/*
-Anmol:
-I have changed the font-size to 17px so it will not be 
-bigger in size than its parent element.
-
-I also changed the color to #535456 down below.
-
-I also added 'margin-left: -20px' for alignment purposes. 
-*/
 .topics-heading {
   font-size: 17px; 
-  //font-size: var(--sub-heading-font-size);
   font-weight: var(--heading-font-weight);
-  //padding-bottom: calc( 3 * var(--sub-heading-bottom-spacing));
   padding-top: calc( var(--sub-heading-bottom-spacing));
   margin-left: -16px; 
 
