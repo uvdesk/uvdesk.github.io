@@ -3,3 +3,5 @@ _site
 .sass-cache
 .jekyll-metadata
 vendor
+node_modules
+README.html
