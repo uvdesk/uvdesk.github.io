@@ -1,5 +1,6 @@
 //for pagination
 var paginationCollection = document.getElementById('pagination');
+
 if (paginationCollection) {
     paginationCollection.addEventListener('click', event => {
         var dropdowns = document.getElementsByClassName("pagination");
@@ -41,19 +42,16 @@ if (current) {
     })
 }
 
-// current openedMenu static variable;
-let openedDropDown = getSetOpenedDropdown();
-
-
 window.onload = load;
 function load() {
+    openDropdownMenuSelectItemOnPageLoad();
     var retrievedData = sessionStorage.getItem("activeId");
     var idArray = JSON.parse(retrievedData);
     if (idArray && (idArray instanceof Array) ) {
         for (let i = 0; i < idArray.length; i++) {
             document.getElementById(idArray[i]).classList.add('open');
-        }
 
+        }
     }
 
     const hamburgerDrpDnBtns = document.querySelectorAll('.hamburger-menu-wrapper .parent .dropdown-btn');
@@ -62,8 +60,13 @@ function load() {
     for　(i = 0; i < length; i++) {
         hamburgerDrpDnBtns[i].onclick = openHamburgerDropdown;
         hamburgerDrpDnBtns[i].nextElementSibling.style.display = 'none';
-    }
 
+        const sibLen = hamburgerDrpDnBtns[i].nextElementSibling.children.length;
+        for (j = 0; j < sibLen; j++) {
+            hamburgerDrpDnBtns[i].nextElementSibling.children[j].onclick = onSelectDropdownItem;
+        }
+
+    }
 }
 
 //for footer-button
@@ -71,20 +74,98 @@ function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
-
 window.onclick = function (event) {
     if (!event.target.matches('.dropbtn')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
         var i;
         for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
+            var onClickDropdownMenuItem = dropdowns[i];
+            if (onClickDropdownMenuItem.classList.contains('show')) {
+                onClickDropdownMenuItem.classList.remove('show');
             }
         }
     }
 }
 
+
+
+// current openedMenu static variable;
+let inlineMenuItem = staticVariable();
+
+// currentOpened External menu
+let externalMenuItem = staticVariable();
+
+// current selected dropdown menu item
+let openedDropdownItem = staticVariable();
+
+// select dropdown item;
+function selectDropdownItem(dropdownItem) {
+    dropdownItem.classList.add('is-selected');
+}
+
+// un-select dropdownmenu Item
+function unSelectDropdownItem(dropdownItem) {
+    dropdownItem.classList.remove('is-selected');
+}
+
+// on selecting current dropdown item
+function onSelectDropdownItem(event = null) {
+    
+    const currentItem = openedDropdownItem();
+
+    if (currentItem && (currentItem !== event.target)) {
+        unSelectDropdownItem(currentItem);
+    }
+
+    if (event && (currentItem !== event.target)) {
+        if(event.preventDefault) {
+            event.preventDefault();
+        }
+        let target;
+        
+        if (isInlineLink(event.target.href, window.location.hostname)) {
+            target = '_self';
+            selectDropdownItem(openedDropdownItem(event.target));
+        } else target = '_blank';
+        window.open(event.target.href, target) ;
+    }
+}
+
+// open Hamburger menu
+function openHamburgerMenu(hamburgerButton, hamburgerMenu) {
+    hamburgerButton.classList.add('hamburger-menu-icon-change');
+    hamburgerMenu.classList.add('hamburger-menu-show');
+}
+// close hamburger menu
+function closeHamburgerMenu(hamburgerButton, hamburgerMenu) {
+    hamburgerButton.classList.remove('hamburger-menu-icon-change');
+    hamburgerMenu.classList.remove('hamburger-menu-show');
+}
+// open the selected dropdown menu in the hamburger menu and close the opened one
+function openHamburgerDropdown(event) {
+    
+    const newMenuItem = event.target.nextElementSibling; 
+    const inline = isInlineLink(newMenuItem.children[0].href, window.location.hostname);
+
+    if (inline) {
+        if (inlineMenuItem() && (newMenuItem !== inlineMenuItem())) {
+            inlineMenuItem().style.display = 'none';
+            // un-select dropdown menu parent button
+            unSelectDropdownItem(inlineMenuItem().previousElementSibling);
+        }
+        if (newMenuItem.style.display === 'none') {
+            newMenuItem.style.display = 'block';
+            selectDropdownItem(event.target);
+            inlineMenuItem(newMenuItem);
+            onSelectDropdownItem({ target: newMenuItem.children[0] });
+        } 
+    } else {
+        if(externalMenuItem() && (newMenuItem　!== externalMenuItem())) {
+            externalMenuItem().style.display = 'none';
+        }
+        externalMenuItem(newMenuItem).style.display = 'block';
+    }
+}
 
 // on hamburger menu icon click
 function onClickHamburgerIcon() {
@@ -96,35 +177,8 @@ function onClickHamburgerIcon() {
         openHamburgerMenu(hamburgerButton, hamburgerMenu);
     }
 }
-
-// open Hamburger menu
-function openHamburgerMenu(hamburgerButton, hamburgerMenu) {
-    hamburgerButton.classList.add('hamburger-menu-icon-change');
-    hamburgerMenu.classList.add('hamburger-menu-show');
-}
-
-// close hamburger menu
-function closeHamburgerMenu(hamburgerButton, hamburgerMenu) {
-    hamburgerButton.classList.remove('hamburger-menu-icon-change');
-    hamburgerMenu.classList.remove('hamburger-menu-show');
-}
-
-// open the selected dropdown menu in the hamburger menu and close the opened one
-function openHamburgerDropdown(event) {
-
-    if (openedDropDown() && (event.target.nextElementSibling !== openedDropDown())) {
-        openedDropDown().style.display = 'none';
-    }
-    if (event.target.nextElementSibling.style.display === 'none') {
-        (openedDropDown(event.target.nextElementSibling)).style.display = 'block';
-    } else {
-        (openedDropDown(event.target.nextElementSibling)).style.display = 'none';
-    }
-}
-
 // close the hamburger menu on the clicking the area outside the hamburger menu
 document.body.addEventListener('mousedown', (event) => {
-
     if (event.clientX > document.querySelector('.hamburger-menu').offsetWidth && 
         ([document.querySelector('.hamburger-menu-icon'),
            document.querySelector('.hmi-bar1'),
@@ -137,13 +191,55 @@ document.body.addEventListener('mousedown', (event) => {
     }
 });
 
-// static variable for storing current opened hamburger dropdown menu 
-function getSetOpenedDropdown() {
-    let currentDropdown = null;
-    return function(dropDown = null) {
-        if (dropDown) {
-            currentDropdown = dropDown;
+// closure for storing static values
+function staticVariable() {
+    let currentValue = null;
+    return function(newValue = null) {
+        if (newValue) {
+            currentValue = newValue;
         }
-        return currentDropdown;
+        return currentValue;
     }
+}
+
+function openDropdownMenuSelectItemOnPageLoad() {
+    const links = document.querySelectorAll('.hamburger-menu-wrapper a');
+    const length = links.length;
+    for (let i = 0; i < length; i++) {
+        if (links[i].href === window.location.href) {
+            openedDropdownItem(selectDropdownItem(links[i].parentNode.previousElementSibling));
+            inlineMenuItem(links[i].parentNode);
+            setTimeout(() => {
+                links[i].parentNode.style.display = 'block';
+            }, 1);
+            selectDropdownItem(links[i]);
+            break;
+        }
+    }
+}
+
+function isInlineLink(link, domainName) {
+  return link.match(`https?://${window.location.hostname}`) !== null;
+}
+
+//close the search bar when user clicks on the body.
+window.onclick = function() {
+
+
+    if(document.getElementById("results-container").hasChildNodes())
+    {
+        document.getElementById("search-bar-header").value = "";
+
+        var ul = document.getElementById("results-container");
+      
+        ul.innerHTML = "";
+        
+    }
+
+    if(document.getElementById("results-container-sidebar").hasChildNodes())
+    {
+        document.getElementById("search-bar-sidebar").value = "";
+        document.getElementById("results-container-sidebar").innerHTML = "";
+    }
+
 }

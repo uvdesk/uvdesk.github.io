@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <title>{{ page.title | default: site.title }}</title>
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -8,11 +7,9 @@
         <meta name="HandheldFriendly" content="true">
         <link rel="stylesheet" type="text/css" href="/assets/css/uvdocs.css">
         <link rel="icon" sizes="16x16" type="text/css" href="/assets/images/favicon.ico">
-
     </head>
 
     <body>
-        
         <div class="component-container">
             {%- include navigation1.html -%}
             {%- include sidebar.html -%}
@@ -26,8 +23,36 @@
                     <p> &copy; Copyright 2018 Webkul Software. All rights reserved under MIT License.</p>
                 </div>
             </div>
+            <script src="{{ site.baseurl }}/js/jekyll-search.js" type="text/javascript"></script>
+            <script type="text/javascript">
+                if( document.getElementById('search-bar-header').style.display === 'none' )
+                {
+                SimpleJekyllSearch.init({
+                    searchInput: document.getElementById('search-bar-sidebar'),
+                    resultsContainer: document.getElementById('results-container-sidebar'),
+                    dataSource: '{{ side.baseurl }}/search.json',
+                    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}<\/a><\/li>',
+                    noResultsText: 'No Results Found',
+                    //limit: 10,
+                    fuzzy: true
+
+                });
+                
+                } else {
+
+                SimpleJekyllSearch.init({
+                  searchInput: document.getElementById('search-bar-header'),
+                  resultsContainer: document.getElementById('results-container'),
+                  dataSource: '{{ site.baseurl }}/search.json',
+                  searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}<\/a><\/li>',
+                  noResultsText: 'No Results Found',
+                  //limit: 10,
+                  fuzzy: true
+                });
+
+                }
+              </script>
         </div>
         <script src="/assets/js/uvdocs.js"></script>
     </body>
-
 </html>

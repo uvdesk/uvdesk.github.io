@@ -1,7 +1,7 @@
 .component-container {
     display: grid;
-    grid-template-columns: var(--hamburger-menu-width) 1fr var(--hamburger-menu-width);
-    grid-template-rows: var(--header-footer-height) 1fr;
+    grid-template-columns: var(--hamburger-menu-width) 1fr;
+    grid-template-rows: var(--header-footer-height) minmax(calc(100vh - var(--header-footer-height) * 2 ), 1fr) var(--header-footer-height);
     background-color: var(--container-bg-color);
 }
 
@@ -11,7 +11,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    box-shadow: none;
 }
 
 .component-container .hamburger-menu {
@@ -23,6 +22,7 @@
     z-index: 5;
     height: auto;
     display: block !important;
+    margin-bottom: 70px; 
 }
 
 .component-container .hamburger-menu-wrapper {
@@ -42,20 +42,20 @@
 }
 
 .component-container .installation-component {
-    grid-column: 2 / 3;
+    grid-column: 2 / 4;
     grid-row: 2 / 3;
     padding: var(--component-container-content-padding);
 }
 
 .component-container .footer {
-    grid-column: 2 / 3;
+    grid-column: 1 / 4;
     grid-row: 3 / 4;
 }
 
 @media all and (max-width: 870px) {    
     .component-container {
         grid-template-columns: 1fr;
-        grid-template-rows: var(--header-footer-height) 1fr var(--header-footer-height);
+        grid-template-rows: var(--header-footer-height) minmax(calc(100vh - var(--header-footer-height) * 2 ), 1fr) var(--header-footer-height);
     }
 
     .component-container .header-filler,　.component-container .sidebar-filler {
