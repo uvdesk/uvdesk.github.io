@@ -13,6 +13,10 @@
   border-right: 1px solid var(--hamburger-border-color);
 }
 
+.hamburger-menu a {
+  color: initial;
+}
+
 .hamburger-menu {
   -webkit-transition: left 200ms linear;
   -moz-transition: left 200ms linear;
@@ -28,6 +32,7 @@
   margin: calc(4 * var(--hamburger-menu-item-bottom-margin)) var(--hamburger-menu-item-left-margin) var(--hamburger-menu-item-bottom-margin);
   opacity: 0.5;
   border-bottom: 1px solid var(--hamburger-menu-heading-bottom-border-color);
+  cursor: pointer;
 }
 
 .hamburgerMenuContentBtn {
@@ -75,11 +80,15 @@
 
 .hamburger-menu-wrapper a:hover, .dropdown-btn:hover, .dropdown-container a:hover {
     color: var(--paragraph-heading-color);
+    opacity: 1;
     border-bottom-color: var(--purple-bg-shade);
 }
 
-.dropdown-btn:active {
-    opacity: 0.5;
+.hamburger-menu-wrapper .parent button:visited,
+.hamburger-menu-wrapper .parent a:visited,
+.hamburger-menu-wrapper .parent a:active,
+.hamburger-menu-wrapper .parent button:active {
+  color: initial;
 }
 
 .parent:first-of-type .dropdown-btn {
@@ -149,7 +158,10 @@
 }
 // hamburger icon end
 
-
+.is-selected {
+  color: var(--purple-bg-shade) !important;
+  font-weight: bold !important;
+}
 
 
 

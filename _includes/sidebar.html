@@ -1,14 +1,30 @@
-
 <div class="hamburger-menu">
-    <h3 class="hamburger-menu-title">Documentation</h3>
+    <h3 class="hamburger-menu-title" onclick="window.open('/', '_self')">Documentation</h3>
+
+        <input type="text" id="search-bar-sidebar" class="search-bar-sidebar" autocomplete="off">
+        <ul id="results-container-sidebar" class="results-container-sidebar"></ul>
+
     <div class="hamburger-menu-wrapper">
+
+        
+
+        <div class="parent">
+
+            <button class="dropdown-btn" id="top-button">System Requirements</button>
+            <div class="dropdown-container">
+                <a href="/uvdemo/requirements/requirements-ubuntu.html">Ubuntu</a>
+                <a href="/uvdemo/requirements/requirements-windows.html">Windows</a>
+                <a href="/uvdemo/requirements/requirements-mac.html">Mac</a>
+            </div>
+        </div>
+
         <div class="parent">
             <button class="dropdown-btn" id="top-button">Installation</button>
             <div class="dropdown-container">
-                <a href="/uvdemo/prerequisites/prerequisites.html">Prerequisites</a>
-                <a href="/uvdemo/installation/installation-ubuntu.html">Installation on Ubuntu</a>
-                <a href="/uvdemo/installation/installation-windows.html">Installation on Windows</a>
-                <a href="/uvdemo/installation/installation-mac.html">Installation on Mac</a>
+               
+                <a href="/uvdemo/installation/installation-ubuntu.html">Ubuntu</a>
+                <a href="/uvdemo/installation/installation-windows.html">Windows</a>
+                <a href="/uvdemo/installation/installation-mac.html">Mac</a>
             </div>
         </div>
         
@@ -58,37 +74,59 @@
         <div class="parent">
             <button class="dropdown-btn">Helpful Links</button>
             <div class="dropdown-container">
-                <a href="https://demo.uvdesk.com/">Schedule a Demo</a>
-                <a href="https://www.youtube.com/channel/UCKKt4IOC7ynLwhJMP35uFeQ">Video Tutorial</a>
-                <a href="https://forums.uvdesk.com/">Webinar - Forum</a>
-                <a href="https://www.uvdesk.com/en/articles/">Read Blogs</a>
-                <a href="https://bagisto.com/en/roadmap/">Released - Add Roadmap</a>
+                <a target="_blank" href="https://demo.uvdesk.com/">Schedule a Demo</a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCKKt4IOC7ynLwhJMP35uFeQ">Video Tutorial</a>
+                <a target="_blank" href="https://forums.uvdesk.com/">Forum</a>
+                <a target="_blank" href="https://www.uvdesk.com/en/articles/">Read Blogs</a>
+           
             </div>
         </div>
         
         <div class="parent">
             <button class="dropdown-btn">Community</button>
             <div class="dropdown-container">
-                <a href="https://github.com/uvdesk/community-skeleton/blob/master/README.md">Get Involved in the Community</a>
-                <a href="">Help to Make UVdesk Community</a>
+                <a target="_blank" href="https://github.com/uvdesk/community-skeleton/blob/master/README.md">Get Involved in the Community</a>
+                <a target="_blank" href="https://github.com/uvdesk">Help to Make UVdesk Community</a>
             </div>
         </div>
         
         <div class="parent">
             <button class="dropdown-btn">Social Sites</button>
             <div class="dropdown-container">
-                <a href="https://www.facebook.com/uvdesk/">Facebook</a>
+                <a target="_blank" href="https://www.facebook.com/uvdesk/">Facebook</a>
             </div>
         </div>
         
         <div class="parent">
             <button class="dropdown-btn">Generates Tickets</button>
             <div class="dropdown-container">
-                <a href="https://support.uvdesk.com/en/">Create Ticket</a>
+                <a target="_blank" href="https://support.uvdesk.com/en/">Create Ticket</a>
             </div>
         </div>
         
-        <button class="button headerBtn hamburgerMenuContentBtn">Fork on Github</button>
-        <button class="button headerBtn hamburgerMenuContentBtn">UVdesk Helpdesk</button>
+        <button onclick="window.open('https:\/\/github.com\/uvdesk\/uvdesk.github.io', '_blank')" class="button headerBtn hamburgerMenuContentBtn">Fork on Github</button>
+        <button onclick="window.open('https:\/\/webkul.uvdesk.com\/en\/', '_blank')" class="button headerBtn hamburgerMenuContentBtn">UVdesk Helpdesk</button>
+         
+       
     </div>
+    <script src="{{ site.baseurl }}/js/jekyll-search.js" type="text/javascript"></script>
+    <script type="text/javascript">
+       
+        if( document.getElementById('search-bar-sidebar').style.display !== 'none' )
+        {
+        SimpleJekyllSearch.init({
+            searchInput: document.getElementById('search-bar-sidebar'),
+            resultsContainer: document.getElementById('results-container-sidebar'),
+            dataSource: '{{ site.baseurl }}/search.json',
+            searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}<\/a><\/li>',
+            noResultsText: 'No Results Found',
+            //limit: 10,
+            fuzzy: true
+
+        });
+        
+        
+
+        } 
+      </script>    
 </div>
