@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  min-width: 500px;
+  min-width: 300px;
   overflow-x: hidden !important;
 }
 
@@ -85,10 +85,6 @@ the 3rd child is now the 4th.
   background-color: var(--green-bg-shade);
 }
 
-/*
-Anmol: 
-I have added a query for .ipsum-logo. 
-*/
 @media all and (max-width: 870px) {
   .second .inline-header {
     display: none;
@@ -111,14 +107,7 @@ I have added a query for .ipsum-logo.
 
   
 }
-/*
-Anmol: 
 
-When the screen is big enough to not display the hamburger-icon,
-we do not want the searchbar to be visible in the side bar, that
- is why both the search-bar-header and the results-container-sidebar
- have been hidden for this media query. 
-*/
 
 @media all and (min-width: 871px) {
   .hamburger-menu {
@@ -270,15 +259,7 @@ a:visited {
     background-color: var(--topics-bg-color);
 }
 
-/*
-Anmol:
-I have changed the font-size to 17px so it will not be 
-bigger in size than its parent element.
 
-I also changed the color to #535456 down below.
-
-I also added 'margin-left: -20px' for alignment purposes. 
-*/
 .topics-heading {
   font-size: 17px; 
   //font-size: var(--sub-heading-font-size);
@@ -532,7 +513,6 @@ I also added 'margin-left: -20px' for alignment purposes.
     margin-top: var(--ticket-top-margin) !important;
   }
 }
-
 
 // footer
 .footer {

@@ -10,13 +10,13 @@
   position: absolute;
   z-index: 1000;
   box-shadow: 5px 10px 8px #888888; 
-  width: 250px; 
+  width: 230px;
   padding: 0px;
-  margin-top: 5px;  
+  margin: 0 auto;  
 }
 
 #results-container li {
-  background-color: #dfdbff;
+  background-color: white;//#dfdbff;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 15px;
@@ -24,16 +24,24 @@
 
 }
 #results-container li:hover {
-  background-color: #8473F3;
+  background-color: #8773ef; //#8773ef  #dfdbff
   transition: 0.65s; 
 
 }
 #results-container li a:hover {
-  color: white;
+  //color: white;
+}
+
+#results-container li a {
+  color: #414449;
+}
+
+#results-container-sidebar li a {
+  color: #414449; 
 }
 
 #results-container-sidebar li a:hover {
-  color: white;
+  //color: white;
 }
 #results-container-sidebar {
   list-style-type: none;
@@ -45,19 +53,17 @@
  
 }
 #results-container-sidebar li {
-  background-color: #dfdbff;
+  background-color: white;//#dfdbff;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 15px;
-
 }
+
 #results-container-sidebar li:hover {
-  background-color: #8473F3;
+  background-color: #8773ef;
   transition: 0.65s;
 }
-#results-container-sidebar li a{
-  color: #8473F3;
-}
+
 .search-bar-header {
   border-radius: 15px; 
   background-color: white;
@@ -71,6 +77,7 @@
   border: 1px solid #d9dde2;
   margin-right: 20px; 
   outline: none !important;
+  width: 250px;
 }
 .search-bar-header:focus {
   border: 1px solid #8473F3;
@@ -554,37 +561,47 @@
   .search-bar-header {
     max-width: 200px; 
   }
+
+  .results-container {
+    max-width: 180px;
+  }
 }
 @media all and (max-width: 942px)
 {
   .search-bar-header {
     max-width: 130px; 
   }
+  
+  #results-container {
+    max-width: 110px;
+    margin: 0 auto;
+  }
 }
 @media all and (max-width: 466px)
 {
   .topics {
     max-width: 90%;
-    margin-right: 40%;
   }
   .grid-community-container > p {
     margin-right: 15%;
   }
   .index-image{
-    margin-right: 35%;
+    //margin-right: 35%;
+    margin-left: -30px; 
   }
   .ticket-content {
     max-width: 90%;
   }
   .helpful-links {
-    max-width: 65%;
+    //max-width: 65%;
+    max-width: 90%;
   }
   .item.helpful {
     display: grid;
     grid-column: auto;
   }
   .community > p, .community h1{
-    max-width: 60%;
+    //max-width: 60%;
   }
   .community > img {
     margin-left: -30px;
@@ -592,5 +609,25 @@
 
   .container .header {
     width: 100%; 
+  }
+
+  .item .topic-box {
+    overflow-x: hidden !important;
+  }
+
+  .topic-box-title {
+    font-size: 18px;
+  }
+  .community {
+    max-width: 90%;
+  }
+
+}
+
+@media all and (max-width: 437px)
+{
+
+  .header .second .hamburger-menu-icon {
+    margin-right: 20% !important;
   }
 }
