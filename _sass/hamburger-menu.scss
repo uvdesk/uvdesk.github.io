@@ -26,6 +26,10 @@
   left: calc(-1 * var(--hamburger-menu-width));
 }
 
+.display-none {
+  display: none;
+}
+
 .hamburger-menu-title {
   width: calc(var(--hamburger-menu-width) - 3 * var(--hamburger-menu-item-left-margin) );
   padding-bottom: var(--hamburger-menu-item-bottom-margin); 
@@ -45,17 +49,16 @@
   font-size: var(--hamburger-menu-item-font-size);
 }
 
-.hamburgerMenuContentBtn:nth-of-type(1) {
-  // margin-top: var(--hamburger-menu-seperator-margin);
+.bgPurpleShade {
   background-color: var(--purple-bg-shade);
 }
 
-.hamburgerMenuContentBtn:nth-of-type(2) {
+.bgGreenShade {
   background-color: var(--green-bg-shade);
 }
 
 // Style the sidenav links and the dropdown button */
-.hamburger-menu-wrapper a, .dropdown-btn {
+.hamburger-menu-wrapper .parent a, .dropdown-btn, .hamburger-menu-wrapper > .searchbar {
     text-decoration: none;
     margin-bottom: var(--hamburger-menu-item-bottom-margin);
     margin-left: calc(var(--hamburger-menu-item-left-margin));
@@ -78,7 +81,7 @@
    margin-left: var(--hamburger-menu-dropdown-container-item-left-margin);
 }
 
-.hamburger-menu-wrapper a:hover, .dropdown-btn:hover, .dropdown-container a:hover {
+.dropdown-btn:hover, .dropdown-container a:hover {
     color: var(--paragraph-heading-color);
     opacity: 1;
     border-bottom-color: var(--purple-bg-shade);
@@ -97,7 +100,6 @@
 
 // Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content
 .dropdown-container {
-    display: none;
     margin: 0 calc(var(--hamburger-menu-item-left-margin)) calc( var(--hamburger-menu-item-bottom-margin));
 }
 // hamburger menu end
@@ -163,6 +165,11 @@
   font-weight: bold !important;
 }
 
+
+.hamburger-menu-wrapper .searchbar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 
 
