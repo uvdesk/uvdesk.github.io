@@ -12,7 +12,7 @@
     left: 0;
     width: 100%;
 }
-
+//height auto to 100%
 .component-container .hamburger-menu {
     box-shadow: none;
     position: fixed;
@@ -20,9 +20,10 @@
     left: 0;
     bottom: 0;
     z-index: 5;
-    height: auto;
+    height: 100%;
     display: block !important;
-    margin-bottom: 70px; 
+    //margin-bottom: 10px; 
+    
 }
 
 .component-container .hamburger-menu-wrapper {
@@ -46,10 +47,11 @@
     grid-row: 2 / 3;
     padding: var(--component-container-content-padding);
 }
-
+//zindex to override sidebar
 .component-container .footer {
     grid-column: 1 / 4;
     grid-row: 3 / 4;
+    z-index: 1000;
 }
 
 @media all and (max-width: 870px) {    

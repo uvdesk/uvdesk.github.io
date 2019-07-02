@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  min-width: 500px;
+  min-width: 300px;
   overflow-x: hidden !important;
 }
 
@@ -111,6 +111,11 @@ p {
   .results-container-sidebar {
     display: none;
   }
+
+  .hamburgerMenuContentBtn:nth-of-type(1), .hamburgerMenuContentBtn:nth-of-type(2) {
+    display: none;
+  }  
+
 }
 
 // grid community container
@@ -249,6 +254,7 @@ a:visited {
     padding: var(--homepage-container-padding);
     background-color: var(--topics-bg-color);
 }
+
 .topics-heading {
   font-size: 17px; 
   font-weight: var(--heading-font-weight);
@@ -500,7 +506,6 @@ a:visited {
     margin-top: var(--ticket-top-margin) !important;
   }
 }
-
 
 // footer
 .footer {
