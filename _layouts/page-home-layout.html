@@ -29,7 +29,7 @@
                   resultsContainer: document.getElementById('results-container'),
                   dataSource: '{{ site.baseurl }}/search.json',
                   searchResultTemplate: '<li><a href="{url}">{title}<\/a><\/li>',
-                  noResultsText: 'No results found',
+                  noResultsText: '<li><a href="javascript:void(0)">No Results Found</a></li>',
                   //limit: 10,
                   //fuzzy: true
                 });
