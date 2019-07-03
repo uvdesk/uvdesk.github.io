@@ -1,6 +1,7 @@
 //for pagination
 var paginationCollection = document.getElementById('pagination');
 
+
 if (paginationCollection) {
     paginationCollection.addEventListener('click', event => {
         var dropdowns = document.getElementsByClassName("pagination");
@@ -44,7 +45,6 @@ if (current) {
 
 window.onload = load;
 function load() {
-    openDropdownMenuSelectItemOnPageLoad();
     var retrievedData = sessionStorage.getItem("activeId");
     var idArray = JSON.parse(retrievedData);
     if (idArray && (idArray instanceof Array) ) {
@@ -52,20 +52,6 @@ function load() {
             document.getElementById(idArray[i]).classList.add('open');
 
         }
-    }
-
-    const hamburgerDrpDnBtns = document.querySelectorAll('.hamburger-menu-wrapper .parent .dropdown-btn');
-    const length = hamburgerDrpDnBtns.length;
-
-    for　(i = 0; i < length; i++) {
-        hamburgerDrpDnBtns[i].onclick = openHamburgerDropdown;
-        hamburgerDrpDnBtns[i].nextElementSibling.style.display = 'none';
-
-        const sibLen = hamburgerDrpDnBtns[i].nextElementSibling.children.length;
-        for (j = 0; j < sibLen; j++) {
-            hamburgerDrpDnBtns[i].nextElementSibling.children[j].onclick = onSelectDropdownItem;
-        }
-
     }
 }
 
@@ -87,16 +73,6 @@ window.onclick = function (event) {
     }
 }
 
-
-
-// current openedMenu static variable;
-let inlineMenuItem = staticVariable();
-
-// currentOpened External menu
-let externalMenuItem = staticVariable();
-
-// current selected dropdown menu item
-let openedDropdownItem = staticVariable();
 
 // select dropdown item;
 function selectDropdownItem(dropdownItem) {
@@ -143,27 +119,28 @@ function closeHamburgerMenu(hamburgerButton, hamburgerMenu) {
 }
 // open the selected dropdown menu in the hamburger menu and close the opened one
 function openHamburgerDropdown(event) {
-    
+
     const newMenuItem = event.target.nextElementSibling; 
     const inline = isInlineLink(newMenuItem.children[0].href, window.location.hostname);
-
     if (inline) {
         if (inlineMenuItem() && (newMenuItem !== inlineMenuItem())) {
-            inlineMenuItem().style.display = 'none';
+            inlineMenuItem().classList.add('display-none');
+            
             // un-select dropdown menu parent button
             unSelectDropdownItem(inlineMenuItem().previousElementSibling);
+            
         }
-        if (newMenuItem.style.display === 'none') {
-            newMenuItem.style.display = 'block';
+        if (newMenuItem.classList.contains('display-none')) {
+            newMenuItem.classList.remove('display-none');
             selectDropdownItem(event.target);
             inlineMenuItem(newMenuItem);
             onSelectDropdownItem({ target: newMenuItem.children[0] });
         } 
     } else {
         if(externalMenuItem() && (newMenuItem　!== externalMenuItem())) {
-            externalMenuItem().style.display = 'none';
+            externalMenuItem().classList.add('display-none');
         }
-        externalMenuItem(newMenuItem).style.display = 'block';
+        externalMenuItem(newMenuItem).classList.remove('display-none');
     }
 }
 
@@ -191,17 +168,6 @@ document.body.addEventListener('mousedown', (event) => {
     }
 });
 
-// closure for storing static values
-function staticVariable() {
-    let currentValue = null;
-    return function(newValue = null) {
-        if (newValue) {
-            currentValue = newValue;
-        }
-        return currentValue;
-    }
-}
-
 function openDropdownMenuSelectItemOnPageLoad() {
     const links = document.querySelectorAll('.hamburger-menu-wrapper a');
     const length = links.length;
@@ -209,9 +175,7 @@ function openDropdownMenuSelectItemOnPageLoad() {
         if (links[i].href === window.location.href) {
             openedDropdownItem(selectDropdownItem(links[i].parentNode.previousElementSibling));
             inlineMenuItem(links[i].parentNode);
-            setTimeout(() => {
-                links[i].parentNode.style.display = 'block';
-            }, 1);
+            links[i].parentNode.classList.remove('display-none');
             selectDropdownItem(links[i]);
             break;
         }
@@ -225,21 +189,10 @@ function isInlineLink(link, domainName) {
 //close the search bar when user clicks on the body.
 window.onclick = function() {
 
-
-    if(document.getElementById("results-container").hasChildNodes())
+    if(document.querySelector(".results-container").hasChildNodes())
     {
-        document.getElementById("search-bar-header").value = "";
-
-        var ul = document.getElementById("results-container");
-      
-        ul.innerHTML = "";
-        
-    }
-
-    if(document.getElementById("results-container-sidebar").hasChildNodes())
-    {
-        document.getElementById("search-bar-sidebar").value = "";
-        document.getElementById("results-container-sidebar").innerHTML = "";
+        document.querySelector(".searchBox").value = '';
+        document.querySelector(".results-container").innerHTML = '';
     }
 
 }
