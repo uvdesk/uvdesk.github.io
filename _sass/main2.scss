@@ -2,8 +2,9 @@
   position: relative;
 }
 .inline-header .searchbar {
-  padding-right: 15px;
+  margin-right: 15px;
   width: 250px;
+  box-sizing: border-box;
   display: inline-block;
 }
 .searchbar input {
@@ -31,7 +32,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  width: 100%;
+  width: 250px;
   transform: translateY(4px);
   border-radius: 1px;
   background-color: var(--topic-box-bg-color);
