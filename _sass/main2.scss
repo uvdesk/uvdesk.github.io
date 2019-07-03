@@ -126,7 +126,6 @@
     padding-bottom: 10px;
     padding-top: 10px; 
     padding-right: 10px;
-    //margin-right: -10px; 
     overflow-x: hidden !important;
     border-left: 6px solid #8473F3;
     background-color: #beb6ed;
@@ -168,16 +167,12 @@
   }
 
 .ipsum-logo{
-    width: 600px !important;
-    //max-width: 470px; 
-    //max-width: 85% !important;
-    //max-width: auto !important;
-    //max-height: 500px;
-    margin-left: -30px;
+    max-width: 95%;
+    // margin-left: -30px;
+     margin-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px; 
     overflow-x: hidden !important;
-  
   }
   .component-a{
     margin-left: 10px; 
@@ -204,15 +199,28 @@
   font-size: 18px !important; 
 }
 
-@media all and (min-width: 871px) {
+
+
+@media all and (min-width: 1200px) {
+  .ipsum-logo{
+    max-height: 800px; 
+  }
+  .image-heading, .paragraph1, .command-heading, .command {
+    margin-left: -15px;
+  }
+  .component-title {
+    max-width: 1000px; 
+  }
+  
+}
+
+@media all and (min-width: 871px) and (max-width: 1199px) {
 
     .ipsum-logo{
-      width: 100%;
-      height: auto;
-      padding-right: 10px;
-      width: auto;
       max-height: 500px;
+      padding-right: 10px;
     }
+
     .component-title{
       font-size: 23px; 
    
@@ -220,11 +228,9 @@
     .sub-a {
       font-size: 18px; 
     }
-  
     .component-sub-a {
       font-size: 22px; 
     }
-  
     .image-heading {
       font-size: 20px;
       padding-bottom: 10px;
@@ -236,79 +242,46 @@
       font-size: 18px;
     }
     .command {
-  
       font-size: 15px; 
+    }
+    .image-heading, .command, .command-heading {
+      margin-left: -16px; 
     }
     .footer {
       width: 100%;
     }
     .installation-component {
       overflow-x: hidden !important;
+      margin-left: -30px;
     }
+
+    
    
   }// end of min width 871
 
-  @media all and (min-width: 1200px) {
-    .ipsum-logo{
-      width: auto;
-      max-height: 800px;
-      max-width: 800px; 
-      margin-left: 40px; 
-    }
-    .image-heading, .paragraph1, .command-heading, .command {
-      margin-left: -15px;
-    }
-    .component-title {
-      max-width: 1000px; 
-    }
-    
-  }
-  @media all and (min-width: 871px) {
-    .ipsum-logo{
-      max-height: 500px;
-      width: auto;
-      max-width: 450px; 
-    }
-    .installation-component {
-      margin-left: -30px; 
-    }
 
-    .command, .command-heading {
-      margin-left: -16px; 
-    }
-}
 
-  @media all and (max-width: 720) {
-    .ipsum-logo{
-      width: auto;
-      max-width: 500px;
-      margin-right: 20px; 
-      padding-right: 30px; 
-    }
-    .component-title {
-      font-size: 25px !important; 
-    }
-    .component-sub-title {
-    font-size: 23px !important; 
-    }
-    .image-heading {
-      font-size: 20px !important; 
-    }
+  // @media all and (max-width: 870px) {
+  //   .ipsum-logo{
+  //     margin-right: 20px; 
+  //     padding-right: 30px; 
+  //   }
+  //   .component-title {
+  //     font-size: 25px !important; 
+  //   }
+  //   .component-sub-title {
+  //   font-size: 23px !important; 
+  //   }
+  //   .image-heading {
+  //     font-size: 20px !important; 
+  //   }
 
-    .topics-heading {
-      font-size: 18px !important; 
-    }
-  }
+  //   .topics-heading {
+  //     font-size: 18px !important; 
+  //   }
+  // }
 
 @media all and (max-width: 680px) {
-  /*.ipsum-logo{
-    //max-width: 500px;
-    max-width: auto;
-    max-height: 300px;
-    margin-left: -30px;
-    max-width: 400px;
-  }
-  */
   .paragraph1, .command-heading, .command, .image-heading {
     margin-left: -20px;
   }

@@ -79,9 +79,22 @@
 @media all and (max-width: 576px) {
   :root {
     --homepage-container-padding:40px 50px;
-    --component-container-content-padding: 40px 50px;
+    --component-container-content-padding: 40px 100px;
     --grid-column-gap: 0px;
     --grid-row-gap: 10px;
+  }
+}
+
+@media all and (max-width: 488px) {
+  :root {
+    --component-container-content-padding: 40px 50px 40px 75px;
+  }
+}
+
+
+@media all and (max-width: 380px) {
+  :root {
+    --component-container-content-padding: 40px 40px;
   }
 }
 
