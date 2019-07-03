@@ -508,21 +508,14 @@ a:visited {
 .footer {
   background-color: var(--footer-background-color);
   text-align: center;
-  padding: var(--header-footer-padding);
-
-  padding-top: var(--footer-tb-padding);
-  padding-bottom: var(--footer-tb-padding);
   height: var(--header-footer-height);
-  display:table;
-}
-
-.footer p {
-  color: var(--footer-text-color);
-}
-
-.footer123 {
-  display: table-cell;
-  vertical-align: middle;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  span {
+    color: var(--footer-text-color);
+  }
 }
 
 

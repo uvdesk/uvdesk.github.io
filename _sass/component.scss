@@ -54,13 +54,7 @@
     width: 100%;
     position: relative;
     left: var(--hamburger-menu-width);
-}
-
-@media only screen and (max-width: 1000px) {
-    .component-container .footer {
-        left: 0;
-        width: 100vw;
-    }
+    width: calc(100vw - var(--hamburger-menu-width));
 }
 
 @media all and (max-width: 870px) {    
@@ -86,5 +80,10 @@
     }
     .component-container .hamburger-menu-icon {
         display: block;
+    }
+
+    .component-container .footer {
+        width: 100vw;
+        left: 0;
     }
 }
