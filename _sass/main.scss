@@ -69,18 +69,10 @@ p {
   padding: 8px 15px;
   box-shadow: none !important;
 }
-/*.headerBtn:nth-child(2) 
-Because the search bar has been added,
-the 2nd child is now the third child.
-*/
 .headerBtn:nth-child(3) {
   background-color: var(--purple-bg-shade);
   margin-right: 5px;
 }
-/*.headerBtn:nth-child(3)
-Because the search bar has been added,
-the 3rd child is now the 4th.
-*/
 .headerBtn:nth-child(4) {
   background-color: var(--green-bg-shade);
 }
@@ -249,12 +241,9 @@ a:visited {
     background-color: var(--topics-bg-color);
 }
 
-
 .topics-heading {
   font-size: 17px; 
-  //font-size: var(--sub-heading-font-size);
   font-weight: var(--heading-font-weight);
-  //padding-bottom: calc( 3 * var(--sub-heading-bottom-spacing));
   padding-top: calc( var(--sub-heading-bottom-spacing));
   margin-left: -16px; 
 

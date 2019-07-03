@@ -59,7 +59,7 @@ $ gem install bundler
     3. Use the **Server address** URL http://127.0.0.1:4000/ in a browser to preview the content.
     
     4. Press `Ctrl+C` in the serve terminal to stop the server. 
-> ***TIP*** You can learn about Jekyll from [here][jekyll-install]
+***TIP*** You can learn about Jekyll from [here][jekyll-install]
 # License
 All the libraries and content included in this documentation are released under the MIT or BSD license.
 
