@@ -1,47 +1,45 @@
 .searchbar {
   position: relative;
 }
-
 .inline-header .searchbar {
-  display: none;
   padding-right: 15px;
-  max-width: 250px;
+  width: 250px;
+  display: inline-block;
 }
-
-@media only screen and (min-width: 960px) {
-  .inline-header .searchbar {
-    display: inline-block;
-  }
+.searchbar input {
+  border-radius: 15px;
+  background-color: white;
+  border: none;
+  padding: 5px 5px 5px 30px;
+  background-image: url(/assets/images/search-1.png);
+  background-repeat: no-repeat;
+  background-position: 7px 7px;
+  border: 1px solid #d9dde2;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none !important;
 }
-
-.footer {
-  z-index: 9999;
+.searchbar input:focus {
+  border: 1px solid #8473F3;
+  transition: 0.5s;
 }
-.aside-title {
-  font-size: 21px; 
-}
- 
 .results-container {
   list-style-type: none;
   position: absolute;
-  left: 10%;
   z-index: 1000;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3), 0px 0px 1px rgba(0, 0, 0, 0.2); 
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  max-width: 80%;
+  width: 100%;
   transform: translateY(4px);
   border-radius: 1px;
   background-color: var(--topic-box-bg-color);
-
 }
-
 .results-container li a {
   color: #414449;
   font-size: 13.33px;
 }
-
 .results-container li{
   background-color: hsla(0, 50%, 50%, 0);//#dfdbff;
   padding: 7px 10px;
@@ -55,45 +53,17 @@
     color: white;
     opacity: 1;
   }
-
 }
 
-// .search-bar-header {
-//   border-radius: 15px; 
-//   background-color: white;
-//   padding-top: 5px;
-//   padding-bottom: 5px;  
-//   padding-left: 28px;
-//   padding-right: 5px; 
-//   background-image: url(/assets/images/search-1.png);
-//   background-repeat: no-repeat;
-//   background-position: 7px 7px; 
-//   border: 1px solid #d9dde2;
-//   
-//   outline: none !important;
-//   width: 250px;
-// }
-// .searchbar-header:focus {
-//   border: 1px solid #8473F3;
-//   transition: 0.5s;
-// }
 
-.searchbar input{
-  border-radius: 15px;
-  background-color: white;
-  border: none;
-  padding: 5px 5px 5px 30px;
-  background-image: url(/assets/images/search-1.png);
-  background-repeat: no-repeat;
-  background-position: 7px 7px;
-  border: 1px solid #d9dde2;
-  max-width: 170px;
-  outline: none !important;
+.footer {
+  z-index: 9999;
 }
-.searchbar input:focus {
-  border: 1px solid #8473F3;
-  transition: 0.5s;
+
+.aside-title {
+  font-size: 21px; 
 }
+ 
 
  .component-sub-a{
     font-size: 15px !important;
@@ -234,9 +204,7 @@
 }
 
 @media all and (min-width: 871px) {
-    .hamburger-menu {
-      display: none !important;
-    }
+
     .ipsum-logo{
       width: 100%;
       height: auto;

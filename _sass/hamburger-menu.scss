@@ -1,10 +1,10 @@
 // hamburger menu start
 .hamburger-menu {
-  display: block;
+  display: none;
   position: fixed;
   top: 0px;
   left: 0px;
-  max-width: var(--hamburger-menu-width);
+  width: var(--hamburger-menu-width);
   height: 100%;
   box-shadow: 2px 0 5px var(--hamburger-box-shadow-color);
   background-color: var(--container-bg-color); 
@@ -58,7 +58,14 @@
 }
 
 .hamburger-menu-wrapper .searchbar {
-  margin: 20px calc(var(--hamburger-menu-item-left-margin));
+  margin: 20px 0px;
+  text-align: center;
+  input, .results-container {
+    width: 170px;
+    display: block;
+    margin-left: var(--hamburger-menu-item-left-margin);
+    text-align: left;
+  }
 }
 
 // Style the sidenav links and the dropdown button */
@@ -177,13 +184,9 @@
 }
 
 
-.hamburger-menu-wrapper .searchbar {
-  width: 80%;
-}
 
 
-
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 1000px) {
   .hamburger-menu-wrapper .searchbar {
     display: none;
   }

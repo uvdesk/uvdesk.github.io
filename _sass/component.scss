@@ -18,9 +18,9 @@
     position: fixed;
     top: var(--header-footer-height);
     left: 0;
-    bottom: var(--header-footer-height);
-    height: calc(100vh - var(--header-footer-height) * 2 );
-    z-index: 5;
+    bottom: 0;
+    height: calc(100vh - var(--header-footer-height));
+    z-index: 9;
     display: block !important;
     overflow: auto;
 }
@@ -50,10 +50,17 @@
 .component-container .footer {
     grid-column: 1 / 4;
     grid-row: 3 / 4;
-    z-index: 1000;
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
+    z-index: 3;
+    width: 100%;
+    position: relative;
+    left: var(--hamburger-menu-width);
+}
+
+@media only screen and (max-width: 1000px) {
+    .component-container .footer {
+        left: 0;
+        width: 100vw;
+    }
 }
 
 @media all and (max-width: 870px) {    
@@ -77,5 +84,7 @@
         top: 0;
         height: 100%;
     }
+    .component-container .hamburger-menu-icon {
+        display: block;
+    }
 }
-

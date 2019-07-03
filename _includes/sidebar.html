@@ -18,22 +18,7 @@
                 </div>
              </div>
         {% endfor %}
-
         <button onclick="window.open('https:\/\/github.com\/uvdesk\/uvdesk.github.io', '_blank')" class="button headerBtn hamburgerMenuContentBtn bgPurpleShade">Fork on Github</button>
         <button onclick="window.open('https:\/\/www.uvdesk.com\/en\/opensource', '_blank')" class="button headerBtn hamburgerMenuContentBtn bgGreenShade">UVdesk Helpdesk</button> 
-       
     </div>
-    <script src="{{ site.baseurl }}/js/jekyll-search.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        // if( document.querySelector('.searchBox').style.display !== 'none' ) {
-        SimpleJekyllSearch.init({
-            searchInput: document.querySelector('.hamburger-menu-wrapper .searchbar .searchBox'),
-            resultsContainer: document.querySelector('.hamburger-menu-wrapper .searchbar .results-container'),
-            dataSource: '{{ site.baseurl }}/search.json',
-            searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}<\/a><\/li>',
-            noResultsText: '<li><a href="javascript:void(0)">No Results Found<\/a><\/li>',
-            fuzzy: true
-        });
-        
-      </script>    
 </div>

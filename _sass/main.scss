@@ -85,43 +85,28 @@ the 3rd child is now the 4th.
   background-color: var(--green-bg-shade);
 }
 
-@media all and (max-width: 870px) {
+@media all and (max-width: 999px) {
   .second .inline-header {
     display: none;
   }
 
-  .second .hamburger-menu-icon {
+  .container .hamburger-menu {
     display: block;
   }
-
+  .container .second .hamburger-menu-icon {
+    display: block;
+  }
   .ipsum-logo {
     max-height: 300px;
     max-width: 400px;
     overflow-x: hidden !important;
   }
 
-  .search-bar-header {
-    display: none;
-  }
-
-
-  
 }
 
 
-@media all and (min-width: 871px) {
-  .hamburger-menu {
-    display: none !important;
-  }
-
-  .search-bar-sidebar{
-    display: none;
-  }
-  .results-container-sidebar {
-    display: none;
-  }
-
-  .hamburgerMenuContentBtn:nth-of-type(1), .hamburgerMenuContentBtn:nth-of-type(2) {
+@media only screen and (min-width: 1000px) {
+  .component-container .hamburgerMenuContentBtn:nth-of-type(1), .component-container .hamburgerMenuContentBtn:nth-of-type(2) {
     display: none;
   }  
 
