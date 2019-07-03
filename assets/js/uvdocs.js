@@ -187,19 +187,19 @@ function isInlineLink(link, domainName) {
 }
 
 //close the search bar when user clicks on the body.
-window.onclick = function() {
+// window.onclick = function() {
 
-    if(document.getElementById("results-container").hasChildNodes())
-    {
-        document.getElementById("search-bar-header").value = "";
-        var ul = document.getElementById("results-container");
-        ul.innerHTML = "";
-    }
+//     if(document.getElementById("results-container").hasChildNodes())
+//     {
+//         document.getElementById("search-bar-header").value = "";
+//         var ul = document.getElementById("results-container");
+//         ul.innerHTML = "";
+//     }
 
-    if(document.getElementById("results-container-sidebar").hasChildNodes())
-    {
-        document.getElementById("search-bar-sidebar").value = "";
-        document.getElementById("results-container-sidebar").innerHTML = "";
-    }
+//     if(document.getElementById("results-container-sidebar").hasChildNodes())
+//     {
+//         document.getElementById("search-bar-sidebar").value = "";
+//         document.getElementById("results-container-sidebar").innerHTML = "";
+//     }
 
-}
+// }

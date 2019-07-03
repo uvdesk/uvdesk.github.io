@@ -62,10 +62,13 @@
 }
 
 // Style the sidenav links and the dropdown button */
+.dropdown-btn {
+  margin-left: calc(var(--hamburger-menu-item-left-margin));
+}
+
 .hamburger-menu-wrapper .parent a, .dropdown-btn{
     text-decoration: none;
     margin-bottom: var(--hamburger-menu-item-bottom-margin);
-    margin-left: calc(var(--hamburger-menu-item-left-margin));
     display: block;
     border: none;
     background: none;
@@ -79,6 +82,10 @@
     width: -ms-fit-content;
     width: -o-fit-content;
     width: fit-content;
+}
+
+.hamburger-menu-wrapper .parent a {
+  margin-left: var(--hamburger-menu-item-bottom-margin);
 }
 
 .dropdown-container a {
@@ -171,7 +178,7 @@
 
 
 .hamburger-menu-wrapper .searchbar {
-  width: 100%;
+  width: 80%;
 }
 
 

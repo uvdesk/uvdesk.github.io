@@ -18,12 +18,11 @@
     position: fixed;
     top: var(--header-footer-height);
     left: 0;
-    bottom: 0;
+    bottom: var(--header-footer-height);
+    height: calc(100vh - var(--header-footer-height) * 2 );
     z-index: 5;
-    height: 100%;
     display: block !important;
-    //margin-bottom: 10px; 
-    
+    overflow: auto;
 }
 
 .component-container .hamburger-menu-wrapper {
@@ -52,6 +51,9 @@
     grid-column: 1 / 4;
     grid-row: 3 / 4;
     z-index: 1000;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
 }
 
 @media all and (max-width: 870px) {    
