@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  min-width: 500px;
+  min-width: 300px;
   overflow-x: hidden !important;
 }
 
@@ -77,40 +77,31 @@ p {
   background-color: var(--green-bg-shade);
 }
 
-@media all and (max-width: 870px) {
+@media all and (max-width: 999px) {
   .second .inline-header {
     display: none;
   }
 
-  .second .hamburger-menu-icon {
+  .container .hamburger-menu {
     display: block;
   }
-
+  .container .second .hamburger-menu-icon {
+    display: block;
+  }
   .ipsum-logo {
     max-height: 300px;
     max-width: 400px;
     overflow-x: hidden !important;
   }
 
-  .search-bar-header {
-    display: none;
-  }
-
-
-  
 }
 
-@media all and (min-width: 871px) {
-  .hamburger-menu {
-    display: none !important;
-  }
 
-  .search-bar-sidebar{
+@media only screen and (min-width: 1000px) {
+  .component-container .hamburgerMenuContentBtn:nth-of-type(1), .component-container .hamburgerMenuContentBtn:nth-of-type(2) {
     display: none;
-  }
-  .results-container-sidebar {
-    display: none;
-  }
+  }  
+
 }
 
 // grid community container
@@ -249,6 +240,7 @@ a:visited {
     padding: var(--homepage-container-padding);
     background-color: var(--topics-bg-color);
 }
+
 .topics-heading {
   font-size: 17px; 
   font-weight: var(--heading-font-weight);
@@ -501,26 +493,18 @@ a:visited {
   }
 }
 
-
 // footer
 .footer {
   background-color: var(--footer-background-color);
   text-align: center;
-  padding: var(--header-footer-padding);
-
-  padding-top: var(--footer-tb-padding);
-  padding-bottom: var(--footer-tb-padding);
   height: var(--header-footer-height);
-  display:table;
-}
-
-.footer p {
-  color: var(--footer-text-color);
-}
-
-.footer123 {
-  display: table-cell;
-  vertical-align: middle;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  span {
+    color: var(--footer-text-color);
+  }
 }
 
 

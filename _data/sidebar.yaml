@@ -1,0 +1,100 @@
+sidebar:
+  - title: System Requirements
+    items:
+      - page: Ubuntu
+        url: /uvdemo/requirements/requirements-ubuntu.html
+      - page: Windows
+        url: /uvdemo/requirements/requirements-windows.html
+      - page: Mac
+        url: /uvdemo/requirements/requirements-mac.html
+  
+  - title: Installation
+    items:
+      - page: Ubuntu
+        url: /uvdemo/installation/installation-ubuntu.html
+      - page: Windows
+        url: /uvdemo/installation/installation-windows.html
+      - page: Mac
+        url: /uvdemo/installation/installation-mac.html
+  
+  - title: Users
+    items:
+      - page: Groups
+        url: /uvdemo/users/groups.html
+      - page: Teams
+        url: /uvdemo/users/teams.html
+      - page: Agents
+        url: /uvdemo/users/agents.html
+      - page: Privileges
+        url: /uvdemo/users/privileges.html
+      - page: Customers
+        url: /uvdemo/users/customers.html
+
+  - title: Knowledgebase
+    items:
+      - page: Folder
+        url: /uvdemo/knowledgebase/folder.html
+      - page: Category
+        url: /uvdemo/knowledgebase/category.html
+      - page: Article
+        url: /uvdemo/knowledgebase/article.html
+  
+  - title: Productivity
+    items:
+      - page: Ticket Types
+        url: /uvdemo/productivity/ticket-type.html
+      - page: Tags
+        url: /uvdemo/productivity/tags.html
+      - page: Saved Replies
+        url: /uvdemo/productivity/replies.html
+      - page: Workflows
+        url: /uvdemo/productivity/workflow.html
+      - page: Prepared Responses
+        url: /uvdemo/productivity/prepared-response.html
+  
+  - title: Settings
+    items:
+      - page: Branding
+        url: /uvdemo/settings/branding.html
+      - page: Email Templates
+        url: /uvdemo/settings/template.html
+      - page: Swift Mailer
+        url: /uvdemo/settings/swiftmailer.html
+      - page: Email Settings
+        url: /uvdemo/settings/email-settings.html
+      - page: Block Spam
+        url: /uvdemo/settings/block-spam.html
+      - page: Mail Box
+        url: /uvdemo/settings/mailbox.html
+
+  - title: Helpful Links
+    items:
+      - page: Schedule a Demo
+        url: https://demo.uvdesk.com/
+      - page: Video Tutorial
+        url: https://www.youtube.com/channel/UCKKt4IOC7ynLwhJMP35uFeQ
+      - page: Forum
+        url: https://forums.uvdesk.com/
+      - page: Read Blogs
+        url: https://www.uvdesk.com/en/articles/
+  
+  - title: Community
+    items:
+      - page: Get Involved in the Community
+        url: https://github.com/uvdesk/community-skeleton/blob/master/README.md
+      - page: Help to Make UVdesk Community
+        url: https://github.com/uvdesk
+      
+  - title: Social Sites
+    items:
+      - page: Twitter
+        url: https://twitter.com/uvdesk?utm_source=&utm_medium=website&utm_content=content
+      - page: Facebook
+        url: https://www.facebook.com/uvdesk?utm_source=&utm_medium=website&utm_content=content
+      - page: Youtube
+        url: https://www.youtube.com/channel/UCKKt4IOC7ynLwhJMP35uFeQ
+  
+  - title: Generate Tickets
+    items:
+      - page: Create Ticket
+        url: https://support.uvdesk.com/en/customer/create-ticket/
