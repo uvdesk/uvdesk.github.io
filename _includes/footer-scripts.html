@@ -1,0 +1,35 @@
+<script src="/assets/js/uvdocs.js" async defer></script>
+<script src="{{ site.baseurl }}/js/jekyll-search.js" type="text/javascript"></script>
+<script type="text/javascript">
+    initializeSearchBarHandler();
+
+    window.addEventListener('resize', () => {
+       initializeSearchBarHandler(); 
+    });
+
+    function initializeSearchBarHandler() {
+        SimpleJekyllSearch.init({
+            searchInput: document.querySelector('.inline-header .searchbar .searchBox'),
+            resultsContainer: document.querySelector('.inline-header .searchbar .results-container'),
+            dataSource: '{{ side.baseurl }}/search.json',
+            searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}<\/a><\/li>',
+            noResultsText: '<li><a href="javascript:void(0)">No Results Found</a></li>',
+            fuzzy: true
+        });
+
+        if (window.innerWidth < 1000) {
+            SimpleJekyllSearch.init({
+                searchInput: document.querySelector('.hamburger-menu-wrapper .searchbar .searchBox'),
+                resultsContainer: document.querySelector('.hamburger-menu-wrapper .searchbar .results-container'),
+                dataSource: '{{ side.baseurl }}/search.json',
+                searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}<\/a><\/li>',
+                noResultsText: '<li><a href="javascript:void(0)">No Results Found</a></li>',
+                fuzzy: true
+            });
+        }
+    }
+
+    // window.addEventListener('scroll', (event) => {
+    //     console.log(document.documentElement.scrollHeight - document.documentElement.clientHeight, document.documentElement.scrollTop );
+    // });
+</script>
