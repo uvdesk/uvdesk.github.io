@@ -1,0 +1,21 @@
+<script>
+    // current openedMenu static variable;
+    const inlineMenuItem = staticVariable();
+
+    // currentOpened External menu
+    const externalMenuItem = staticVariable();
+
+    // current selected dropdown menu item
+    const openedDropdownItem = staticVariable();
+
+    // closure for storing static values
+    function staticVariable() {
+        let currentValue = null;
+        return function (newValue = null) {
+            if (newValue) {
+                currentValue = newValue;
+            }
+            return currentValue;
+        }
+    }
+</script>

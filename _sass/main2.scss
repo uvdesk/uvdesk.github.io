@@ -1,103 +1,71 @@
-
-.search-bar-div {
+.searchbar {
+  position: relative;
+}
+.inline-header .searchbar {
+  margin-right: 15px;
+  width: 250px;
+  box-sizing: border-box;
   display: inline-block;
 }
-.aside-title {
-  font-size: 21px; 
-}
-#results-container {
-  list-style-type: none;
-  position: absolute;
-  z-index: 1000;
-  box-shadow: 5px 10px 8px #888888; 
-  width: 250px; 
-  padding: 0px;
-  margin-top: 5px;  
-}
-
-#results-container li {
-  background-color: #dfdbff;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 15px;
-  margin-right: -20px; 
-
-}
-#results-container li:hover {
-  background-color: #8473F3;
-  transition: 0.65s; 
-
-}
-#results-container li a:hover {
-  color: white;
-}
-
-#results-container-sidebar li a:hover {
-  color: white;
-}
-#results-container-sidebar {
-  list-style-type: none;
-  position: absolute;
-  z-index: 1000;
-  box-shadow: 5px 10px 8px #888888;
-  background-color: white;
-  padding: 0px; 
- 
-}
-#results-container-sidebar li {
-  background-color: #dfdbff;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 15px;
-
-}
-#results-container-sidebar li:hover {
-  background-color: #8473F3;
-  transition: 0.65s;
-}
-#results-container-sidebar li a{
-  color: #8473F3;
-}
-.search-bar-header {
-  border-radius: 15px; 
-  background-color: white;
-  padding-top: 5px;
-  padding-bottom: 5px;  
-  padding-left: 28px;
-  padding-right: 5px; 
-  background-image: url(/assets/images/search-1.png);
-  background-repeat: no-repeat;
-  background-position: 7px 7px; 
-  border: 1px solid #d9dde2;
-  margin-right: 20px; 
-  outline: none !important;
-}
-.search-bar-header:focus {
-  border: 1px solid #8473F3;
-  transition: 0.5s;
-}
-.search-bar-sidebar:focus {
-  border: 1px solid #8473F3;
-  transition: 0.5s;
-}
-.search-bar-sidebar {
+.searchbar input {
   border-radius: 15px;
   background-color: white;
   border: none;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 28px;
-  padding-right: 5px;
+  padding: 5px 5px 5px 30px;
   background-image: url(/assets/images/search-1.png);
   background-repeat: no-repeat;
   background-position: 7px 7px;
   border: 1px solid #d9dde2;
-  max-width: 170px;
-  margin-left: 30px;
-  margin-top: 5px; 
-  margin-bottom: 5px;
+  width: 100%;
+  box-sizing: border-box;
   outline: none !important;
 }
+.searchbar input:focus {
+  border: 1px solid #8473F3;
+  transition: 0.5s;
+}
+.results-container {
+  list-style-type: none;
+  position: absolute;
+  z-index: 1000;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3), 0px 0px 1px rgba(0, 0, 0, 0.2); 
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  width: 250px;
+  transform: translateY(4px);
+  border-radius: 1px;
+  background-color: var(--topic-box-bg-color);
+}
+.results-container li a {
+  color: #414449;
+  font-size: 13.33px;
+}
+.results-container li{
+  background-color: hsla(0, 50%, 50%, 0);//#dfdbff;
+  padding: 7px 10px;
+  color: var(--topic-box-bg-color);
+}
+.results-container li:hover {
+  background-color: #8773ef; //#8773ef  #dfdbff
+  transition: 0.65s;
+  
+  a {
+    color: white;
+    opacity: 1;
+  }
+}
+
+
+.footer {
+  z-index: 9999;
+}
+
+.aside-title {
+  font-size: 21px; 
+}
+ 
+
  .component-sub-a{
     font-size: 15px !important;
     overflow-x: hidden !important;
@@ -138,12 +106,12 @@
  }
   .paragraph1{
     padding-bottom: 15px;
-    margin-left: 10px;
+    //margin-left: 10px;
+    margin-left: -15px;
     color: #202020;
     font-size: 15px !important;
     padding-right: 20px;
     overflow-x: hidden !important;
-    width: 85%;
   }
   .command-heading{
     margin-left: 10px;
@@ -158,7 +126,6 @@
     padding-bottom: 10px;
     padding-top: 10px; 
     padding-right: 10px;
-    //margin-right: -10px; 
     overflow-x: hidden !important;
     border-left: 6px solid #8473F3;
     background-color: #beb6ed;
@@ -183,6 +150,7 @@
     color: #535456;
     padding-right: 10px; 
     overflow-x: hidden !important;
+    margin-left: -38px;
   }
   .paragraph1 li b{
     font-size: 13px;
@@ -199,15 +167,12 @@
   }
 
 .ipsum-logo{
-    width: auto;
-    //max-width: 470px; 
-    max-width: 85% !important;
-    max-height: 500px;
-    margin-left: -30px;
+    max-width: 95%;
+    // margin-left: -30px;
+     margin-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px; 
     overflow-x: hidden !important;
-  
   }
   .component-a{
     margin-left: 10px; 
@@ -218,7 +183,7 @@
 
 .installation-component{
   min-height: 600px; 
-  margin-left: 30px;
+  //margin-left: 30px;
   overflow-x: hidden !important;
 
   }
@@ -234,17 +199,28 @@
   font-size: 18px !important; 
 }
 
-@media all and (min-width: 871px) {
-    .hamburger-menu {
-      display: none !important;
-    }
+
+
+@media all and (min-width: 1200px) {
+  .ipsum-logo{
+    max-height: 800px; 
+  }
+  .image-heading, .paragraph1, .command-heading, .command {
+    margin-left: -15px;
+  }
+  .component-title {
+    max-width: 1000px; 
+  }
+  
+}
+
+@media all and (min-width: 871px) and (max-width: 1199px) {
+
     .ipsum-logo{
-      width: 100%;
-      height: auto;
-      padding-right: 10px;
-      width: auto;
       max-height: 500px;
+      padding-right: 10px;
     }
+
     .component-title{
       font-size: 23px; 
    
@@ -252,11 +228,9 @@
     .sub-a {
       font-size: 18px; 
     }
-  
     .component-sub-a {
       font-size: 22px; 
     }
-  
     .image-heading {
       font-size: 20px;
       padding-bottom: 10px;
@@ -268,73 +242,46 @@
       font-size: 18px;
     }
     .command {
-  
       font-size: 15px; 
+    }
+    .image-heading, .command, .command-heading {
+      margin-left: -16px; 
     }
     .footer {
       width: 100%;
     }
     .installation-component {
       overflow-x: hidden !important;
+      margin-left: -30px;
     }
+
+    
    
   }// end of min width 871
 
-  @media all and (min-width: 1200px) {
-    .ipsum-logo{
-      width: auto;
-      max-height: 800px;
-      max-width: 800px; 
-      margin-left: 40px; 
-    }
-    .image-heading, .paragraph1, .command-heading, .command {
-      margin-left: -15px;
-    }
-    .component-title {
-      max-width: 1000px; 
-    }
-    
-  }
-  @media all and (min-width: 871px) {
-    .ipsum-logo{
-      max-height: 500px;
-      width: auto;
-      max-width: 450px; 
-    }
-    .installation-component {
-      margin-left: -30px; 
-    }
-}
 
-  @media all and (max-width: 720) {
-    .ipsum-logo{
-      width: auto;
-      max-width: 500px;
-      margin-right: 20px; 
-      padding-right: 30px; 
-    }
-    .component-title {
-      font-size: 25px !important; 
-    }
-    .component-sub-title {
-    font-size: 23px !important; 
-    }
-    .image-heading {
-      font-size: 20px !important; 
-    }
 
-    .topics-heading {
-      font-size: 18px !important; 
-    }
-  }
+  // @media all and (max-width: 870px) {
+  //   .ipsum-logo{
+  //     margin-right: 20px; 
+  //     padding-right: 30px; 
+  //   }
+  //   .component-title {
+  //     font-size: 25px !important; 
+  //   }
+  //   .component-sub-title {
+  //   font-size: 23px !important; 
+  //   }
+  //   .image-heading {
+  //     font-size: 20px !important; 
+  //   }
+
+  //   .topics-heading {
+  //     font-size: 18px !important; 
+  //   }
+  // }
 
 @media all and (max-width: 680px) {
-  .ipsum-logo{
-    max-width: 500px;
-    max-height: 300px;
-    margin-left: -30px;
-    max-width: 400px;
-  }
   .paragraph1, .command-heading, .command, .image-heading {
     margin-left: -20px;
   }
@@ -380,9 +327,13 @@
     }
 
     .component-title {
-      font-size: 25px; 
+      font-size: 25px;
+      width: 420px !important;
     }
 
+    .paragraph1, .paragraph1 li {
+      width: 400px !important;
+    }
     .component-sub-title {
     font-size: 22px !important; 
     }
@@ -402,13 +353,12 @@
     p {
       font-size: 15px;
     }
-    .components-topics .ipsum-logo { 
-      
-      width: 300px;
-      height: auto;
-      //margin-right: 40px;
-      margin-left: -30px; 
-    
+    .paragraph1 > .ipsum-logo {
+      width: 350px !important;
+    }
+
+    .ipsum-logo {
+      width: 350px !important; 
     }
     .component-title, .component-sub-title, .image-heading, .paragraph1, .command-heading, .command, .image-heading{
 
@@ -419,13 +369,22 @@
   @media all and (max-width: 410px) {
     .installation-component p {
       max-width: 340px; 
-      margin-right: 30px; 
+      //margin-right: 30px; 
     }
+
+    li {
+      max-width: 350px !important; 
+    }
+
+    .paragraph1 > .ipsum-logo {
+      height: auto; 
+    }
+
   }
 
   @media all and (max-width: 380px) {
     p {
-      font-size: 12px;
+      font-size: 15px;
       padding-right: 40px;
     }
     .image-heading{
@@ -433,29 +392,41 @@
     }
     .command{
       font-size: 15px;
+      width: 300px !important;
     }
     .footer{
       max-width: 380px !important;
     }
     .installation-component{
       grid-column: auto;  
-      margin-right: 30px;
+      //margin-right: 30px;
+      margin-left: 15px !important; 
     }
     .ipsum-logo{
       margin-right: -20px; 
-      max-width: 270px; 
+      //width: 250px !important; 
+      max-width: 200px !important; 
+      height: auto !important;
     }
     .component-sub-title > ol {
       margin-left: -40px;
+    }
+    .component-sub-title {
+      width: 280px !important;
     }
     .installation-component > p, .components-topics > p{
       margin-left: -20px;
       max-width: 270px; 
     }
+
+    .paragraph1 {
+      width: 280px !important;
+    }
     .paragraph1 > li{
        
-        margin-left: -25px;
-        overflow-x: hidden !important;
+      margin-left: -25px;
+      overflow-x: hidden !important;
+      width: 250px !important;
     }
     .footer123 p{
       margin-right: -20px;
@@ -463,6 +434,7 @@
 
     .component-title {
       font-size: 25px; 
+      width: 280px !important;
     }
     .image-heading {
       font-size: 20px !important; 
@@ -474,13 +446,42 @@
   }
 
   @media all and (max-width: 340px){
+
+    .component-container {
+      width: 340px; 
+    }
+
+    .component-sub-a {
+      width: 300px !important;
+    }
+
+    .paragraph {
+      width: 300px !important;
+    }
+
+    p {
+      font-size: 15px; 
+    }
+    .component-title {
+      width: 260px !important;
+    }
+
+    .component-sub-title > b{
+      width: 260px !important;
+    }
+    
     .component-sub-title{
-      width: 250px;
+      width: 260px !important;
       font-size: 25px;
     }
     .ipsum-logo{
-      max-width: 250px;
-      height: 300px;
+      //max-width: 250px;
+      //height: 300px;
+      //max-width: 90%;
+      width: 230px !important;
+      //height: auto !important;
+      //min-height: 300px;
+      margin-left: -20px; 
      
     }
 
@@ -495,15 +496,17 @@
     .paragraph1 {
       font-size: 17px;
       overflow-x: hidden !important;
-      padding-right: 40px;
+      //padding-right: 40px;
+      width: 270px !important;
 
     }
     .paragraph1 > li{
-      max-width: 200px;
+      width: 260px !important;
       font-size: 18px; 
       padding-top:10px;
       padding-bottom: 10px;
-      overflow-x: hidden !important; 
+      overflow-x: hidden !important;
+      margin-right: 20px !important; 
   
     }
     .command-heading{
@@ -512,6 +515,7 @@
 
     .command{
       font-size: 15px;
+      width: 260px !important;
     }
 
     .installation-component{
@@ -520,13 +524,15 @@
 
     .footer123 p{
       overflow-x: hidden !important;
-      margin-right: 20px; 
+      //margin-right: 20px; 
 
     }
 
     b {
       font-size: 16px; 
     }
+
+
   }
 
 @media all and (max-width: 970px)
@@ -545,14 +551,15 @@
     max-width: 150px; 
   }
 
-  .results-container{
-    margin-left: -50px; 
-  }
 }
 @media all and (max-width: 1000px) 
 {
   .search-bar-header {
     max-width: 200px; 
+  }
+
+  .results-container {
+    max-width: 180px;
   }
 }
 @media all and (max-width: 942px)
@@ -560,31 +567,37 @@
   .search-bar-header {
     max-width: 130px; 
   }
+  
+  #results-container {
+    max-width: 110px;
+    margin: 0 auto;
+  }
 }
 @media all and (max-width: 466px)
 {
   .topics {
     max-width: 90%;
-    margin-right: 40%;
   }
   .grid-community-container > p {
     margin-right: 15%;
   }
   .index-image{
-    margin-right: 35%;
+    //margin-right: 35%;
+    margin-left: -30px; 
   }
   .ticket-content {
     max-width: 90%;
   }
   .helpful-links {
-    max-width: 65%;
+    //max-width: 65%;
+    max-width: 90%;
   }
   .item.helpful {
     display: grid;
     grid-column: auto;
   }
   .community > p, .community h1{
-    max-width: 60%;
+    //max-width: 60%;
   }
   .community > img {
     margin-left: -30px;
@@ -592,5 +605,32 @@
 
   .container .header {
     width: 100%; 
+  }
+
+  .item .topic-box {
+    overflow-x: hidden !important;
+  }
+
+  .topic-box-title {
+    font-size: 18px;
+  }
+  .community {
+    max-width: 90%;
+  }
+
+}
+
+@media all and (max-width: 437px)
+{
+
+  .header .second .hamburger-menu-icon {
+    margin-right: 20% !important;
+  }
+}
+
+@media all and (max-width: 490px)
+{
+  .ipsum-logo {
+    width: 350px !important;
   }
 }

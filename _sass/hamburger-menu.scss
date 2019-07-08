@@ -1,10 +1,10 @@
 // hamburger menu start
 .hamburger-menu {
-  display: block;
+  display: none;
   position: fixed;
   top: 0px;
   left: 0px;
-  max-width: var(--hamburger-menu-width);
+  width: var(--hamburger-menu-width);
   height: 100%;
   box-shadow: 2px 0 5px var(--hamburger-box-shadow-color);
   background-color: var(--container-bg-color); 
@@ -26,6 +26,10 @@
   left: calc(-1 * var(--hamburger-menu-width));
 }
 
+.display-none {
+  display: none;
+}
+
 .hamburger-menu-title {
   width: calc(var(--hamburger-menu-width) - 3 * var(--hamburger-menu-item-left-margin) );
   padding-bottom: var(--hamburger-menu-item-bottom-margin); 
@@ -45,20 +49,33 @@
   font-size: var(--hamburger-menu-item-font-size);
 }
 
-.hamburgerMenuContentBtn:nth-of-type(1) {
-  // margin-top: var(--hamburger-menu-seperator-margin);
+.bgPurpleShade {
   background-color: var(--purple-bg-shade);
 }
 
-.hamburgerMenuContentBtn:nth-of-type(2) {
+.bgGreenShade {
   background-color: var(--green-bg-shade);
 }
 
+.hamburger-menu-wrapper .searchbar {
+  margin: 20px 0px;
+  text-align: center;
+  input, .results-container {
+    width: 170px;
+    display: block;
+    margin-left: var(--hamburger-menu-item-left-margin);
+    text-align: left;
+  }
+}
+
 // Style the sidenav links and the dropdown button */
-.hamburger-menu-wrapper a, .dropdown-btn {
+.dropdown-btn {
+  margin-left: calc(var(--hamburger-menu-item-left-margin));
+}
+
+.hamburger-menu-wrapper .parent a, .dropdown-btn{
     text-decoration: none;
     margin-bottom: var(--hamburger-menu-item-bottom-margin);
-    margin-left: calc(var(--hamburger-menu-item-left-margin));
     display: block;
     border: none;
     background: none;
@@ -74,11 +91,15 @@
     width: fit-content;
 }
 
+.hamburger-menu-wrapper .parent a {
+  margin-left: var(--hamburger-menu-item-bottom-margin);
+}
+
 .dropdown-container a {
    margin-left: var(--hamburger-menu-dropdown-container-item-left-margin);
 }
 
-.hamburger-menu-wrapper a:hover, .dropdown-btn:hover, .dropdown-container a:hover {
+.dropdown-btn:hover, .dropdown-container a:hover {
     color: var(--paragraph-heading-color);
     opacity: 1;
     border-bottom-color: var(--purple-bg-shade);
@@ -97,7 +118,6 @@
 
 // Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content
 .dropdown-container {
-    display: none;
     margin: 0 calc(var(--hamburger-menu-item-left-margin)) calc( var(--hamburger-menu-item-bottom-margin));
 }
 // hamburger menu end
@@ -163,6 +183,14 @@
   font-weight: bold !important;
 }
 
+
+
+
+@media only screen and (min-width: 1000px) {
+  .hamburger-menu-wrapper .searchbar {
+    display: none;
+  }
+}
 
 
 
