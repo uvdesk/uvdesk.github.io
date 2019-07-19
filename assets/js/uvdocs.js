@@ -200,6 +200,7 @@ function isInlineLink(link, domainName) {
 }
 
 //close the search bar when user clicks on the body.
+<<<<<<< HEAD
 function hideSearchBarDropdown (event) {
     const resultsContainer = window.innerWidth < 1000 ? document.querySelector('.hamburger-menu-wrapper .searchbar .results-container') : document.querySelector('.inline-header .searchbar .results-container');
     const rect = resultsContainer.getBoundingClientRect();
@@ -207,3 +208,13 @@ function hideSearchBarDropdown (event) {
         resultsContainer.classList.add('display-none');
     }
 }
+=======
+// window.onclick = function() {
+
+//     if(document.querySelector(".results-container").hasChildNodes())
+//     {
+//         document.querySelector(".results-container").classList.add('display-none');
+//     }
+
+// }
+>>>>>>> 7a8f62fc60cd2509b93ce070b8b928ec277eb2bd
