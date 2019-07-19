@@ -44,14 +44,23 @@ if (current) {
 }
 
 window.onload = load;
-function load() {
+async function load() {
     var retrievedData = sessionStorage.getItem("activeId");
     var idArray = JSON.parse(retrievedData);
+    loadSearchTextBox();
     if (idArray && (idArray instanceof Array) ) {
         for (let i = 0; i < idArray.length; i++) {
             document.getElementById(idArray[i]).classList.add('open');
 
         }
+    }
+}
+
+async function loadSearchTextBox() {
+    if (window.innerWidth < 1000) {
+        document.querySelector('.hamburger-menu-wrapper .searchbar .searchBox').value = sessionStorage.getItem('search');
+    } else {
+        document.querySelector('.inline-header .searchbar .searchBox').value = sessionStorage.getItem('search');
     }
 }
 
@@ -187,12 +196,11 @@ function isInlineLink(link, domainName) {
 }
 
 //close the search bar when user clicks on the body.
-window.onclick = function() {
+// window.onclick = function() {
 
-    if(document.querySelector(".results-container").hasChildNodes())
-    {
-        document.querySelector(".searchBox").value = '';
-        document.querySelector(".results-container").innerHTML = '';
-    }
+//     if(document.querySelector(".results-container").hasChildNodes())
+//     {
+//         document.querySelector(".results-container").classList.add('display-none');
+//     }
 
-}
+// }
