@@ -165,7 +165,6 @@ function onClickHamburgerIcon() {
 }
 // close the hamburger menu on the clicking the area outside the hamburger menu
 document.body.addEventListener('mousedown', (event) => {
-    console.log(document.querySelector('.header').getBoundingClientRect().bottom);
     if (event.clientY > document.querySelector('.header').getBoundingClientRect().bottom) {
         if (event.clientX > document.querySelector('.hamburger-menu').offsetWidth && 
             ([document.querySelector('.hamburger-menu-icon'),
