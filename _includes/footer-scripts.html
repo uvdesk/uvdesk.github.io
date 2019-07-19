@@ -7,6 +7,10 @@
        initializeSearchBarHandler(); 
     });
 
+    window.addEventListener('keyup', (event) => {
+        dropdownSelectionKeydown(event);
+    });
+
     function initializeSearchBarHandler() {
         
 
@@ -14,7 +18,7 @@
             searchInput: document.querySelector('.inline-header .searchbar .searchBox'),
             resultsContainer: document.querySelector('.inline-header .searchbar .results-container'),
             dataSource: '{{ side.baseurl }}/search.json',
-            searchResultTemplate: '<li><a onclick="saveSearchTerm(event)" href="{url}" title="{title}">{title}<\/a><\/li>',
+            searchResultTemplate: '<li><a class="" onclick="saveSearchTerm(event)" href="{url}" title="{title}">{title}<\/a><\/li>',
             noResultsText: '<li><a href="javascript:void(0)">No Results Found</a></li>',
             fuzzy: true
         });
@@ -30,32 +34,47 @@
             });
         }
     }
-    
+   
     function dropdownSelectionKeydown(event) {
-        const resultsContainer = event.target.nextElementSibling;
-        if (resultsContainer.children.length > 0 && (event.keyCode === 38 || event.keyCode === 40)) {
-            if (searchBoxResultSelectedItem()) {
-                removeDropdownItem(searchBoxResultSelectedItem());
+        
+        const resultsContainer = window.innerWidth < 1000 ? document.querySelector('.hamburger-menu-wrapper .searchbar .results-container') : document.querySelector('.inline-header .searchbar .results-container');
+       
+
+        if (resultsContainer.children.length > 0 && (event.keyCode === 38 || event.keyCode === 40 || event.keyCode === 13)) {
+            const resultsContainerHeight = resultsContainer.getBoundingClientRect().height;
+            const resultsContainerElementHeight = resultsContainer.firstElementChild.getBoundingClientRect().height
+            const scrollRatio = Math.floor(resultsContainerHeight / resultsContainerElementHeight);
+            if (resultsContainer.children[searchBoxResultSelectedItem()]) {
+                removeDropdownItem(resultsContainer.children[searchBoxResultSelectedItem()]);
             }
             switch(event.keyCode) {
                 case 38:
-                    searchBoxResultSelectedItem(searchBoxResultSelectedItem() ? (searchBoxResultSelectedItem().previousElementSibling ? searchBoxResultSelectedItem().previousElementSibling : resultsContainer.children[resultsContainer.children.length - 1]) : resultsContainer.children[resultsContainer.children.length-1])
-                    addDropdownItem(searchBoxResultSelectedItem());
+                    searchBoxResultSelectedItem(searchBoxResultSelectedItem() > 0 ? searchBoxResultSelectedItem() - 1 : resultsContainer.children.length - 1);
+                    resultsContainer.scrollTop -= Math.floor(resultsContainer.scrollHeight / resultsContainer.children.length * 0.5);
+                    addDropdownItem(resultsContainer.children[searchBoxResultSelectedItem()]);
+                    if ((searchBoxResultSelectedItem() === (resultsContainer.children.length - 1) )) {
+                        resultsContainer.scrollTop = resultsContainer.scrollHeight;
+                    }
                     break;
-                
                 case 40:
-                    searchBoxResultSelectedItem(searchBoxResultSelectedItem() ? (searchBoxResultSelectedItem().nextElementSibling ? searchBoxResultSelectedItem().nextElementSibling : resultsContainer.children[0]) : resultsContainer.children[0]);
-                    console.log(searchBoxResultSelectedItem().firstElementChild);
-                    console.log(searchBoxResultSelectedItem().nextElementSibling.nextElementSibling.firstElementChild);
-                    console.log(resultsContainer.childNodes[0].firstElementChild);
-                    addDropdownItem(searchBoxResultSelectedItem());
+                    searchBoxResultSelectedItem(searchBoxResultSelectedItem() < resultsContainer.children.length - 1 ? searchBoxResultSelectedItem() + 1 : 0);
+                    if (searchBoxResultSelectedItem() >= scrollRatio) {
+                        resultsContainer.scrollTop += Math.floor(resultsContainerElementHeight) ;
+                    }
+                    addDropdownItem(resultsContainer.children[searchBoxResultSelectedItem()]);
+                    if ( (searchBoxResultSelectedItem() === 0 )) {
+                        resultsContainer.scrollTop = 0;
+                    }
                     break;
+                case 13:
+                    if (searchBoxResultSelectedItem() >= 0 && searchBoxResultSelectedItem() <= resultsContainer.children.length)
+                        resultsContainer.children[searchBoxResultSelectedItem()].firstElementChild.click();
             }
-        }
+        }        
     }
 
     function saveSearchTerm(event) {
-        sessionStorage.setItem("search", event.target.parentNode.parentNode.previousElementSibling.value);
+        sessionStorage.setItem("search", event.target.innerHTML);
     }
 
     function addDropdownItem(item) {

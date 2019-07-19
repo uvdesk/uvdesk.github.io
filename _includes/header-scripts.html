@@ -9,13 +9,13 @@
     const openedDropdownItem = staticVariable();
 
 
-    const searchBoxResultSelectedItem = staticVariable();
+    const searchBoxResultSelectedItem = staticVariable(-1);
 
     // closure for storing static values
     function staticVariable(init = null) {
         let currentValue = init;
         return function (newValue = null) {
-            if (newValue) {
+            if (newValue||newValue === 0) {
                 currentValue = newValue;
             }
             return currentValue;

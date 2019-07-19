@@ -57,11 +57,12 @@ async function load() {
 }
 
 async function loadSearchTextBox() {
-    if (window.innerWidth < 1000) {
-        document.querySelector('.hamburger-menu-wrapper .searchbar .searchBox').value = sessionStorage.getItem('search');
-    } else {
-        document.querySelector('.inline-header .searchbar .searchBox').value = sessionStorage.getItem('search');
+    
+    const searchBOXes = document.querySelectorAll('.searchBox');
+    for (let i = 0; i < searchBOXes.length; i++) {
+        searchBOXes[i].value = sessionStorage.getItem('search');
     }
+    
 }
 
 //for footer-button
@@ -205,4 +206,5 @@ function hideSearchBarDropdown (event) {
     if (event.clientX > rect.right || event.clientX < rect.left || event.clientY > rect.bottom || event.clientY < resultsContainer.previousElementSibling.getBoundingClientRect().top) {
         resultsContainer.classList.add('display-none');
     }
+    searchBoxResultSelectedItem(-1);
 }
