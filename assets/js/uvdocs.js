@@ -44,15 +44,25 @@ if (current) {
 }
 
 window.onload = load;
-function load() {
+async function load() {
     var retrievedData = sessionStorage.getItem("activeId");
     var idArray = JSON.parse(retrievedData);
+    loadSearchTextBox();
     if (idArray && (idArray instanceof Array) ) {
         for (let i = 0; i < idArray.length; i++) {
             document.getElementById(idArray[i]).classList.add('open');
 
         }
     }
+}
+
+async function loadSearchTextBox() {
+    
+    const searchBOXes = document.querySelectorAll('.searchBox');
+    for (let i = 0; i < searchBOXes.length; i++) {
+        searchBOXes[i].value = sessionStorage.getItem('search');
+    }
+    
 }
 
 //for footer-button
@@ -92,7 +102,7 @@ function onSelectDropdownItem(event = null) {
     if (currentItem && (currentItem !== event.target)) {
         unSelectDropdownItem(currentItem);
     }
-
+    
     if (event && (currentItem !== event.target)) {
         if(event.preventDefault) {
             event.preventDefault();
@@ -156,15 +166,18 @@ function onClickHamburgerIcon() {
 }
 // close the hamburger menu on the clicking the area outside the hamburger menu
 document.body.addEventListener('mousedown', (event) => {
-    if (event.clientX > document.querySelector('.hamburger-menu').offsetWidth && 
-        ([document.querySelector('.hamburger-menu-icon'),
-           document.querySelector('.hmi-bar1'),
-           document.querySelector('.hmi-bar2'),
-           document.querySelector('.hmi-bar3')].indexOf(event.target) === -1)) {
-        const hamburgerButton = document.querySelector('.hamburger-menu-icon');
-        if (hamburgerButton.classList.contains('hamburger-menu-icon-change')) {
-            closeHamburgerMenu(hamburgerButton, hamburgerMenu = document.querySelector('.hamburger-menu'));
-        }
+    if (event.clientY > document.querySelector('.header').getBoundingClientRect().bottom) {
+        if (event.clientX > document.querySelector('.hamburger-menu').offsetWidth && 
+            ([document.querySelector('.hamburger-menu-icon'),
+               document.querySelector('.hmi-bar1'),
+               document.querySelector('.hmi-bar2'),
+               document.querySelector('.hmi-bar3')].indexOf(event.target) === -1)) {
+            const hamburgerButton = document.querySelector('.hamburger-menu-icon');
+            if (hamburgerButton.classList.contains('hamburger-menu-icon-change')) {
+                closeHamburgerMenu(hamburgerButton, hamburgerMenu = document.querySelector('.hamburger-menu'));
+            } 
+        } 
+        hideSearchBarDropdown(event);
     }
 });
 
@@ -187,12 +200,11 @@ function isInlineLink(link, domainName) {
 }
 
 //close the search bar when user clicks on the body.
-window.onclick = function() {
-
-    if(document.querySelector(".results-container").hasChildNodes())
-    {
-        document.querySelector(".searchBox").value = '';
-        document.querySelector(".results-container").innerHTML = '';
+function hideSearchBarDropdown (event) {
+    const resultsContainer = window.innerWidth < 1000 ? document.querySelector('.hamburger-menu-wrapper .searchbar .results-container') : document.querySelector('.inline-header .searchbar .results-container');
+    const rect = resultsContainer.getBoundingClientRect();
+    if (event.clientX > rect.right || event.clientX < rect.left || event.clientY > rect.bottom || event.clientY < resultsContainer.previousElementSibling.getBoundingClientRect().top) {
+        resultsContainer.classList.add('display-none');
     }
-
+    searchBoxResultSelectedItem(-1);
 }
