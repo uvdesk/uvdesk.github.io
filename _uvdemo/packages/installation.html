@@ -1,0 +1,32 @@
+---
+layout: component-layout
+title: How to Install a Package?
+link-title: Installation - Packages
+category: Packages
+url: /uvdemo/packages/installation-ubuntu.html
+tags: [Install Package, Package Installation, Package]
+---
+<div class="installation-component">
+  <p class="component-title">{{ page.title }}</p>
+  <div class="components-topics">
+    <p class="component-sub-title">Steps To Install a Package in Open Source Helpdesk Ticketing System</p>
+    <p class="image-heading"><b>Step 1 -</b></p>
+    <p class="paragraph1">Browse to the <b><em>apps</em></b> directory of your helpdesk installation</p>
+      <img class='ipsum-logo' src="/assets/images/packages/installation/apps-directory.png" alt="uvdesk-image">
+    <p class="image-heading"><b>Step 2 -</b></p>
+    <p class="paragraph1">Inside the <b><em>apps</em></b> directory put your package source code</p>
+    <p class="image-heading"><b>Step 3 -</b></p>
+    <p class="paragraph1">Now, Go back to your helpdesk root directory and run the following commands:</p>
+      <img class='ipsum-logo' src="/assets/images/packages/create-package-skeleton/0.png" alt="uvdesk-image">
+    <p class="command-heading">Package Configuration:</p>
+    <p class="command">php bin/console uvdesk_extensions:configure-extensions</p>
+      <img class='ipsum-logo' src="/assets/images/packages/installation/1.png" alt="uvdesk-image">
+    <p class="command-heading">Assets Installation:</p>
+    <p class="command">php bin/console assets:install</p>
+      <img class='ipsum-logo' src="/assets/images/packages/installation/2.png" alt="uvdesk-image">
+    <p class="command-heading">Clear Cache:</p>
+    <p class="command">php bin/console cache:clear</p>
+      <img class='ipsum-logo' src="/assets/images/packages/installation/3.png" alt="uvdesk-image">
+      <p class="paragraph1">Now, The package will be successfully installed into your helpdesk installation</p>
+  </div>
+</div>

@@ -67,6 +67,13 @@ sidebar:
       - page: Mail Box
         url: /uvdemo/settings/mailbox.html
 
+  - title: Packages
+    items:
+      - page: Installation 
+        url: /uvdemo/packages/installation.html
+      - page: Creating a Package Skeleton
+        url: /uvdemo/packages/create-package-skeleton.html
+
   - title: Helpful Links
     items:
       - page: Schedule a Demo
