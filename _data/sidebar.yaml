@@ -62,9 +62,9 @@ sidebar:
         url: /uvdemo/settings/swiftmailer.html
       - page: Email Settings
         url: /uvdemo/settings/email-settings.html
-      - page: Block Spam
+      - page: Spam Settings
         url: /uvdemo/settings/block-spam.html
-      - page: Mail Box
+      - page: MailBox
         url: /uvdemo/settings/mailbox.html
 
   - title: Helpful Links
