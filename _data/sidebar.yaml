@@ -98,3 +98,8 @@ sidebar:
     items:
       - page: Create Ticket
         url: https://support.uvdesk.com/en/customer/create-ticket/
+
+  - title: Dockerize Your Application
+    items:
+      - page: Docker
+        url: /uvdemo/default/docker.html
