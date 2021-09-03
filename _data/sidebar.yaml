@@ -16,6 +16,11 @@ sidebar:
         url: /uvdemo/installation/installation-windows.html
       - page: Mac
         url: /uvdemo/installation/installation-mac.html
+
+  - title: Apps
+    items:
+      - page: Ubuntu
+        url: /uvdemo/installation/installation-ubuntu.html
   
   - title: Users
     items:
@@ -38,6 +43,8 @@ sidebar:
         url: /uvdemo/knowledgebase/category.html
       - page: Article
         url: /uvdemo/knowledgebase/article.html
+      - page: Marketing Announcement
+        url: /uvdemo/knowledgebase/marketing_announcement.html
   
   - title: Productivity
     items:
