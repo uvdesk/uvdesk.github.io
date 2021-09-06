@@ -19,8 +19,8 @@ sidebar:
 
   - title: Apps
     items:
-      - page: Ubuntu
-        url: /uvdemo/installation/installation-ubuntu.html
+      - page: Explore Apps
+        url: /uvdemo/apps/Explore-apps.html
   
   - title: Users
     items:
