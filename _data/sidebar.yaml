@@ -58,6 +58,11 @@ sidebar:
         url: /uvdemo/productivity/workflow.html
       - page: Prepared Responses
         url: /uvdemo/productivity/prepared-response.html
+
+  - title: Reports
+    items:
+      - page: Agent Acitivty
+        url: /uvdemo/reports/agent-activity.html
   
   - title: Settings
     items:
