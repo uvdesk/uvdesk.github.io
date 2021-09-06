@@ -63,6 +63,9 @@ sidebar:
     items:
       - page: Agent Acitivty
         url: /uvdemo/reports/agent-activity.html
+      - page: Kudos
+        url: /uvdemo/reports/kudos.html
+    
   
   - title: Settings
     items:
