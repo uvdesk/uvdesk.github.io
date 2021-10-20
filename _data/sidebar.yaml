@@ -20,7 +20,7 @@ sidebar:
   - title: Apps
     items:
       - page: Explore Apps
-        url: /uvdemo/apps/Explore-apps.html
+        url: /uvdemo/apps/explore_apps.html
   
   - title: Users
     items:
