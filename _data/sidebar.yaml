@@ -16,6 +16,11 @@ sidebar:
         url: /uvdemo/installation/installation-windows.html
       - page: Mac
         url: /uvdemo/installation/installation-mac.html
+
+  - title: Apps
+    items:
+      - page: Explore Apps
+        url: /uvdemo/apps/Explore-apps.html
   
   - title: Users
     items:
@@ -38,6 +43,8 @@ sidebar:
         url: /uvdemo/knowledgebase/category.html
       - page: Article
         url: /uvdemo/knowledgebase/article.html
+      - page: Marketing Announcement
+        url: /uvdemo/knowledgebase/marketing_announcement.html
   
   - title: Productivity
     items:
@@ -51,6 +58,14 @@ sidebar:
         url: /uvdemo/productivity/workflow.html
       - page: Prepared Responses
         url: /uvdemo/productivity/prepared-response.html
+
+  - title: Reports
+    items:
+      - page: Agent Acitivty
+        url: /uvdemo/reports/agent-activity.html
+      - page: Kudos
+        url: /uvdemo/reports/kudos.html
+    
   
   - title: Settings
     items:
