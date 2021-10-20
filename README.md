@@ -56,6 +56,16 @@ $ gem install bundler
         Server running... press ctrl-c to stop.
         ```
 
+        OR
+
+        If port 4000 is engaged then put another port and run project using below command.
+
+        For Example:
+
+        ```
+        bundle exec jekyll serve --livereload --port 4001
+        ```
+
     3. Use the **Server address** URL http://127.0.0.1:4000/ in a browser to preview the content.
     
     4. Press `Ctrl+C` in the serve terminal to stop the server. 
