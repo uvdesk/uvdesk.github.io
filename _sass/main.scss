@@ -274,7 +274,7 @@ a:visited {
   padding: 10px;
 }
 
-@media all and(min-width: 1261px) {
+@media all and (min-width: 1261px) {
   .item.box-3 {
     grid-column: 4 / 5;
   }
@@ -448,14 +448,14 @@ a:visited {
 }
 
 
-@media all and(min-width: 1261px) {
+@media all and (min-width: 1261px) {
   .ticket {
     grid-column: 4 / 5;
     grid-row: 1 / span 2;
   }
 }
 
-@media all and(max-width: 1260px) {
+@media all and (max-width: 1260px) {
   .helpful-links-grid-container {
     grid-template-columns: auto auto;
   }
@@ -478,7 +478,7 @@ a:visited {
   }
 }
 
-@media all and(max-width: 846px) {
+@media all and (max-width: 846px) {
   .helpful-links-grid-container {
     grid-template-columns: auto;
     grid-row-gap: var(--grid-row-gap);

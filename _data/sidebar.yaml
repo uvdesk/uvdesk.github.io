@@ -45,6 +45,8 @@ sidebar:
         url: /uvdemo/knowledgebase/article.html
       - page: Marketing Announcement
         url: /uvdemo/knowledgebase/marketing_announcement.html
+      - page: Marketing Modules
+        url: /uvdemo/knowledgebase/marketing_modules.html
   
   - title: Productivity
     items:
