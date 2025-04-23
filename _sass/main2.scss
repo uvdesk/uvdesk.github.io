@@ -89,16 +89,18 @@
     color:#131516;
     padding-right: 10px; 
     overflow-x: hidden !important;
+    font-weight: var(--heading-font-weight, bold);
   }
   .component-sub-title{
     font-size: 20px !important;
     margin-left: -15px;
     padding-bottom: 5px;
-    color: #3a3535;
+    color: #131516;
     padding-right: 10px; 
     font-size: 22px;
     overflow-x: hidden !important;
     max-width: 85%;
+    font-weight: var(--heading-font-weight, bold);
   }
  .sub-a{
    margin-left: -54px; 
@@ -116,10 +118,13 @@
   .command-heading{
     margin-left: 10px;
     padding-bottom: 15px;
-    color: #171819;
+    color: #131516;
     padding-right: 10px;
     font-size: 15px !important; 
     overflow-x: hidden !important; 
+    font-weight: var(--heading-font-weight, bold);
+
+    
   }
   .command {
     margin-left: 10px;
