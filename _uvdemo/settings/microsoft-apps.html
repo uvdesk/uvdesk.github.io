@@ -1,0 +1,61 @@
+---
+layout: component-layout
+title: How to use Microsoft App
+link-title: Microsoft App
+category: Settings
+url: /uvdemo/settings/microsoft-app.html
+tags: Microsoft App Azure Active Directory OAuth Microsoft Integration
+---
+
+<div class="installation-component">
+    <p class="component-title">UVdesk - How to use Microsoft App</p>
+
+    <div class="components-topics">
+        <p class="component-sub-title"><b>What Is Microsoft App?</b></p>
+        <p class="paragraph1">The Microsoft App integration allows you to link your UVdesk support system with Microsoft Azure Active Directory. This enables you to retrieve user information and access email data securely using Microsoft Graph APIs.</p>
+        <p class="paragraph1">Here I am drafting out few configuration steps to automatically integrate your Microsoft App in the UVdesk.</p>
+
+        <p class="component-sub-title"><b>Steps to use Microsoft App :</b></p>
+        <ol class="paragraph1">
+            <li><i class="fa fa-caret-right"></i> Login to your UVdesk Support Panel.</li>
+            <li><i class="fa fa-caret-right"></i> On the Dashboard, you will see <b>"SETTINGS"</b> menu and under it, you will find <b>"Microsoft Apps"</b>.</li>
+
+            <br/>
+            <img class='ipsum-logo' src="/assets/images/settings/microsoft_apps.png" alt="uvdesk-image">
+
+            <li><i class="fa fa-caret-right"></i> Now, just click on <b>“New App”</b> button.</li>
+
+            <br/>
+            <img class='ipsum-logo' src="/assets/images/settings/ms1.png" alt="uvdesk-image">
+
+            <li><i class="fa fa-caret-right"></i> Need to fill out all below details and proceed by clicking <b>“Proceed”</b> button.</li>
+        </ol>    
+            <p class="image-heading"><b>Configurations:</b></p>
+            <ol class="paragraph1">
+                <li><b>App Name:</b> Enter an app name to easily help you identify its purpose.</li>
+                <li><b>Supported Account Types:</b> Choose "Accounts in any organizational directory and personal Microsoft accounts".</li>
+                <li><b>Redirect URI:</b> Select platform as Web and enter <code>https://localhost/helpdesk-project/public/en/member/integrations/microsoft-apps/oauth/login</code>.</li>
+                <li><b>Client Secret:</b> Go to Certificates & Secrets > New Client Secret, enter a description, choose an expiration time and copy the generated value.</li>
+                <li><b>API Permissions:</b> Navigate to API Permissions and add the following Delegated permissions:
+                    <ul>
+                        <li>offline_access</li>
+                        <li>openid</li>
+                        <li>profile</li>
+                        <li>User.Read</li>
+                        <li>IMAP.AccessAsUser.All</li>
+                        <li>SMTP.Send</li>
+                        <li>POP.AccessAsUser.All</li>
+                        <li>Mail.Read</li>
+                        <li>Mail.ReadBasic</li>
+                        <li>Mail.Send</li>
+                        <li>Mail.Send.Shared</li>
+                    </ul>
+                </li>
+                <li><b>Application (Client) Id:</b> Copy it from the App Overview page.</li>
+                <li><b>Directory (Tenant) Id:</b> Copy it from the same Overview page.</li>
+            </ol>
+            <br/>
+            <img class='ipsum-logo' src="/assets/images/settings/ms2.png" alt="uvdesk-image">
+
+    </div>
+</div>

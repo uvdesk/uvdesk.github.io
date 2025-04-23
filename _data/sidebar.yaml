@@ -81,8 +81,12 @@ sidebar:
         url: /uvdemo/settings/email-settings.html
       - page: Spam Settings
         url: /uvdemo/settings/block-spam.html
-      - page: MailBox
+      - page: Mailbox
         url: /uvdemo/settings/mailbox.html
+      - page: Api
+        url: /uvdemo/settings/api.html
+      - page: Microsoft Apps
+        url: /uvdemo/settings/microsoft-apps.html
 
   - title: Helpful Links
     items:
