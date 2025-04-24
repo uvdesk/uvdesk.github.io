@@ -32,11 +32,11 @@
   --ticket-top-margin: 22px;
   --ticket-button-width: 126px;
   --ticket-content-bottom-padding: 15px;
-  --hamburger-menu-width: 250px;
+  --hamburger-menu-width: 280px;
   --hamburger-menu-item-left-margin: 40px;
   --hamburger-menu-item-bottom-margin: 10px;
   --hamburger-menu-item-font-family: "Source Sans Pro", "Arial", sans-serif;
-  --hamburger-menu-item-font-size: 16px;
+  --hamburger-menu-item-font-size: 20px;
   --hamburger-menu-item-font-weight: 400;
   --hamburger-menu-seperator-margin: 20px;
   --hamburger-menu-dropdown-container-item-left-margin: 15px;
@@ -680,10 +680,14 @@ a:visited {
   margin-left: var(--hamburger-menu-dropdown-container-item-left-margin);
 }
 
-.dropdown-btn:hover, .dropdown-container a:hover {
-  color: var(--paragraph-heading-color);
+.dropdown-btn:hover {
+  color: var(--purple-bg-shade);
   opacity: 1;
-  border-bottom-color: var(--purple-bg-shade);
+}
+
+.dropdown-container a:hover {
+  color: var(--purple-bg-shade) !important;
+  opacity: 1 !important;
 }
 
 .hamburger-menu-wrapper .parent button:visited,
@@ -758,6 +762,13 @@ a:visited {
 .is-selected {
   color: var(--purple-bg-shade) !important;
   font-weight: bold !important;
+  background-color: rgba(59, 130, 246, 0.5);
+  width: 84%;
+  text-align: left;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: visible;
+  padding-left: 4px;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -765,6 +776,23 @@ a:visited {
     display: none;
   }
 }
+.hamburger-menu::-webkit-scrollbar {
+  width: 10px; /* adjust as needed */
+}
+
+.hamburger-menu::-webkit-scrollbar-track {
+  background: rgba(59, 130, 246, 0.5); /* track color */
+  border-radius: 10px;
+}
+
+.hamburger-menu::-webkit-scrollbar-thumb {
+  background-color: rgba(59, 130, 246, 0.5); /* scrollbar handle */
+  background-color: var(--purple-bg-shade); /* scrollbar handle */
+  border-radius: 10px;
+  border: 2px solid transparent; /* space around the thumb */
+  background-clip: content-box;
+}
+
 .component-container {
   display: grid;
   grid-template-columns: var(--hamburger-menu-width) 1fr;
