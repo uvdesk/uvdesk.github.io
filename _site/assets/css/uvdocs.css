@@ -1453,5 +1453,11 @@ a:visited {
     width: 350px !important;
   }
 }
+.image-heading b::before {
+  content: "• ";
+  color: #000;
+  font-weight: bold;
+  margin: 2px 0px 4px 0px;
+}
 
 /*# sourceMappingURL=uvdocs.css.map */
