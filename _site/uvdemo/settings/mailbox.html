@@ -421,7 +421,7 @@
 
 </div>
             <div class="footer">
-                <span> &copy; Copyright 2021 Webkul Software. All rights reserved under MIT License.</span>
+                <span> &copy; Copyright <span id="copyright-year"></span> Webkul Software. All rights reserved under MIT License.</span>
             </div><script src="/assets/js/uvdocs.js" async defer></script>
 <script src="/js/jekyll-search.js" type="text/javascript"></script>
 <script type="text/javascript">
@@ -519,5 +519,8 @@
     }
 
 </script></div>
+        <script>
+            document.getElementById("copyright-year").textContent = ` ${new Date().getFullYear()}`;
+          </script>
     </body>
 </html>
