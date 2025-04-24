@@ -5,7 +5,7 @@
     "category" : "Apps",
     "tags"     : "Apps, Add Apps, Create Apps, Creating Apps, New Apps, Explore Apps, Publish Apps",
     "url"      : "/uvdemo/apps/explore_apps.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    UVdesk - How to add an Apps?            What are Explore Apps?        Integrate Apps as per as your needs to get things done faster than ever.        Steps for adding apps-                     Login to the UVdesk Support Portal.             On the Dashboard, you will see &quot;APPS&quot; menu and under it, you will find &quot;Explore apps&quot;.                                     Click on the &quot;Explore apps&quot; Icon and then you will be redirected to a new page.                         In the new page, you will see a search bar and along with the pre-installed apps (if any).             Here you can add apps and save changes.                 You can purchase the apps for your helpdesk from here.    "
     } ,
     
@@ -14,7 +14,7 @@
     "category" : "",
     "tags"     : "",
     "url"      : "/uvdemo/apps/index.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    Apps            Explore Apps                    Installation on Ubuntu            "
     } ,
     
@@ -23,7 +23,7 @@
     "category" : "",
     "tags"     : "",
     "url"      : "/uvdemo/default/docker.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    UVdesk - Dockerize helpdesk project            You can also dockerize your helpdesk project to easily deploy your setup from within a docker container.        To build an image, simply switch to your project&#39;s directory and run the following command:        $ docker build -t {IMAGE_NAME} .        Upon successfull execution, this will create a docker image with the specified tag using the -t option. You can use this image to deploy your helpdesk project using either:&lt;/br/&gt;        docker run or docker-compose."
     } ,
     
@@ -32,7 +32,7 @@
     "category" : "",
     "tags"     : "",
     "url"      : "/uvdemo/installation/index.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    Installation            Installation &amp; Update                    Installation on Ubuntu            Installation on Windows            Installation on Mac            "
     } ,
     
@@ -41,7 +41,7 @@
     "category" : "Installation",
     "tags"     : "Install Installation, Mac Install, Mac, XAMPP, Download, Configuration, Migration, Helpdesk, Admin, PHP, System Requirement",
     "url"      : "/uvdemo/installation/installation-mac.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    Installation - Mac            Steps To Install Open Source Helpdesk On XAMPP:        Step 1 -        Install the community-skeleton project via composer using the below-structured command on XAMPP:        Clear Cache:        composer clear-cache        Create Project:        composer create-project uvdesk/community-skeleton helpdesk-project        OR        Download ZIP archive of latest stable release from our official site and extract it.        Step 2 -        Browse your installed helpdesk project. For example – http://domain/installed_folder/public/                    Step 3 - Set Up Helpdesk                    Step 4 - Evaluating System Requirement                    Step 5 - Database Configuration                    Step 6 - Create Super Admin Account                    Step 7 - Website Configuration                    Step 8 -Install Now                    Step 9 - Database Migration                    Step 10 - The Helpdesk Has Been Installed Successfully on XAMPP                        "
     } ,
     
@@ -50,7 +50,7 @@
     "category" : "Installation",
     "tags"     : "Install Ubuntu, Ubuntu Installation, Installed, Configuration, Migration, Helpdesk, Admin, System, Requirements, Download, PHP",
     "url"      : "/uvdemo/installation/installation-ubuntu.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    Installation - Ubuntu            Steps To Install Open Source Helpdesk Ticketing System On Ubuntu:        Step 1 -        Install the community-skeleton project via composer using the below-structured command:        Clear Cache:        composer clear-cache        Create Project:        composer create-project uvdesk/community-skeleton helpdesk-project        OR        Download ZIP archive of latest stable release from our official site and extract it.        Step 2 -        Browse your installed helpdesk project. For example – http://domain/installed_folder/public/                    Step 3 - Set Up Helpdesk                    Step 4 - Evaluating System Requirement                    Step 5 - Database Configuration                    Step 6 - Create Super Admin Account                    Step 7 - Website Configuration                    Step 8 -Install Now                    Step 9 - Database Migration                    Step 10 - The Helpdesk Has Been Installed Fully                "
     } ,
     
@@ -59,7 +59,7 @@
     "category" : "Installation",
     "tags"     : "Install Windows, Windows Installation, WAMP, Configuration, Migration, Helpdesk, Admin, System Requirements, Download, PHP",
     "url"      : "/uvdemo/installation/installation-windows.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    Installation - Windows            Steps To Install Open Source Helpdesk On WAMP:        Step 1 -        Install the community-skeleton project via composer using the below-structured command on WAMP:        Clear Cache:        composer clear-cache        Create Project:        composer create-project uvdesk/community-skeleton helpdesk-project        OR        Download ZIP archive of latest stable release from our official site and extract it.        Step 2 -        Browse your installed helpdesk project. For example – http://domain/installed_folder/public/                    Step 3 - Set Up Helpdesk                    Step 4 - Evaluating System Requirement                    Step 5 - Database Configuration                    Step 6 - Create Super Admin Account                    Step 7 - Website Configuration                    Step 8 -Install Now                    Step 9 - Database Migration                    Step 10 - The Helpdesk Has Been Installed Successfully on WAMP                "
     } ,
     
@@ -68,7 +68,7 @@
     "category" : "Knowledgebase",
     "tags"     : "Article, Add Article, Create Article, Creating Article, New Article, Categories, Publish Article",
     "url"      : "/uvdemo/knowledgebase/article.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    UVdesk - How to add an Article?            What is an Article?        These are the rich content text files providing relevant information for any particular topic. One can quickly get the answers to all the problems from these rich content articles.        In short, the articles are saved documents from which a customer or a user can fetch valuable information. You can make sure that your customer has a right insight by sharing a proper and standard knowledge base with them.        The support agents if they have a privilege can add and organize solution articles under the category and folders within the support portal so that your customers can quickly browse through them in their self-service portal.        Steps for creating a Article-                     Login to your UVdesk Support Panel.             On the Dashboard, you will see &quot;KNOWLEDGEBASE&quot; menu and under it, you will find &quot;Articles&quot;.                                     Click on the &quot;Articles&quot; Icon and then you will be redirected to a new page.             You will see a list of existing articles with its status, edit &amp; delete buttons. You will also see Category and ID for each article.                         Click on &quot;New Article&quot; button to add a new Article.             Enter Title, Content under the Article Tab.              When the status of the article is Publish, then the article will be displayed on the front-end.                             Under the SEO, enter Slug, Meta Title, Meta Keywords &amp; Meta Description.                         Under the Related Articles, you can enter the Article Title which you want to display on the front-end to the customer along with this current article.                         Under the Revisions feature, it stores a record of each saved or published article. You to see what changes you made in the article along with the time and date and you can also restore back the revision made on any specific date.             The agent will also add Categories into the article by typing the first two alphabets of the Category name and then select it and add in the article.             The agent will also view, preview and update their articles as taping on the front right side corner buttons.                         Click on &quot;Save Changes&quot; to save information and create a new Article.            "
     } ,
     
@@ -77,7 +77,7 @@
     "category" : "Knowledgebase",
     "tags"     : "Category, Categories, Add Category, Create Category, Create Categories, Add Categories, Publish Category",
     "url"      : "/uvdemo/knowledgebase/category.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    UVdesk - How to add a Category?            What is a Category?        Categories refer to the information for a specific topic and these categories will contain articles in it. A knowledge base normally contains folders which have a number of categories and articles in it.        With helpdesk, the owner can make sure that the customers always have a right insight by sharing knowledge with them.        The support agents if they have a privilege can add and organize solution articles as folders within the support portal so that your customers can quickly browse through them in their self-service portal.        Steps for creating a Category-                     Login to your UVdesk Support Panel.             On the Dashboard, you will see &quot;KNOWLEDGEBASE&quot; menu and under it, you will find &quot;Category&quot;.                                     Click on the &quot;Category&quot; Icon and then you will be redirected to a new page.             You will see a list of existing categories with its status, edit &amp; delete buttons. You will also see a number of articles in each category.                         Click on &quot;New Category&quot; button to add a new Category.             Enter Name, Description, Folder, Sort Order. From the drop-down select Sorting option and select the Status as Publish or Draft of the Category from the drop-down.             When the status is Publish, then the category will be displayed on the front-end.                             Click on &quot;Save Changes&quot; to save information and create a new Category.            "
     } ,
     
@@ -86,7 +86,7 @@
     "category" : "Knowledgebase",
     "tags"     : "Folder, Add Folder, Create Folder, New Folder, Categories, Category",
     "url"      : "/uvdemo/knowledgebase/folder.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    UVdesk - How to add a Folder?            What is a Folder?        The folder can be created as per the requirements of the department related to various issues. Under Folders, multiple categories can be created and within categories, relevant articles are added.        The support agents if they have a privilege can add and organize solution articles as folders within the support portal so that your customers can quickly browse through them in their self-service portal.        Steps for Creating Folders:-                     Login to the UVdesk Support Portal.             On the Dashboard, you will see &quot;KNOWLEDGEBASE&quot; menu and under it, you will find &quot;Folders&quot;.                                     Click on the &quot;Folders&quot; Icon and then you will be redirected to a new page.             You will see a grid of existing folders with its Categories &amp; Articles.                         Click on &quot;New Folder&quot; button to add a new Folder.             Enter Name, Description, upload Folder Image, and select the Status as Publish or Draft of the Folder from the drop-down.             When the status is Publish, then the folder will be displayed on the front-end.                             Click on &quot;Save Changes&quot; to save information and create a new Folder.            "
     } ,
     
@@ -95,7 +95,7 @@
     "category" : "",
     "tags"     : "",
     "url"      : "/uvdemo/knowledgebase/index.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    Knowledgebase            Hub of information which works as the user guide for the customers to help themselves.        Components :                    Folder            Category            Article            "
     } ,
     
@@ -104,7 +104,7 @@
     "category" : "Knowledgebase",
     "tags"     : "Marketing, Marketing Announcement, Add Marketing Announcement, Create Marketing Announcement, Creating Marketing Announcement, New Marketing Announcement, Categories, Publish Marketing Announcement",
     "url"      : "/uvdemo/knowledgebase/marketing_announcement.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    UVdesk - How to add an Announcement?            What is a Marketing Announcement?        Add promotional information that includes promo title, promo text, tag, tag color, and product link with text.        This promotional information will display on the customer panel.        Steps for creating a Marketing Announcement-                     Login to your UVdesk Support Panel.             On the Dashboard, you will see &quot;KNOWLEDGEBASE&quot; menu and under it, you will find &quot;Marketing Announcement&quot;.                                     Click on the &quot;Marketing Announcement&quot; Icon and then you will be redirected to a new page.             Click on &quot;New Announcement&quot; button to add a new Announcement.                                      Enter Title, Promo text and select the promo tag as offer, new and  Update accordingly from the drop down and choose the tag color.                                     Enter the link text and paste the link URL, select the status as publish or draft and choose the group from the drop down.             When the status is Publish, then the “Marketing Announcement” will be displayed on the front-end.             Click on &quot;Save Advertisement&quot; to save information.                  Customer End - Preview        The marketing announcement which you have created will shown on the customer side as in given below snapshot :             "
     } ,
     
@@ -113,7 +113,7 @@
     "category" : "Knowledgebase",
     "tags"     : "Marketing, Marketing Module, Add Marketing Module, Create Marketing Module, New Marketing Module, Promotions, Publish Marketing Module",
     "url"      : "/uvdemo/knowledgebase/marketing_modules.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    UVdesk - How to create a Marketing Module?            What is a Marketing Module?        The Marketing Module allows admins to display important updates like promotions or feature releases directly on the Customer Panel with full customization.        These announcements are visible only to logged-in customers and help keep users informed and engaged."
     } ,
     
@@ -122,7 +122,7 @@
     "category" : "",
     "tags"     : "",
     "url"      : "/uvdemo/productivity/index.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    Productivity              Automate your processes by creating set of rules and presets to respond faster to the tickets.        Components :                    Ticket Types            Tags            Saved Replies            Workflows            Prepared Responses            "
     } ,
     
@@ -131,7 +131,7 @@
     "category" : "Productivity",
     "tags"     : "Prepared Response, Add Prepared Response, Manual Workflow, Automate, New Prepared Response, Adding Prepared Response",
     "url"      : "/uvdemo/productivity/prepared-response.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    UVdesk - How to add Prepared Responses?            Prepared Responses are the Manual Workflow which can be applied to the ticket manually by the support staff or an agent. The owner or the support staff can create &quot;Prepared Responses&quot; easily. Without specifying the condition, you will be directed to the actions part.        The benefit of Prepared Responses:        Manual Workflow or Prepared Responses automate few things like ticket assignment, changing the status, tags, priorities, etc as per the need.        Quick Steps for adding Prepared Responses:                     Login to your UVdesk Support Panel.             On the Dashboard, you will see &quot;PRODUCTIVITY&quot; menu and under it, you will find &quot;Prepared Responses&quot;.                                     Click on the &quot;Prepared Responses&quot; Icon and then you will be redirected to a new page.             You will see a list of Prepared Responses with Delete &amp; Edit Button. You can also search the Prepared Responses in the search box. You can sort the Prepared Responses by Id &amp; Name and by the Status.                                     Click on &quot;New Prepared Response&quot; button for adding a new Prepared Response.             Enter Name, Description, select Prepared Response Status.                                     The prepared response can be shared with groups and teams.                                     Under the &quot;Actions&quot;, select Action and its consecutive option as per the requirement.                                      Click on &quot;Add Prepared Response&quot; to save the new Prepared Response.                Where can you use Prepared Responses?        On the ticket view, the agent can see in the footer, a drop-down for Prepared Response. From the drop-down options select the Manual workflow or Prepared Response which they want to apply for the ticket and those actions will be applied after the selection.                        "
     } ,
     
@@ -140,7 +140,7 @@
     "category" : "Productivity",
     "tags"     : "Saved Replies, Prepare Saved Replies, Create Saved Replies, Creating Saved Reply, Creating Saved Replies, Instant Reply, Instant Replies, Reply Templates, New Saved Reply",
     "url"      : "/uvdemo/productivity/replies.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    UVdesk - How to prepare Saved Replies?            Saving time by instant replies:        Even the vast knowledgebase can&#39;t protect support staffs or the agents from the most common questions coming up again and again by the customers.        This force agents to reinvent the wheel for the same set of questions which results in inconsistent replies and wasted queries.        What are Saved Replies?        Save agent&#39;s time by creating some pre-formatted reply templates to common queries- Saved Replies that helps the agent to answer the question within a single click.        For the next time, any customer asks a question - How to reset a password, the agent can quickly pop out a saved response for that issue and focus on other things that really matter.        Quicks steps for creating Saved Replies:                     Login to your UVdesk Support Panel.             On the Dashboard, you will see &quot;PRODUCTIVITY&quot; menu and under it, you will find &quot;Saved Replies&quot;.                                     Click on the &quot;Saved Replies&quot; Icon and then you will be redirected to a new page.             In the new page, you will see a list of existing Saved Replies and &quot;New Saved Reply&quot; button.                                     Hit the &quot;New Saved Reply&quot; button and then you will see a page for creating a new Saved Reply.             Enter the Name, Groups, Teams, content and select the placeholder.                                                 After that, click on &quot;Save Changes&quot; to save information and create a saved reply.             You can also sort the Saved Replies by Id, Name, and search any saved Reply by any keyword also.            "
     } ,
     
@@ -149,7 +149,7 @@
     "category" : "Productivity",
     "tags"     : "Tag, Tags, Ticket, Tickets, Add Tag to Ticket, Adding Tags to Tickets",
     "url"      : "/uvdemo/productivity/tags.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    UVdesk - How to add tags to a ticket?            What are tags &amp; its usage?        Tags are set of words that are used to add more meaning to the ticket and to make the ticket search easy.         Tags Usage:        Tag helps to label any ticket with specific words making it easier to search any ticket from a chunk of ticket list as it has been tagged.        For example - If you want to tag all the support requests having a prime concern related to presale then you can tag those tickets as &quot;Presale query&quot; or &quot;About presale&quot;. It will help a lot in ticket search.        Quicks steps for adding Tags:        The tags can be added manually to any ticket by the support staff or the administrator. Follow these simple steps to tag any ticket.                                 Login to your UVdesk Support Panel.             Go to the Ticket View and open a ticket as per your need.              On the left side of the ticket, you will find the Tags box.                                                 Enter the name of the tag which you want to add on that ticket and hit the enter button to save.             You can also view the list of added tags by following the path PRODUCTIVITY &gt; Tags.                                                 "
     } ,
     
@@ -158,7 +158,7 @@
     "category" : "Productivity",
     "tags"     : "Ticket Type, Ticket Types, Ticket, Create Ticket Types, Creating Ticket Type, Creating Ticket Types, New Ticket Type, New Ticket Types, Categorize Ticket",
     "url"      : "/uvdemo/productivity/ticket-type.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    UVdesk - Steps for creating Ticket Types            What are Ticket Types?        The ticket types help to distinguish the ticket according to different kinds of problems the support group deals with and for providing the true nature to the submitted requests.        Need for categorizing a ticket:                     It helps in the management of problems process.             Improve ticket trend reporting.             Helps in enabling proper escalation routing of tickets.             Helps in the reduction of support cost.                Quicks steps for creating Ticket Types:                     Login to your UVdesk Support Panel.             On the Dashboard, you will see &quot;PRODUCTIVITY&quot; menu and under it, you will find &quot;Ticket Types&quot;.                                     Click on the &quot;Ticket Types&quot; Icon and then you will be redirected to a new page.             In the new page, you will see a list of existing Ticket Types and &quot;New Type&quot; button.                                                 Hit the &quot;New Type&quot; button and then you will see a page for creating a new Ticket Type.             Enter Name, Description and Click on &quot;Save Changes&quot; to save information and create a Ticket Type.                                                 You can also sort the Ticket Types by Id, Name, and Status.            "
     } ,
     
@@ -167,7 +167,7 @@
     "category" : "Productivity",
     "tags"     : "Workflow, Work-flow, Workflows, Work-flows, create Workflow, Create Work-flow, New Workflow, New Work-flow, Set Up Work Flow, Set-Up Work-Flow, Automate Process, Automatic, Automated, Business Rules",
     "url"      : "/uvdemo/productivity/workflow.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    UVdesk -How to set-up Workflow?            These are &quot;business guidelines that can automate your customer support process&quot;. Workflows constitute an event, condition, action.        You can configure department specific rules that automatically sends an e-mail notification, assigns a task to users and update field values when matched with the defined execution criteria.        The main reason behind creating automated business rules is that agents will no longer to do these repetitive steps manually which surely reduces boredom amongst them and focus on other tasks that are having prime concerns.        Understanding basics of workflows:                     Events are basically predefined functions namely Ticket, Agent, Customer.             Conditions are available for Mail, Ticket, Customer and consist of two buttons- AND, OR.             For AND option all the mentioned conditions have to be true then further execution will take place while for OR option either one of the conditions needs to be correct.             Actions will occur or applied in the event when an event gets matched with the specific conditions.                Quicks steps for creating a Workflow:                     Login to your UVdesk Support Panel.             On the Dashboard, you will see &quot;PRODUCTIVITY&quot; menu and under it, you will find &quot;Workflows&quot;.                                     Click on the &quot;Workflows&quot; Icon and then you will be redirected to a new page.             In the new page, you will see a list of existing Workflows and &quot;New Workflow&quot; button.                                     Hit the &quot;New Workflow&quot; button and then you will see a page for creating a new Workflow.             For the reference, I am creating a workflow of &quot;Mail to an agent when ticket generated&quot;.             Enter Name, Description and check &quot;Workflow is Active&quot; checkbox.                         "
     } ,
     
@@ -176,7 +176,7 @@
     "category" : "Reports",
     "tags"     : "Agent Activity, Add Agent Activity, New Agent Activity, Adding Agent Activity",
     "url"      : "/uvdemo/reports/agent-activity.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    UVdesk - How to add an Agent Activity?            What is an Agent Activity?        A support staff member who manages support tickets is referred to as an &quot;Agent&quot;. It implies that the agent will respond to customers, close tickets, change ticket information, and transfer tickets from one group/team to another, among other items.        UVdesk – Agent Activity view to serve a better experience for your customers.        Steps for adding agent activity-                     Login to your UVdesk Support Panel.             On the Dashboard, you will see &quot;Reports&quot; menu and under it, you will find &quot;Agent Activity&quot;.                                     Click on the &quot;Agent Activity&quot; Icon and then you will be redirected to a new page.             Here you will see the page with the ID, Subject, Customer, Total Reply and Agent Last Reply.                        "
     } ,
     
@@ -185,7 +185,7 @@
     "category" : "",
     "tags"     : "",
     "url"      : "/uvdemo/reports/index.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    Reports              Automate your processes by creating set of rules and presets to respond faster to the tickets.        Components :                    Agent Activity            "
     } ,
     
@@ -194,7 +194,7 @@
     "category" : "Reports",
     "tags"     : "Kudos, Add Kudos, New Kudos, Adding Kudos",
     "url"      : "/uvdemo/reports/kudos.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    UVdesk - How to add Kudos?            What is Kudos?        Kudos is all about the ratings of &quot;Agents&quot; profile whether they have got a good response or the bad one from the customers.        UVdesk – It also displays whether the agent is a star performer or a mediocre one.        Steps for adding kudos-                     Login to your UVdesk Support Panel.             On the Dashboard, you will see &quot;Reports&quot; menu and under it, you will find &quot;Kudos&quot;.                                     Click on the &quot;kudos&quot; Icon and then you will be redirected to a new page.            In the Kudos section within the Reports, the owner or the agent can see the ratings provided by the customers for their support.            The agent or the owner can see Ticket Id, Customer Name, Customer Email, Timestamp on which Kudos Rating is provided by the customer.            In the Filter View, the owner or the agent can see the Kudos Rating by selecting any particular Agent, Group, Team, Type, Priority, customer, source.                        "
     } ,
     
@@ -203,7 +203,7 @@
     "category" : "System Requirements",
     "tags"     : "Mac, System Requirement, Hardware Requirement, Install Composer, Composer Installation, Install PHP, PHP Installation, Install Mailparse, Mailparse Installation, Install Imap, Imap Installation, Server, Database, MAMP",
     "url"      : "/uvdemo/requirements/requirements-mac.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    System Requirements - Mac    Hardware Requirements:            Processor: 1GHz or higher        RAM: 4GB or higher        &lt;/br&gt;    Software Requirements:            Composer Installation:            Instruction Link -https://getcomposer.org/download/            Using the above link you will find command to install composer on Mac.        PHP Installation:                        In Mac, PHP automatically comes with MAMP even you can download it according to your requirements of PHP Version and also can switch PHP versions easily.                Mailparse Installation:            Install Mailparse Extension in Mac using below structured command:            Command:            pecl install mailparse            After successful execution of the command, you need to add &quot;extension=mailparse.so&quot; in php.ini file of the PHP version you are using.            Note:-Sometimes you will not get pre-installed pecl in MAC so in that case you need to install pecl first following the link given below:            Instruction Link - https://www.lullabot.com/articles/installing-php-pear-and-pecl-extensions-on-mamp-for-mac-os-x-107-lion            Imap Installation:            MAMP comes with pre-installed IMAP Extension, you just need to uncomment the IMAP Extension from php.ini file of PHP version which you are using, it will reflect/work after restarting apache services.            Helpful links:            PHP IMAP &amp; PHP Mailparse for Ubuntu, Windows, Centos, Mac.                        Server:        Apache 2 or NGINX        Database:        MySQL 5.7.23 or higher.    "
     } ,
     
@@ -212,7 +212,7 @@
     "category" : "System Requirements",
     "tags"     : "Ubuntu, System Requirement, Hardware Requirement, Install Composer, Composer Installation, Install PHP, PHP Installation, Install Mailparse, Mailparse Installation, Install Imap, Imap Installation, Server, Database",
     "url"      : "/uvdemo/requirements/requirements-ubuntu.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    System Requirements - Ubuntu    Hardware Requirements:            Processor: 1GHz or higher        RAM: 4GB or higher            Software Requirements:            Composer Installation:            Instruction Link -https://getcomposer.org/download/        PHP Installation:        Command:                    sudo add-apt-repository ppa:ondrej/php&lt;/br&gt;            sudo apt-get update&lt;/br&gt;            fter that, pick and run below structured command related to the PHP version of your system/server.               For php 7.3:        apt-get -y install php7.3 php7.3-curl php7.3-intl php7.3-gd php7.3-dom php7.3-iconv php7.3-xsl php7.3-mbstring php7.3-ctype php7.3-zip php7.3-pdo php7.3-xml php7.3-bz2 php7.3-calendar php7.3-exif php7.3-fileinfo php7.3-json php7.3-mysqli php7.3-mysql php7.3-posix php7.3-tokenizer php7.3-xmlwriter php7.3-xmlreader php7.3-phar php7.3-soap php7.3-mysql php7.3-fpm libapache2-mod-php7.3 php7.3-gmp php7.3-bcmath php7.3-apcu php7.3-redis php7.3-imagick php7.3-imap php7.3-xdebug        For php 7.4:        apt-get -y install php7.4 php7.4-cli php7.4-fpm php7.4-curl php7.4-intl php7.4-gd php7.4-dom php7.4-iconv php7.4-xsl php7.4-mbstring php7.4-ctype php7.4-zip php7.4-pdo php7.4-xml php7.4-bz2 php7.4-calendar php7.4-exif php7.4-fileinfo php7.4-json php7.4-mysqli php7.4-mysql php7.4-posix php7.4-tokenizer php7.4-xmlwriter php7.4-xmlreader php7.4-phar php7.4-soap php7.4-fpm libapache2-mod-php7.4 php7.4-gmp php7.4-bcmath php7.4-apcu php7.4-redis php7.4-imagick php7.4-imap php7.4-xdebug        For php 8.0:        apt-get -y install php8.0 php8.0-cli php8.0-fpm php8.0-curl php8.0-intl php8.0-gd php8.0-dom php8.0-iconv php8.0-xsl php8.0-mbstring php8.0-ctype php8.0-zip php8.0-pdo php8.0-xml php8.0-bz2 php8.0-calendar php8.0-exif php8.0-fileinfo php8.0-json php8.0-mysqli php8.0-mysql php8.0-posix php8.0-tokenizer php8.0-xmlwriter php8.0-xmlreader php8.0-phar php8.0-soap php8.0-fpm libapache2-mod-php8.0 php8.0-gmp php8.0-bcmath php8.0-apcu php8.0-redis php8.0-imagick php8.0-imap php8.0-xdebug        For php 8.1:        apt-get -y install php8.1 php8.1-cli php8.1-fpm php8.1-curl php8.1-intl php8.1-gd php8.1-dom php8.1-iconv php8.1-xsl php8.1-mbstring php8.1-ctype php8.1-zip php8.1-pdo php8.1-xml php8.1-bz2 php8.1-calendar php8.1-exif php8.1-fileinfo php8.1-json php8.1-mysqli php8.1-mysql php8.1-posix php8.1-tokenizer php8.1-xmlwriter php8.1-xmlreader php8.1-phar php8.1-soap php8.1-fpm libapache2-mod-php8.1 php8.1-gmp php8.1-bcmath php8.1-apcu php8.1-redis php8.1-imagick php8.1-imap php8.1-xdebug        For php 8.2:        apt-get -y install php8.2 php8.2-cli php8.2-fpm php8.2-curl php8.2-intl php8.2-gd php8.2-dom php8.2-iconv php8.2-xsl php8.2-mbstring php8.2-ctype php8.2-zip php8.2-pdo php8.2-xml php8.2-bz2 php8.2-calendar php8.2-exif php8.2-fileinfo php8.2-json php8.2-mysqli php8.2-mysql php8.2-posix php8.2-tokenizer php8.2-xmlwriter php8.2-xmlreader php8.2-phar php8.2-soap php8.2-fpm libapache2-mod-php8.2 php8.2-gmp php8.2-bcmath php8.2-apcu php8.2-redis php8.2-imagick php8.2-imap php8.2-xdebug        IMAP and Mailparse Installation:        Helpful links:        PHP IMAP &amp; PHP Mailparse for Ubuntu, Windows, Centos, Mac.                Mailparse Extention Command:        apt-get install php &lt;version&gt; -mailparse        or        pecl install mailparse        Note: Add &quot;extension=mailparse.so&quot; in php.ini file of the php version you are using.        IMAP Extention Command:        apt-get install php &lt;version&gt; -imap        Server:        Apache 2 or NGINX        Database:        MySQL 5.7.23 or higher.            "
     } ,
     
@@ -221,7 +221,7 @@
     "category" : "System Requirements",
     "tags"     : "Windows, System Requirement, Hardware Requirement, Install Composer, Composer Installation, Install PHP, PHP Installation, Install Mailparse, Mailparse Installation, Install Imap, Imap Installation, Server, Database, WAMP Bitmani, Wamp",
     "url"      : "/uvdemo/requirements/requirements-windows.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    System Requirements - Windows    Hardware Requirements:            Processor: 1GHz or higher        RAM: 4GB or higher        &lt;/br&gt;    Software Requirements:            Composer Installation:            Instruction Link -https://getcomposer.org/download/            Using above link you will get the composer.exe file for Windows and when need to run composer.exe to install, it will ask for the path of php.exe which you can find in your WAMP directory whichever you are using.                PHP Installation:                        In windows, PHP automatically comes with WAMP even you can download it according to your requirements of PHP Version and also you can switch PHP versions easily with the help of WAMP.                Mailparse Installation:            NOTE:-The WAMP for windows are not available with pre-installed or pre-enabled Mailparse Extension hence download Bitnami WAMP from below-given link.            Link -https://bitnami.com/stack/wamp            It comes with the support of Mailparse Extension so you just need to uncomment the Mailparse Extension from the php.ini file of the specific version you have enabled and after that, you just need to restart Apache Server.            Imap Installation:            In Windows when you are using Bitnami WAMP it already comes with Imap Extension you just need to uncomment the Imap Extension in php.ini file of the specific version and restart Apache Server, it will work as expected.            Helpful links:            PHP IMAP &amp; PHP Mailparse for Ubuntu, Windows, Centos, Mac.                        Server:        Apache 2 or NGINX        Database:        MySQL 5.7.23 or higher.    "
     } ,
     
@@ -230,7 +230,7 @@
     "category" : "Settings",
     "tags"     : "API, REST, Ticket, UVdesk, Integration",
     "url"      : "/uvdemo/settings/api.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    UVdesk - API Resource"
     } ,
     
@@ -239,7 +239,7 @@
     "category" : "Settings",
     "tags"     : "Spam Settings, Blocking Spams, Block Messages, Mailbox, Blacklisting, Whitelisting, Blacklist, Whitelist",
     "url"      : "/uvdemo/settings/block-spam.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    UVdesk - Spam Settings                UVdesk has the feature to block unwanted spam messages popping up again and again into your Mailbox. These spam messages are annoying and consume a lot of space as well.                Steps to blacklisting and whitelisting the particular senders:                     Login to your UVdesk Support Panel.             On the Dashboard, you will see &quot;SETTINGS&quot; menu and under it, you will find &quot;Spam Settings&quot;."
     } ,
     
@@ -248,7 +248,7 @@
     "category" : "Settings",
     "tags"     : "Branding, Brand, Branding Portal, Brand Portal, Custom, Customize",
     "url"      : "/uvdemo/settings/branding.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    UVdesk - Branding of the portal                Steps for Branding of the portal:                     Login to your UVdesk Support Panel.             On the Dashboard, you will see &quot;SETTINGS&quot; menu and under it, you will find &quot;Branding&quot;.                                                 Click on the &quot;Branding&quot; Icon and then you will be redirected to a new page.                                                 In the new page, you will see a total of five tabs namely- General, Knowledgebase, Time, SEO, Links, Advanced &amp; Broadcast Message             Under &quot;General&quot; tab, the owner can upload Wide Logo, Website Status, choose Brand Color, enter Name and set the default language.                                                                                 Page Background Color                 Header Background Color                 Banner Background Color                 Page Link Color                 Page Link Hover Color                 Article Text Color                 Tag Line                                        Note:                     In the Layout, the owner can select their preferred layout and in that style folders and articles will be displayed to the customer.             The owner can also select &quot;Ticket Create Option&quot; &amp; &quot;Login Required To Create Tickets&quot;. By selecting &quot;Ticket Create Option&quot;, the user can see the button of creating a ticket on the front end and by clicking on &quot;Login Required To Create Tickets&quot;, the customers have to sign in before creating any ticket.              Owner can Remove Customer Login/Sign in Button.              Disable Customer Login if required for sometime.                         "
     } ,
     
@@ -257,7 +257,7 @@
     "category" : "Settings",
     "tags"     : "E-mail, Email, Command, Commands, Use Email Commands",
     "url"      : "/uvdemo/settings/email-settings.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    UVdesk - How to use E-mail commands ?                E-mail commands ease the way you handle tickets and perform actions on them. With this, you don&#39;t need to open your UVdesk dashboard every time to manage tickets instead, you can harness the power of your email service provider by using email commands.                 Steps to use email commands :                     Login to your UVdesk Support Panel.             On the Dashboard, you will see &quot;SETTINGS&quot; menu and under it, you will find &quot;Email Settings&quot;."
     } ,
     
@@ -266,7 +266,7 @@
     "category" : "",
     "tags"     : "",
     "url"      : "/uvdemo/settings/index.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    Settings                Manage your Brand Identity, Company Information and other details at a glance.        Components :                    Branding            Email Templates            Swift Mailer            Email Settings            Spam Settings            MailBox            "
     } ,
     
@@ -275,7 +275,7 @@
     "category" : "Settings",
     "tags"     : "MailBox, Mailbox, Use, MailBox, Email, E-mail, New, MailBox, New, Mailbox",
     "url"      : "/uvdemo/settings/mailbox.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    UVdesk - How to use MailBox                What Is Mailbox?        Mailbox feature allows e-mails which are sent to any specific e-mail address to be automatically imported to the support ticket system as a ticket. Now, the owner or the agent can work on that ticket and resolve the issue of the customer.        Here I am drafting out few configuration steps to automatically convert your emails into the support ticket in the UVdesk."
     } ,
     
@@ -284,7 +284,7 @@
     "category" : "Settings",
     "tags"     : "Microsoft, App, Azure, Active, Directory, OAuth, Microsoft, Integration",
     "url"      : "/uvdemo/settings/microsoft-apps.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    UVdesk - How to use Microsoft App"
     } ,
     
@@ -293,7 +293,7 @@
     "category" : "Settings",
     "tags"     : "Swift, Mailer, User, Swift, Mailer, Email",
     "url"      : "/uvdemo/settings/swiftmailer.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    UVdesk - How to use Swift Mailer                        Steps to use Swift Mailer :                     Login to your UVdesk Support Panel.             On the Dashboard, you will see &quot;SETTINGS&quot; menu and under it, you will find &quot;Swift Mailer&quot;."
     } ,
     
@@ -302,7 +302,7 @@
     "category" : "Settings",
     "tags"     : "Email, Templates, E-mail, Template, Prepare, E-mail, Prepare, Email, Templates, Create, Email, Template, Create, E-mail, Templates, New, Template, Create, Template",
     "url"      : "/uvdemo/settings/template.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    UVdesk - How to prepare E-mail templates?                E-mail templates are basically pre-formatted text which makes use of placeholders.         Placeholders allow you to use dynamic codes in action which are not visible to the customers as they get replaced by the exact value at the time of execution.        They are a great way to add dynamic content and personalize your automated e-mails.They are enclosed in double curly braces."
     } ,
     
@@ -311,7 +311,7 @@
     "category" : "Users",
     "tags"     : "Add Agent, Add Agents, Add Support Agent, Add Support Agents, Create Support Staff",
     "url"      : "/uvdemo/users/agents.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    UVdesk - How to add support agents?                What are Support Agents?        Support Agents are individuals who check the customer&#39;s query in the ticket and reply to their query with the best possible solution.                Steps for adding support agents-                     Login to the UVdesk Support Portal.             On the Dashboard, you will see &quot;USERS&quot; menu and under it, you will find &quot;Agents&quot;."
     } ,
     
@@ -320,7 +320,7 @@
     "category" : "Users",
     "tags"     : "Edit Customer, Edit Customers, Editing Customer, Editing Customers, Manage Customer, Managing Customers, New Customer, Edit Profile, Manage Profile",
     "url"      : "/uvdemo/users/customers.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    UVdesk - Editing and Managing Customer Profiles?                        The profiles of the customers get registered in the UVdesk automatically when a customer sends support e-mails to the support for the very first time. The owner can add or edit any existing customer by simply clicking on Customers section.        UVdesk allows the administrator or the agent ( who has the privilege of adding customer)  to Edit, Delete &amp; Add the customer profiles. "
     } ,
     
@@ -329,7 +329,7 @@
     "category" : "Users",
     "tags"     : "Groups, Group, Add Groups, Add Group, Adding Groups, New Groups, New Group, Create Group, Create Groups",
     "url"      : "/uvdemo/users/groups.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    UVdesk - How to add Groups?                What are Groups?        Groups signify the classification of the agents/staff so that the incoming support requests are passed on to the technician&#39;s expertise.                Advantages of Groups:                     By configuring groups, multiple support agents can be managed by classifying them into individual groups.             The owner can organize agents into groups so that he can keep an eye on the activities related to various departments without wasting much time in searching for agents work progress on a particular task.        "
     } ,
     
@@ -338,7 +338,7 @@
     "category" : "",
     "tags"     : "",
     "url"      : "/uvdemo/users/index.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    Users                Manage your support staff and customer with robust tools. Control your Groups, Teams, Agents and Customers.        Components :                    Groups            Teams            Agents            Privileges            Customers            "
     } ,
     
@@ -347,7 +347,7 @@
     "category" : "Users",
     "tags"     : "Privilege, Privileges, Agent Privileges, Add Privileges, Add Agent Privileges, Create Privilege Permission, Permissions, New Privileges, New Privilege",
     "url"      : "/uvdemo/users/privileges.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    UVdesk - How to add Agent Privileges?                What is Agent Privileges?        The admin or the owner can set the access for the agents like which part they can see on their service portal.        The owner can restrict which part of the helpdesk the agent have the authority to see and what actions they can perform which can be set under agent privileges.        Under agent privileges, there are set of privileges which agents can perform if they have the authority to do so.        Example- If an agent has the privilege to manage knowledge base then he will see the option of the knowledge base in the account of his service portal else not."
     } ,
     
@@ -356,7 +356,7 @@
     "category" : "Users",
     "tags"     : "Groups, Subgroups, Sub-Groups, Team, Teams, Adding Team, Add Team, Create Team",
     "url"      : "/uvdemo/users/teams.html",
-    "date"     : "2025-04-24 18:47:22 +0530",
+    "date"     : "2025-04-24 19:02:46 +0530",
     "desc"     : "    UVdesk - How to arrange Groups into Subgroups?                Team working:        UVdesk support allows to group users into teams (a subgroup of any group) which make it easy for allocating conversations to a group of people in spite of assigning to an individual one."
     } 
     
