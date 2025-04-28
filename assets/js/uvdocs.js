@@ -87,11 +87,15 @@ window.onclick = function (event) {
 // select dropdown item;
 function selectDropdownItem(dropdownItem) {
     dropdownItem.classList.add('is-selected');
+   
+    // const textWidth = dropdownItem.scrollWidth; // Get the width of the selected text
+    // dropdownItem.style.cssText = 'width: ' + (textWidth + 20) + 'px !important';
 }
 
 // un-select dropdownmenu Item
 function unSelectDropdownItem(dropdownItem) {
     dropdownItem.classList.remove('is-selected');
+    
 }
 
 // on selecting current dropdown item
@@ -208,3 +212,5 @@ function hideSearchBarDropdown (event) {
     }
     searchBoxResultSelectedItem(-1);
 }
+
+

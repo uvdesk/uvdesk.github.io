@@ -46,18 +46,18 @@
   --footer-bg-color: #4e32a8;
   --footer-text-color: #f2f4f9;
   --button-box-shadow-color: #27272780;
-  --topics-bg-color: #f9f9f9;
+  --topics-bg-color: #FAFAFA;
   --topics-box-shadow-color: rgba(0, 0, 0, 0.1);
   --topic-box-border-color: #E6E6E9;
-  --topic-box-bg-color: #ffffff;
+  --topic-box-bg-color: #FAFAFA;
   --hamburger-box-shadow-color: #27272780;
   --hamburger-border-color: #efeded;
   --hamburger-menu-heading-bottom-border-color: grey;
   --community-container-text-color: #282828;
-  --paragraph-heading-color:	#202020;
+  --paragraph-heading-color:	#000000;
   --purple-bg-shade: #4e32a8;
   --green-bg-shade: #1cbc54;
-  --container-bg-color: #ffffff;
+  --container-bg-color: #FAFAFA;
   --button-link-visited-color: #4e32a8;
   --button-link-hover-opacity: 0.7;
   --button-link-active-opacity: 0.5;
@@ -666,7 +666,8 @@ a:visited {
   margin: 20px 0px;
   text-align: center;
 }
-.hamburger-menu-wrapper .searchbar input, .hamburger-menu-wrapper .searchbar .results-container {
+.hamburger-menu-wrapper .searchbar input,
+.hamburger-menu-wrapper .searchbar .results-container {
   width: 170px;
   display: block;
   margin-left: var(--hamburger-menu-item-left-margin);
@@ -677,7 +678,8 @@ a:visited {
   margin-left: calc(var(--hamburger-menu-item-left-margin));
 }
 
-.hamburger-menu-wrapper .parent a, .dropdown-btn {
+.hamburger-menu-wrapper .parent a,
+.dropdown-btn {
   text-decoration: none;
   margin-bottom: var(--hamburger-menu-item-bottom-margin);
   display: block;
@@ -694,6 +696,7 @@ a:visited {
   width: -o-fit-content;
   width: fit-content;
   opacity: var(--paragraph-opacity);
+  font-weight: bolder;
 }
 
 .hamburger-menu-wrapper .parent a {
@@ -702,16 +705,21 @@ a:visited {
 
 .dropdown-container a {
   margin-left: var(--hamburger-menu-dropdown-container-item-left-margin);
+  color: black !important;
 }
 
 .dropdown-btn:hover {
   color: var(--purple-bg-shade);
   opacity: 1;
+  transform: scale(1.01);
+  transition: transform 0.3s ease;
 }
 
 .dropdown-container a:hover {
-  color: var(--purple-bg-shade) !important;
+  color: #8473F3 !important;
   opacity: 1 !important;
+  transform: scale(1.01);
+  transition: all 0.1s ease-in-out;
 }
 
 .hamburger-menu-wrapper .parent button:visited,
@@ -723,10 +731,6 @@ a:visited {
 
 .parent:first-of-type .dropdown-btn {
   margin-top: calc(var(--hamburger-menu-seperator-margin));
-}
-
-.dropdown-container {
-  margin: 0 calc(var(--hamburger-menu-item-left-margin)) calc(var(--hamburger-menu-item-bottom-margin));
 }
 
 .hamburger-menu-show {
@@ -755,7 +759,9 @@ a:visited {
   transform: rotateZ(90deg);
 }
 
-.hmi-bar1, .hmi-bar2, .hmi-bar3 {
+.hmi-bar1,
+.hmi-bar2,
+.hmi-bar3 {
   width: 30px;
   height: 4px;
   background-color: var(--purple-bg-shade, #8473F3);
@@ -783,16 +789,26 @@ a:visited {
   transform: rotate(-45deg) translate(8px, -8px);
 }
 
-.is-selected {
-  color: var(--purple-bg-shade) !important;
+.dropdown-btn.is-selected {
+  color: #4e32a8 !important;
   font-weight: bold !important;
-  background-color: rgba(59, 130, 246, 0.5);
-  width: 84%;
   text-align: left;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
   overflow: visible;
   padding-left: 4px;
+  font-size: 21px;
+}
+
+a.is-selected {
+  color: #4e32a8 !important;
+}
+
+.dropdown-container {
+  margin: 0 calc(var(--hamburger-menu-item-left-margin)) calc(var(--hamburger-menu-item-bottom-margin));
+  box-shadow: 2px 4px 6px rgb(149, 97, 246);
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+  margin: 0px 20px 12px 52px;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -801,19 +817,24 @@ a:visited {
   }
 }
 .hamburger-menu::-webkit-scrollbar {
-  width: 10px; /* adjust as needed */
+  width: 10px;
+  /* adjust as needed */
 }
 
 .hamburger-menu::-webkit-scrollbar-track {
-  background: rgba(59, 130, 246, 0.5); /* track color */
+  background: rgba(59, 130, 246, 0.5);
+  /* track color */
   border-radius: 10px;
 }
 
 .hamburger-menu::-webkit-scrollbar-thumb {
-  background-color: rgba(59, 130, 246, 0.5); /* scrollbar handle */
-  background-color: var(--purple-bg-shade); /* scrollbar handle */
+  background-color: rgba(59, 130, 246, 0.5);
+  /* scrollbar handle */
+  background-color: var(--purple-bg-shade);
+  /* scrollbar handle */
   border-radius: 10px;
-  border: 2px solid transparent; /* space around the thumb */
+  border: 2px solid transparent;
+  /* space around the thumb */
   background-clip: content-box;
 }
 
@@ -987,6 +1008,7 @@ a:visited {
 .topics-heading {
   font-size: 18px;
   color: #000000;
+  font-weight: bold;
 }
 
 .component-title {
@@ -994,7 +1016,7 @@ a:visited {
   width: 85%;
   margin-left: -15px;
   padding-bottom: 10px;
-  color: #131516;
+  color: #000000;
   padding-right: 10px;
   overflow-x: hidden !important;
   font-weight: var(--heading-font-weight, bold);
@@ -1004,7 +1026,7 @@ a:visited {
   font-size: 20px !important;
   margin-left: -15px;
   padding-bottom: 5px;
-  color: #131516;
+  color: #000000;
   padding-right: 10px;
   font-size: 22px;
   overflow-x: hidden !important;
@@ -1020,16 +1042,17 @@ a:visited {
 .paragraph1 {
   padding-bottom: 15px;
   margin-left: -15px;
-  color: #202020;
+  color: #000000;
   font-size: 15px !important;
   padding-right: 20px;
   overflow-x: hidden !important;
+  line-height: 1.3;
 }
 
 .command-heading {
   margin-left: 10px;
   padding-bottom: 15px;
-  color: #131516;
+  color: #000000;
   padding-right: 10px;
   font-size: 15px !important;
   overflow-x: hidden !important;
@@ -1193,6 +1216,7 @@ a:visited {
   }
   .topics-heading {
     font-size: 18px !important;
+    font-weight: bold;
   }
 }
 @media all and (max-width: 480px) {
@@ -1226,6 +1250,7 @@ a:visited {
   .topics-heading {
     font-size: 18px !important;
     margin-left: -30px;
+    font-weight: bold;
   }
   .sidebar-filler {
     grid-column: auto;
@@ -1312,6 +1337,7 @@ a:visited {
   }
   .topics-heading {
     font-size: 18px !important;
+    font-weight: bold;
   }
 }
 @media all and (max-width: 340px) {
@@ -1346,6 +1372,7 @@ a:visited {
   }
   .topics-heading {
     font-size: 20px;
+    font-weight: bold;
   }
   .paragraph1 {
     font-size: 17px;
@@ -1453,11 +1480,8 @@ a:visited {
     width: 350px !important;
   }
 }
-.image-heading b::before {
-  content: "• ";
-  color: #000;
+b {
   font-weight: bold;
-  margin: 2px 0px 4px 0px;
 }
 
 /*# sourceMappingURL=uvdocs.css.map */
