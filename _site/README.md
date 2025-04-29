@@ -39,7 +39,7 @@ $ gem install bundler
     1. To install Jekyll dependencies, run: 
 
         ```
-        $ bundle install
+        $ bundle install --path vendor/bundle
         ```
     2. To generate the local preview, run:
         ```
